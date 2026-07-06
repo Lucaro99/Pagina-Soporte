@@ -527,6 +527,44 @@
         box-shadow: 0 12px 24px rgba(2, 99, 226, 0.08);
         transform: translateY(-4px);
       }
+      .experience-carousel__viewport {
+        overflow: hidden;
+        width: 100%;
+      }
+      .experience-carousel__track {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 1.5rem;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+      .experience-carousel__track::-webkit-scrollbar {
+        display: none;
+      }
+      .experience-carousel__slide {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        min-width: 100%;
+      }
+      .experience-carousel__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .experience-carousel__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #cbd5e1;
+        transition: background-color 0.3s ease;
+      }
+      .experience-carousel__dot.is-active {
+        background-color: #0ea5e9;
+      }
     </style>
 
     <!-- Datos Estructurados JSON-LD para SEO y AEO -->
@@ -619,22 +657,33 @@
     <meta property="og:type" content="website" />
   </head>
   <body>
-<!-- HERO SECTION -->
-    <header class="gradient-hero relative overflow-hidden border-b border-slate-100">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 lg:pt-24 lg:pb-28">
+    <!-- HERO SECTION -->
+    <header
+      class="gradient-hero relative overflow-hidden border-b border-slate-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 lg:pt-24 lg:pb-28"
+      >
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Textos Principales -->
-          <div class="lg:col-span-7 space-y-6">
+          <div class="lg:col-span-6 space-y-6">
             <div class="hero-eyebrow">Portal de Soporte</div>
 
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-              <span class="text-icqBlue relative inline-block">Soporte ICQ24:</span>
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight"
+            >
+              <span class="text-icqBlue relative inline-block"
+                >Soporte ICQ24:</span
+              >
               Centraliza tus solicitudes y recibe soporte
-              <span class="text-icqBlue relative inline-block">más ágil</span>
-              y organizado
+              <span class="text-icqBlue relative inline-block"
+                >más ágil y organizado</span
+              >
             </h1>
 
-            <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+            <p
+              class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl"
+            >
               Gestiona tus solicitudes, consulta el estado de tus casos y mantén
               seguimiento continuo desde un solo lugar. Nuestro portal está
               diseñado para brindarte una experiencia de soporte más rápida,
@@ -645,55 +694,77 @@
             <!-- Beneficios Rápidos (Checkmarks) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
               <div class="flex items-center gap-2.5 text-slate-700">
-                <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full"
+                >
                   <i class="fa-solid fa-check"></i>
                 </span>
-                <span class="font-semibold text-sm">Seguimiento en tiempo real</span>
+                <span class="font-semibold text-sm"
+                  >Seguimiento en tiempo real</span
+                >
               </div>
               <div class="flex items-center gap-2.5 text-slate-700">
-                <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full"
+                >
                   <i class="fa-solid fa-check"></i>
                 </span>
-                <span class="font-semibold text-sm">Atención especializada</span>
+                <span class="font-semibold text-sm"
+                  >Atención especializada</span
+                >
               </div>
               <div class="flex items-center gap-2.5 text-slate-700">
-                <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full"
+                >
                   <i class="fa-solid fa-check"></i>
                 </span>
-                <span class="font-semibold text-sm">Gestión centralizada de solicitudes</span>
+                <span class="font-semibold text-sm"
+                  >Gestión centralizada de solicitudes</span
+                >
               </div>
               <div class="flex items-center gap-2.5 text-slate-700">
-                <span class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-6 h-6 bg-icqBlue/10 text-icqBlue rounded-full"
+                >
                   <i class="fa-solid fa-check"></i>
                 </span>
-                <span class="font-semibold text-sm">Mayor trazabilidad y control</span>
+                <span class="font-semibold text-sm"
+                  >Mayor trazabilidad y control</span
+                >
               </div>
             </div>
 
             <!-- CTAs -->
             <div class="flex flex-wrap gap-4 pt-4">
-              <a href="https://icq24.atlassian.net/servicedesk/customer/portals" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              <a
+                href="https://icq24.atlassian.net/servicedesk/customer/portals"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary"
+              >
                 Crear Ticket
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
-              <a href="#como-funciona" class="btn-secondary">
-                Ver cómo funciona
+              <a href="#tutorial" class="btn-secondary">
+                Nuestro acompañamiento
                 <i class="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>
 
           <!-- Imagen limpia abarcando todo el espacio -->
-          <div class="lg:col-span-5 relative w-full flex items-center justify-center">
+          <div
+            class="lg:col-span-6 relative w-full flex items-center justify-center"
+          >
             <img
-              src="Assets/Personas soporte.webp"
-              alt="Diferencial de Soporte"
+              src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/PC.png?raw=true"
+              alt="Soporte ICQ24"
               class="w-full h-auto object-contain"
             />
           </div>
         </div>
       </div>
-    </header>
 
       <!-- Frase Persuasiva de Cierre -->
 
@@ -719,7 +790,10 @@
           <h2
             class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight"
           >
-            Una experiencia de soporte pensada para simplificar tu operación
+            Una experiencia de soporte pensada para
+            <span class="text-icqBlue relative inline-block"
+              >simplificar tu operación</span
+            >
           </h2>
           <div
             class="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed"
@@ -871,19 +945,19 @@
               Nuestro Acompañamiento
             </div>
             <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
-              Aprende a utilizar el portal de soporte ICQ24
+              Más que soporte, un acompañamiento continuo
             </h2>
             <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-              Conoce cómo crear solicitudes, consultar el estado de tus tickets
-              y gestionar soporte desde una experiencia más organizada y
-              centralizada. Creamos este espacio para ayudarte a familiarizarte
-              rápidamente con el portal y facilitar el seguimiento de cada caso.
+              Conoce cómo en <strong>ICQ24</strong> acompañamos a nuestros
+              clientes antes, durante y especialmente después de cada
+              implementación,
+              <strong
+                >brindando el respaldo necesario para resolver
+                incidencias,</strong
+              >
+              orientar a los usuarios y ayudarles a obtener el máximo valor de
+              sus soluciones.
             </p>
-            <div class="pt-2">
-              <button onclick="playTutorial()" class="btn-primary group">
-                <i class="fa-solid fa-play"></i> Ver Tutorial
-              </button>
-            </div>
           </div>
 
           <!-- Video Player Interactivo Simulado -->
@@ -1004,12 +1078,19 @@
         <h2
           class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight"
         >
-          Gestiona tus solicitudes de forma rápida y sencilla
+          Gestiona tus solicitudes de forma
+          <span class="text-icqBlue relative inline-block"
+            >rápida y sencilla</span
+          >
         </h2>
+
         <p class="text-sm sm:text-base text-slate-500 mt-4 leading-relaxed">
-          El portal de soporte fue diseñado para ayudarte a mantener una
-          experiencia de soporte más clara, organizada y eficiente, reduciendo
-          tiempos de seguimiento y facilitando la gestión de cada solicitud.
+          El portal de soporte fue diseñado para
+          <strong
+            >ayudarte a mantener una experiencia de soporte más clara,</strong
+          >
+          organizada y eficiente, reduciendo tiempos de seguimiento y
+          facilitando la gestión de cada solicitud.
         </p>
       </div>
 
@@ -1027,9 +1108,7 @@
           >
             1
           </div>
-          <h3 class="text-base font-bold text-slate-900">
-            1. Accede al portal
-          </h3>
+          <h3 class="text-base font-bold text-slate-900">Accede al portal</h3>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Ingresa fácilmente desde cualquier dispositivo y accede a tu espacio
             de soporte.
@@ -1043,9 +1122,7 @@
           >
             2
           </div>
-          <h3 class="text-base font-bold text-slate-900">
-            2. Crea tu solicitud
-          </h3>
+          <h3 class="text-base font-bold text-slate-900">Crea tu solicitud</h3>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Describe tu requerimiento y adjunta la información necesaria para
             facilitar la atención del caso.
@@ -1060,7 +1137,7 @@
             3
           </div>
           <h3 class="text-base font-bold text-slate-900">
-            3. Da seguimiento en tiempo real
+            Da seguimiento en tiempo real
           </h3>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Consulta actualizaciones, respuestas y avances directamente desde el
@@ -1076,7 +1153,7 @@
             4
           </div>
           <h3 class="text-base font-bold text-slate-900">
-            4. Recibe atención especializada
+            Recibe atención especializada
           </h3>
           <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
             Nuestro equipo te acompañará durante todo el proceso hasta la
@@ -1087,7 +1164,7 @@
     </section>
 
     <!-- SECCIÓN 5 — SOPORTE Y ACOMPAÑAMIENTO -->
-    <section class="bg-white py-20" style="background-color: #f8fafc">
+    <section class="py-20" style="background-color: #f8fafc">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Tarjeta Informativa Grande -->
@@ -1096,17 +1173,26 @@
             <h2
               class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight"
             >
-              Soporte estructurado para operaciones empresariales
+              Soporte estructurado para
+              <span class="text-icqBlue relative inline-block"
+                >operaciones empresariales</span
+              >
             </h2>
             <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-              ICQ24 combina experiencia técnica, procesos estructurados y
-              acompañamiento continuo para brindar una experiencia de soporte
-              alineada a las necesidades de operaciones modernas.
+              <strong>ICQ24</strong> combina
+              <strong
+                >experiencia técnica, procesos estructurados y acompañamiento
+                continuo</strong
+              >
+              para brindar una experiencia de soporte alineada a las necesidades
+              de operaciones modernas.
             </p>
             <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
               Nuestro enfoque permite mantener organización, trazabilidad y
-              seguimiento continuo, ayudando a nuestros clientes a gestionar sus
-              solicitudes con mayor claridad y control.
+              seguimiento continuo, ayudando a nuestros clientes a
+              <strong
+                >gestionar sus solicitudes con mayor claridad y control.</strong
+              >
             </p>
           </div>
 
@@ -1202,8 +1288,8 @@
           class="relative w-full rounded-2xl overflow-hidden flex justify-center items-center"
         >
           <img
-            src="Assets/PC.png"
-            alt="Diferencial de Soporte"
+            src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Personas%20soporte.webp?raw=true"
+            alt="Soporte ICQ24"
             class="w-full h-auto object-cover rounded-xl"
           />
         </div>
@@ -1211,18 +1297,21 @@
         <!-- Panel Derecho (Textos Originales del Diferencial) -->
         <div class="space-y-6">
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-            En ICQ24 creemos que el soporte debe ir más allá de resolver
-            incidentes. Debe ayudar a mantener continuidad operativa, facilitar
+            En <strong>ICQ24</strong> creemos que el soporte debe ir más allá de
+            resolver incidentes. Debe
+            <strong>ayudar a mantener continuidad operativa,</strong> facilitar
             la comunicación y brindar mayor visibilidad sobre cada solicitud.
           </p>
-          <p
-            class="text-sm sm:text-base text-slate-900 font-bold leading-relaxed"
-          >
-            Por eso trabajamos en una experiencia de soporte enfocada en:
+          <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+            Por eso trabajamos en
+            <strong>una experiencia de soporte </strong>enfocada en:
             organización, seguimiento, trazabilidad y acompañamiento continuo.
-            Nuestro objetivo es ofrecer a cada cliente una experiencia más
-            clara, centralizada y eficiente, alineada a las necesidades de
-            operaciones empresariales modernas.
+            Nuestro objetivo es
+            <strong
+              >ofrecer a cada cliente una experiencia más clara, centralizada y
+              eficiente,</strong
+            >
+            alineada a las necesidades de operaciones empresariales modernas.
           </p>
         </div>
       </div>
@@ -1553,8 +1642,11 @@
           class="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed"
         >
           Gestiona solicitudes, mantén seguimiento continuo y recibe atención
-          organizada desde una experiencia diseñada para ayudarte a resolver más
-          rápido y mantener mayor control sobre cada caso.
+          organizada desde una
+          <strong
+            >experiencia diseñada para ayudarte a resolver más rápido</strong
+          >
+          y mantener mayor control sobre cada caso.
         </p>
         <div class="pt-4">
           <a
@@ -1571,11 +1663,6 @@
 
     <!-- Lógica Interactiva (Vanilla JS) -->
     <script>
-      // Inicialización de Iconos Lucide
-      if (window.lucide) {
-        lucide.createIcons();
-      }
-
       // Acordeón de FAQs
       function toggleFaq(id) {
         const item = document.getElementById(id);
@@ -1708,7 +1795,124 @@
         updateControls();
       }
 
-      initExperienceCarousel();
+      // Carrusel con ciclo infinito
+      document.addEventListener("DOMContentLoaded", function () {
+        function initExperienceCarousel() {
+          const carousel = document.querySelector("[data-experience-carousel]");
+          if (!carousel) return;
+
+          const track = carousel.querySelector(".experience-carousel__track");
+          const slides = Array.from(
+            carousel.querySelectorAll(".experience-carousel__slide"),
+          );
+          const prevButton = carousel.querySelector("[data-experience-prev]");
+          const nextButton = carousel.querySelector("[data-experience-next]");
+          const dotsWrap = carousel.querySelector("[data-experience-dots]");
+
+          if (
+            !track ||
+            !slides.length ||
+            !prevButton ||
+            !nextButton ||
+            !dotsWrap
+          )
+            return;
+
+          let dots = [];
+          let ticking = false;
+
+          const getStep = () => {
+            const first = slides[0];
+            const second = slides[1];
+            return second
+              ? second.offsetLeft - first.offsetLeft
+              : first.offsetWidth;
+          };
+
+          const getVisibleSlides = () => {
+            const step = getStep() || track.clientWidth || 1;
+            return Math.max(1, Math.round(track.clientWidth / step));
+          };
+
+          const getMaxIndex = () =>
+            Math.max(0, slides.length - getVisibleSlides());
+
+          const getActiveIndex = () => {
+            const step = getStep();
+            if (!step) return 0;
+            return Math.min(getMaxIndex(), Math.round(track.scrollLeft / step));
+          };
+
+          const scrollToIndex = (index) => {
+            const safeIndex = Math.min(Math.max(index, 0), getMaxIndex());
+            track.scrollTo({
+              left: slides[safeIndex].offsetLeft - slides[0].offsetLeft,
+              behavior: "smooth",
+            });
+          };
+
+          const updateControls = () => {
+            const activeIndex = getActiveIndex();
+
+            dots.forEach((dot, index) => {
+              const isActive = index === activeIndex;
+              dot.classList.toggle("is-active", isActive);
+              dot.setAttribute("aria-current", isActive ? "true" : "false");
+            });
+          };
+
+          const buildDots = () => {
+            dotsWrap.innerHTML = "";
+            dots = Array.from({ length: getMaxIndex() + 1 }, (_, index) => {
+              const dot = document.createElement("button");
+              dot.type = "button";
+              dot.className = "experience-carousel__dot";
+              dot.setAttribute("aria-label", `Ir al beneficio ${index + 1}`);
+              dot.addEventListener("click", () => scrollToIndex(index));
+              dotsWrap.appendChild(dot);
+              return dot;
+            });
+          };
+
+          prevButton.addEventListener("click", () => {
+            const activeIndex = getActiveIndex();
+            if (activeIndex === 0) {
+              scrollToIndex(getMaxIndex());
+            } else {
+              scrollToIndex(activeIndex - 1);
+            }
+          });
+
+          nextButton.addEventListener("click", () => {
+            const activeIndex = getActiveIndex();
+            if (activeIndex >= getMaxIndex()) {
+              scrollToIndex(0);
+            } else {
+              scrollToIndex(activeIndex + 1);
+            }
+          });
+
+          track.addEventListener("scroll", () => {
+            if (ticking) return;
+            ticking = true;
+            window.requestAnimationFrame(() => {
+              updateControls();
+              ticking = false;
+            });
+          });
+
+          window.addEventListener("resize", () => {
+            buildDots();
+            scrollToIndex(getActiveIndex());
+            updateControls();
+          });
+
+          buildDots();
+          updateControls();
+        }
+
+        setTimeout(initExperienceCarousel, 500);
+      });
     </script>
   </body>
 </html>

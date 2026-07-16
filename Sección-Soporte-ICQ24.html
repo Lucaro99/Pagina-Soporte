@@ -664,7 +664,7 @@
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-20 lg:pt-24 lg:pb-28"
       >
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
           <!-- Textos Principales -->
           <div class="lg:col-span-6 space-y-6">
             <div class="hero-eyebrow">Portal de Soporte</div>
@@ -783,9 +783,11 @@
       id="experiencia"
       class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10"
     >
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start items-center"
+      >
         <!-- Textos de Encabezado -->
-        <div class="lg:col-span-6 space-y-5 lg:sticky lg:top-28">
+        <div class="lg:col-span-6 space-y-5">
           <div class="eyebrow">Experiencia de Soporte</div>
           <h2
             class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight"
@@ -970,19 +972,20 @@
                 id="video-thumbnail"
                 class="absolute inset-0 flex flex-col justify-between p-6 bg-cover bg-center transition-all duration-500"
                 style="
-                  background-image: linear-gradient(
-                    to bottom,
-                    rgba(15, 23, 42, 0.4),
-                    rgba(15, 23, 42, 0.85)
-                  );
+                  background-image:
+                    linear-gradient(
+                      to bottom,
+                      rgba(15, 23, 42, 0.3),
+                      rgba(15, 23, 42, 0.85)
+                    ),
+                    url(&quot;https://img.youtube.com/vi/70KMkBdSyXA/maxresdefault.jpg&quot;);
                 "
               >
                 <div class="flex items-center justify-between">
                   <span
                     class="bg-slate-900/80 backdrop-blur text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider text-slate-300"
-                    >Guía de Adopción</span
+                    >ICQ24</span
                   >
-                  <span class="text-xs text-slate-400">Duración: 2:15 min</span>
                 </div>
 
                 <!-- Play Trigger Center -->
@@ -994,72 +997,39 @@
                 </button>
 
                 <div class="space-y-1.5">
-                  <p class="text-sm font-bold">
-                    Introducción al Portal Atlassian JSM - ICQ24
-                  </p>
+                  <p class="text-sm font-bold">SOPORTE</p>
                   <p class="text-xs text-slate-400">
-                    Paso a paso para clientes autorizados.
+                    Implementar es solo el comienzo.
                   </p>
                 </div>
               </div>
 
-              <!-- Reproductor Simulado (Active State) -->
-              <div
-                id="video-player"
-                class="absolute inset-0 bg-black hidden flex-col justify-between p-6"
-              >
-                <div class="flex items-center justify-between z-10">
-                  <span
-                    class="bg-icqBlue text-white text-[10px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider"
-                    >Reproduciendo tutorial</span
-                  >
-                  <button
-                    onclick="stopTutorial()"
-                    class="bg-slate-900/80 text-slate-400 hover:text-white p-1.5 rounded-full"
-                  >
-                    <i class="fa-solid fa-x"></i>
-                  </button>
-                </div>
-
-                <!-- Simulación de reproducción con ondas y animación -->
-                <div
-                  class="absolute inset-0 flex items-center justify-center flex-col gap-3"
+              <!-- Reproductor de Video Real (YouTube Iframe) -->
+              <div id="video-player" class="absolute inset-0 bg-black hidden">
+                <iframe
+                  id="youtube-iframe"
+                  class="w-full h-full"
+                  src=""
+                  title="Tutorial de Adopción - ICQ24"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  allowfullscreen
+                ></iframe>
+                <button
+                  onclick="stopTutorial()"
+                  class="absolute top-4 right-4 z-20 bg-slate-900/80 hover:bg-slate-900 text-slate-400 hover:text-white p-2 rounded-full shadow-lg transition-all"
+                  aria-label="Cerrar video"
                 >
-                  <div class="flex items-end gap-1.5 h-12">
-                    <span
-                      class="w-1.5 bg-icqBlue rounded-full animate-[bounce_1s_infinite_100ms] h-8"
-                    ></span>
-                    <span
-                      class="w-1.5 bg-icqBlue rounded-full animate-[bounce_1s_infinite_200ms] h-12"
-                    ></span>
-                    <span
-                      class="w-1.5 bg-icqBlue rounded-full animate-[bounce_1s_infinite_300ms] h-6"
-                    ></span>
-                    <span
-                      class="w-1.5 bg-icqBlue rounded-full animate-[bounce_1s_infinite_400ms] h-10"
-                    ></span>
-                    <span
-                      class="w-1.5 bg-icqBlue rounded-full animate-[bounce_1s_infinite_500ms] h-4"
-                    ></span>
-                  </div>
-                  <p class="text-xs text-slate-400 tracking-wider">
-                    Vídeo explicativo animado
-                  </p>
-                </div>
-
-                <div class="w-full space-y-2 z-10">
-                  <div
-                    class="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden"
-                  >
-                    <div
-                      class="bg-icqBlue h-full w-1/3 animate-[pulse_1.5s_infinite]"
-                    ></div>
-                  </div>
-                  <div class="flex justify-between text-[11px] text-slate-500">
-                    <span>0:45 / 2:15</span>
-                    <span class="flex items-center gap-1"> Activo</span>
-                  </div>
-                </div>
+                  <i class="fa-solid fa-x"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -1288,7 +1258,7 @@
           class="relative w-full rounded-2xl overflow-hidden flex justify-center items-center"
         >
           <img
-            src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Personas%20soporte.webp?raw=true"
+            src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/PC.png?raw=true"
             alt="Soporte ICQ24"
             class="w-full h-auto object-cover rounded-xl"
           />
@@ -1673,15 +1643,29 @@
         if (!isOpen) item.classList.add("open");
       }
 
-      // Funcionalidades de Simulación de Video Tutorial
+      // Funcionalidades de Video Tutorial (YouTube)
       function playTutorial() {
         document.getElementById("video-thumbnail").classList.add("hidden");
         document.getElementById("video-player").classList.remove("hidden");
+        const iframe = document.getElementById("youtube-iframe");
+        if (
+          iframe &&
+          (!iframe.src ||
+            iframe.src === window.location.href ||
+            iframe.src === "about:blank")
+        ) {
+          iframe.src =
+            "https://www.youtube.com/embed/70KMkBdSyXA?autoplay=1&rel=0";
+        }
       }
 
       function stopTutorial() {
         document.getElementById("video-player").classList.add("hidden");
         document.getElementById("video-thumbnail").classList.remove("hidden");
+        const iframe = document.getElementById("youtube-iframe");
+        if (iframe) {
+          iframe.src = "";
+        }
       }
 
       function initExperienceCarousel() {

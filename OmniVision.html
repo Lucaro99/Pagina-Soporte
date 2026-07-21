@@ -1,0 +1,2208 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OmniVision | Inteligencia de resultados para Five9 | ICQ24</title>
+    <meta
+      name="description"
+      content="Conecte cada conversación Five9 con calidad, resolución, ventas, retención y desempeño de agentes de voz IA—y sepa qué cambiar."
+    />
+    <meta
+      property="og:title"
+      content="OmniVision | Inteligencia de resultados para Five9 | ICQ24"
+    />
+    <meta
+      property="og:description"
+      content="Conecte cada conversación Five9 con calidad, resolución, ventas, retención y desempeño de agentes de voz IA—y sepa qué cambiar."
+    />
+    <meta property="og:site_name" content="OmniVision por ICQ24" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://omnivision.icq24.com/og.png" />
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/3f2f44a158.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Configuración de estilos y paleta de marca ICQ24 en Tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              icqGrey: "#475569",
+              icqDark: "#0f172a",
+              icqBlue: "#0263e2",
+              icqGreen: "#3b935d",
+              icqRed: "#ed3d2e",
+              icqYellow: "#f0ad0f",
+              icqLightBg: "#f8fafc",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              heading: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --brand-primary: #0263e2;
+        --brand-primary-hover: #002d6d;
+        --brand-primary-light: #eff6ff;
+        --brand-primary-mid: #1d4ed8;
+        --navy: #0a192f;
+        --navy-dark: #0b132b;
+        --yellow: #f0ad0f;
+        --yellow-bg: #fef6e4;
+        --red: #ed3d2e;
+        --green: #3b935d;
+        --green-bg: #e8f5ee;
+
+        --bg-white: #ffffff;
+        --bg-light: #f8fafc;
+        --bg-card: #f9fafb;
+        --bg-dark: #0f172a;
+        --bg-dark-elevated: #1e293b;
+
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --text-light: #94a3b8;
+        --text-inverse: #ffffff;
+
+        --border-light: #e2e8f0;
+        --border-dark: #334155;
+
+        --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        --shadow-md:
+          0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+        --shadow-lg:
+          0 10px 25px -3px rgba(0, 0, 0, 0.07),
+          0 4px 6px -2px rgba(0, 0, 0, 0.04);
+        --shadow-xl:
+          0 20px 40px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        --shadow-card: 0 4px 20px rgba(2, 99, 226, 0.1);
+
+        --radius-sm: 8px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+        --radius-xl: 28px;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #1e293b;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: -0.02em;
+      }
+      .gradient-hero {
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.9),
+          rgba(255, 255, 255, 0.95)
+        );
+      }
+      .gradient-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 80% 60% at 50% 0%,
+          rgba(2, 99, 226, 0.08) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 32px;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 9999px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        text-decoration: none;
+        transition:
+          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 0.3s ease,
+          background-color 0.3s ease,
+          color 0.3s ease;
+        background: #0263e2;
+        color: #ffffff;
+      }
+      .btn-primary:hover {
+        background: #002d6d;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -3px rgba(2, 99, 226, 0.25);
+      }
+
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 32px;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 9999px;
+        cursor: pointer;
+        border: 2px solid #e2e8f0;
+        text-decoration: none;
+        transition:
+          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 0.3s ease,
+          background-color 0.3s ease,
+          color 0.3s ease,
+          border-color 0.3s ease;
+        background: transparent;
+        color: #1e293b;
+      }
+      .btn-secondary:hover {
+        border-color: #0263e2;
+        color: #0263e2;
+        background: #eff6ff;
+        transform: translateY(-2px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #475569;
+        margin-bottom: 20px;
+        letter-spacing: 0.12em;
+      }
+      .eyebrow span {
+        width: 12px;
+        height: 2px;
+        background-color: #0263e2;
+        display: inline-block;
+      }
+
+      .five9-card-hover {
+        transition:
+          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 0.3s ease,
+          border-color 0.3s ease;
+        border: 1px solid #e2e8f0;
+      }
+      .five9-card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(2, 99, 226, 0.08);
+        border-color: rgba(2, 99, 226, 0.2);
+      }
+
+      /* FAQs section animations */
+      .faq-item {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        overflow: hidden;
+        transition:
+          box-shadow 0.2s,
+          border-color 0.2s;
+      }
+      .faq-item.open {
+        box-shadow: 0 10px 25px -3px rgba(2, 99, 226, 0.07);
+        border-color: rgba(2, 99, 226, 0.15);
+      }
+      .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 22px 28px;
+        cursor: pointer;
+        user-select: none;
+      }
+      .faq-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #f8fafc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #64748b;
+        flex-shrink: 0;
+        transition: all 0.3s;
+      }
+      .faq-item.open .faq-icon {
+        background: rgba(2, 99, 226, 0.1);
+        color: #0263e2;
+        transform: rotate(180deg);
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .faq-item.open .faq-a {
+        max-height: 400px;
+      }
+      .faq-a-inner {
+        padding: 0 28px 24px 28px;
+        font-size: 14px;
+        color: #64748b;
+        line-height: 1.75;
+      }
+
+      /* Mock Donut Chart styles */
+      .donut-ring {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(
+          #0263e2 0% 58%,
+          #38bdf8 58% 85%,
+          #f0ad0f 85% 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .donut-ring::before {
+        content: "";
+        position: absolute;
+        inset: 14px;
+        border-radius: 50%;
+        background-color: #ffffff;
+      }
+
+      /* Marquee Animation styles */
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 45s linear infinite;
+      }
+      .animate-marquee:hover {
+        animation-play-state: paused;
+      }
+
+      /* FAQ Accordion styles */
+      .faq-item {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+      }
+      .faq-item:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      }
+      .faq-item.open {
+        border-color: #0263e2;
+        box-shadow: 0 4px 16px rgba(2, 99, 226, 0.08);
+      }
+      .faq-q {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem 1.5rem;
+        cursor: pointer;
+        gap: 1rem;
+        user-select: none;
+      }
+      .faq-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background: #f1f5f9;
+        flex-shrink: 0;
+        transition: transform 0.3s ease, background 0.3s ease;
+      }
+      .faq-item.open .faq-icon {
+        transform: rotate(180deg);
+        background: #0263e2;
+        color: #ffffff;
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+      }
+      .faq-item.open .faq-a {
+        max-height: 300px;
+      }
+      .faq-a-inner {
+        padding: 0 1.5rem 1.25rem 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.7;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800">
+    <!-- HERO SECTION -->
+    <section
+      class="gradient-hero relative overflow-hidden border-b border-slate-100"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-2 lg:pt-24 lg:pb-28"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+        >
+          <!-- Text Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="eyebrow">
+              Inteligencia de resultados conversacionales para Five9
+            </div>
+
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight"
+            >
+              Convierte cada conversación de Five9
+              <span class="text-icqBlue relative block mt-2 font-black italic"
+                >en una mejor decisión de negocio.</span
+              >
+            </h1>
+
+            <p
+              class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl"
+            >
+              OmniVision conecta lo que clientes y agentes dicen con tus
+              métricas Five9 para explicar por qué cambian la calidad, la
+              resolución, las ventas, la retención y el desempeño de tus agentes
+              de voz IA—y qué hacer a continuación.
+            </p>
+
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a
+                class="btn-primary"
+                href="https://www.icq24.com/contactus"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Analizar mis conversaciones
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="#como-funciona" class="btn-secondary">
+                Ver cómo funciona <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <p
+              class="text-xs text-slate-500 font-medium pt-2 flex flex-wrap items-center gap-y-2 gap-x-4"
+            >
+              <span class="flex items-center gap-1.5 text-icqBlue"
+                ><i class="fa-solid fa-circle-check text-xs"></i> 100% de las
+                interacciones</span
+              >
+              <span class="flex items-center gap-1.5 text-icqBlue"
+                ><i class="fa-solid fa-circle-check text-xs"></i> Humanos y
+                agentes de voz IA</span
+              >
+              <span class="flex items-center gap-1.5 text-icqBlue"
+                ><i class="fa-solid fa-circle-check text-xs"></i> Español e
+                inglés</span
+              >
+              <span class="flex items-center gap-1.5 text-icqBlue"
+                ><i class="fa-solid fa-circle-check text-xs"></i> Power BI</span
+              >
+            </p>
+          </div>
+
+          <!-- Dashboard Mockup Column -->
+          <div
+            class="lg:col-span-7 relative w-full flex items-center justify-center lg:justify-end lg:pl-12"
+          >
+            <!-- Dashboard Widget Wrapper -->
+            <div
+              class="w-full bg-[#eef2f6] rounded-2xl border border-slate-200/80 shadow-2xl text-slate-800 text-left font-sans select-none overflow-hidden max-w-xl lg:scale-105 xl:scale-110 transition-transform duration-500"
+            >
+              <!-- Top bar -->
+              <div
+                class="flex items-center justify-between bg-[#0f172a] px-5 py-4 border-b border-slate-800 text-white"
+              >
+                <div class="flex items-center gap-2.5">
+                  <span class="relative flex h-2 w-2">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                    ></span>
+                  </span>
+                  <span
+                    class="text-xs font-bold tracking-wider text-slate-200 uppercase"
+                    >Centro de Inteligencia</span
+                  >
+                </div>
+                <div
+                  class="flex gap-1.5 text-[8px] sm:text-[10px] text-slate-400 font-semibold items-center"
+                >
+                  <span
+                    class="border border-slate-700 bg-slate-800/40 px-1.5 py-0.5 rounded whitespace-nowrap"
+                    >Últimos 30 días</span
+                  >
+                  <span
+                    class="border border-slate-700 bg-slate-800/40 px-1.5 py-0.5 rounded whitespace-nowrap"
+                    >Todas las campañas</span
+                  >
+                  <span
+                    class="bg-[#0263e2] hover:bg-[#002d6d] text-white px-2 py-0.5 rounded font-bold cursor-pointer transition-colors whitespace-nowrap"
+                    >Aplicar</span
+                  >
+                </div>
+              </div>
+
+              <!-- Main Content Container with padding -->
+              <div class="p-5 sm:p-6 space-y-4">
+                <!-- Metrics Row -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <!-- Card 1 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >Conversaciones</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >12,847</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >100%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >CSAT Estimado</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >4.2</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >+0.4</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >Cumplimiento QA</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >86%</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >+7.1</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >FCR</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >74%</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >+5.2</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Graphs Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <!-- Bar graph (2/3 width) -->
+                  <div
+                    class="sm:col-span-2 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[180px]"
+                  >
+                    <div class="flex items-center justify-between mb-3">
+                      <b class="text-xs font-bold text-slate-800"
+                        >Volumen y satisfacción</b
+                      >
+                      <span
+                        class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                        >Semanal</span
+                      >
+                    </div>
+                    <div
+                      class="relative flex items-end justify-between h-24 px-2 gap-2"
+                    >
+                      <!-- Grid lines -->
+                      <div
+                        class="absolute inset-0 flex flex-col justify-between pointer-events-none"
+                      >
+                        <div class="w-full border-t border-slate-100"></div>
+                        <div class="w-full border-t border-slate-100"></div>
+                        <div class="w-full border-t border-slate-100"></div>
+                        <div class="w-full border-t border-slate-100"></div>
+                      </div>
+
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 74%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 48%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 86%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 60%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 92%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 68%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 80%"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex justify-between text-[9px] text-slate-400 font-bold mt-2 px-1"
+                    >
+                      <span>L</span><span>M</span><span>M</span><span>J</span
+                      ><span>V</span><span>S</span><span>D</span>
+                    </div>
+                  </div>
+
+                  <!-- Donut graph (1/3 width) -->
+                  <div
+                    class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-between h-[180px]"
+                  >
+                    <div class="w-full flex items-center justify-between mb-2">
+                      <b class="text-xs font-bold text-slate-800"
+                        >Sentimiento</b
+                      >
+                      <span
+                        class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                        >Actual</span
+                      >
+                    </div>
+
+                    <div class="donut-ring">
+                      <div class="z-10 text-center">
+                        <span
+                          class="block text-sm font-extrabold text-slate-900 leading-none"
+                          >58%</span
+                        >
+                        <small class="text-[8px] text-slate-500 font-medium"
+                          >positivo</small
+                        >
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex flex-wrap justify-center gap-x-2 gap-y-1 text-[8px] font-bold mt-2 text-slate-500"
+                    >
+                      <span class="flex items-center gap-1"
+                        ><i
+                          class="fa-solid fa-circle text-[6px] text-[#0263e2]"
+                        ></i>
+                        Positivo</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><i
+                          class="fa-solid fa-circle text-[6px] text-[#38bdf8]"
+                        ></i>
+                        Neutral</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><i
+                          class="fa-solid fa-circle text-[6px] text-[#f0ad0f]"
+                        ></i>
+                        Atención</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mini Table -->
+                <div
+                  class="bg-white rounded-xl border border-slate-200/80 shadow-sm overflow-hidden"
+                >
+                  <div
+                    class="grid grid-cols-3 bg-slate-50 px-4 py-2.5 text-[9px] font-bold text-slate-500 uppercase tracking-wider border-b border-slate-200"
+                  >
+                    <span>Señal Detectada</span>
+                    <span>Impacto</span>
+                    <span>Prioridad</span>
+                  </div>
+                  <div class="divide-y divide-slate-100 text-xs text-slate-700">
+                    <div
+                      class="grid grid-cols-3 px-4 py-2.5 items-center font-medium"
+                    >
+                      <span class="text-slate-900 font-semibold"
+                        >Objeción de precio</span
+                      >
+                      <span class="text-slate-500">Conversión</span>
+                      <span
+                        ><span
+                          class="bg-[#fef3c7] text-[#d97706] text-[10px] font-bold px-2 py-0.5 rounded"
+                          >Alta</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      class="grid grid-cols-3 px-4 py-2.5 items-center font-medium"
+                    >
+                      <span class="text-slate-900 font-semibold"
+                        >Llamada repetida</span
+                      >
+                      <span class="text-slate-500">FCR</span>
+                      <span
+                        ><span
+                          class="bg-[#fef3c7] text-[#d97706] text-[10px] font-bold px-2 py-0.5 rounded"
+                          >Alta</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      class="grid grid-cols-3 px-4 py-2.5 items-center font-medium"
+                    >
+                      <span class="text-slate-900 font-semibold"
+                        >Saludo incompleto</span
+                      >
+                      <span class="text-slate-500">QA</span>
+                      <span
+                        ><span
+                          class="bg-[#fffbeb] text-[#b45309] text-[10px] font-bold px-2 py-0.5 rounded"
+                          >Media</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <span
+                  class="block text-center text-[9px] text-slate-400 font-bold pt-2 tracking-wide uppercase"
+                  >Datos ilustrativos para demostración</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF STRIP -->
+    <section
+      class="bg-slate-900 py-6 border-y border-slate-800 text-white overflow-hidden"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-6"
+      >
+        <span class="text-xs font-bold text-slate-400 uppercase tracking-wider"
+          >Creado para operaciones Five9</span
+        >
+        <div
+          class="flex flex-wrap items-center gap-x-8 gap-y-2 text-sm font-bold text-slate-200"
+        >
+          <span class="flex items-center gap-2"
+            ><i class="fa-solid fa-check text-icqBlue"></i> 100% de
+            interacciones</span
+          >
+          <span class="flex items-center gap-2"
+            ><i class="fa-solid fa-check text-icqBlue"></i> Humanos + agentes
+            IA</span
+          >
+          <span class="flex items-center gap-2"
+            ><i class="fa-solid fa-check text-icqBlue"></i> Español +
+            inglés</span
+          >
+          <span class="flex items-center gap-2"
+            ><i class="fa-solid fa-check text-icqBlue"></i> Power BI</span
+          >
+          <span class="flex items-center gap-2"
+            ><i class="fa-solid fa-check text-icqBlue"></i> Tus llaves de
+            IA</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- DEL DATO A LA CAUSA SECTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center"
+      >
+        <!-- Title left -->
+        <div class="lg:col-span-6 space-y-4">
+          <div class="eyebrow">Del dato a la causa</div>
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight"
+          >
+            Five9 muestra la operación.<br />
+            <span class="text-icqBlue"
+              >OmniVision explica qué está moviendo el resultado.</span
+            >
+          </h2>
+        </div>
+        <!-- Copy right -->
+        <div class="lg:col-span-6 space-y-6">
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+            Conecta el contenido de cada conversación con disposiciones,
+            métricas, comportamiento del cliente y resultados de negocio. Ve
+            <strong
+              >qué ocurrió, por qué ocurrió y cuál es la próxima intervención de
+              mayor impacto.</strong
+            >
+          </p>
+          <div>
+            <a
+              href="https://omnivision-icq24-es.icq24.chatgpt.site/omnivision-para-five9"
+              class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-2 text-base group"
+            >
+              Valida la integración Five9
+              <i
+                class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOMES SECTION (APLICACIONES DE RESULTADOS) -->
+    <section
+      id="soluciones"
+      class="bg-slate-50 border-y border-slate-100 py-20 lg:py-28"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <div class="eyebrow justify-center">Aplicaciones de resultados</div>
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight"
+          >
+            Empieza por la
+            <span class="text-icqBlue">decisión que más importa.</span>
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+            <strong>OmniVision</strong> no obliga a comprar una promesa genérica
+            de IA. Cada aplicación responde una pregunta de negocio concreta
+            sobre tus conversaciones <strong>Five9.</strong>
+          </p>
+        </div>
+
+        <!-- Infinite Carousel Wrapper -->
+        <div class="relative w-full overflow-hidden py-4">
+          <div class="animate-marquee flex gap-8">
+            <!-- Card 1 -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >01</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >QA · Cumplimiento · Coaching</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Quality Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Convierte cada interacción en evidencia de calidad,
+                  cumplimiento y oportunidades de coaching.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >02</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Conversión · Objeciones · Ingresos</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Sales Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Descubre objeciones, comportamientos ganadores y señales que
+                  explican la conversión.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >03</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Riesgo · Fidelización · Churn</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Retention Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Identifica intención de cancelación, fricción y patrones que
+                  anticipan la pérdida del cliente.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >04</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Promesas · Cumplimiento · Recuperación</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Collections Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Conecta cumplimiento, promesas de pago y estrategias de
+                  cobranza con tus resultados.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >05</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >FCR · Repetición · Intención</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Customer Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Ve FCR, contactos repetidos, intención y sentimiento en una
+                  historia de 90 días por cliente.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >06</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Bots · Prompt · Conocimiento</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Voice Agent Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Evalúa contención, transferencias, adherencia al prompt y
+                  brechas de conocimiento con independencia.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://omnivision-icq24-es.icq24.chatgpt.site/omnivision-para-agentes-elevenlabs"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Explorar aplicación
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 1 (Duplicate) -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >01</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >QA · Cumplimiento · Coaching</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Quality Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Convierta cada interacción en evidencia de calidad,
+                  cumplimiento y oportunidades de coaching.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 2 (Duplicate) -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >02</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Conversión · Objeciones · Ingresos</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Sales Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Descubra objeciones, comportamientos ganadores y señales que
+                  explican la conversión.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 3 (Duplicate) -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >03</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Riesgo · Fidelización · Churn</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Retention Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Identifique intención de cancelación, fricción y patrones que
+                  anticipan la pérdida del cliente.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 4 (Duplicate) -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >04</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Promesas · Cumplimiento · Recuperación</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Collections Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Conecte cumplimiento, promesas de pago y estrategias de
+                  cobranza con sus resultados.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 5 (Duplicate) -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >05</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >FCR · Repetición · Intención</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Customer Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Vea FCR, contactos repetidos, intención y sentimiento en una
+                  historia de 90 días por cliente.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://www.icq24.com/contactus"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Ver con mis datos
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+
+            <!-- Card 6 (Duplicate) -->
+            <article
+              class="five9-card-hover bg-white p-8 rounded-2xl flex flex-col justify-between h-[300px] w-[290px] sm:w-[340px] flex-shrink-0 whitespace-normal"
+            >
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span
+                    class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+                    >06</span
+                  >
+                  <small
+                    class="text-[8px] font-bold uppercase tracking-wider text-slate-500 bg-slate-100 px-2 py-0.5 rounded"
+                    >Bots · Prompt · Conocimiento</small
+                  >
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">
+                  Voice Agent Intelligence
+                </h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Evalúe contención, transferencias, adherencia al prompt y
+                  brechas de conocimiento con independencia.
+                </p>
+              </div>
+              <div class="pt-4">
+                <a
+                  href="https://omnivision-icq24-es.icq24.chatgpt.site/omnivision-para-agentes-elevenlabs"
+                  class="text-icqBlue font-bold hover:text-slate-900 transition-colors inline-flex items-center gap-1.5 text-sm group"
+                >
+                  Explorar aplicación
+                  <i
+                    class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-0.5 transition-transform"
+                  ></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DECISION CYCLE SECTION -->
+    <section
+      id="como-funciona"
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28"
+    >
+      <!-- Title -->
+      <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+        <div class="eyebrow justify-center">Un ciclo de decisión</div>
+        <h2
+          class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight"
+        >
+          Escucha todo. Entiende por qué.
+          <span class="text-icqBlue">Actúa mejor.</span>
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          <strong>OmniVision</strong> convierte el contenido conversacional en
+          una cadena de evidencia que tu operación puede seguir y medir.
+        </p>
+      </div>
+
+      <!-- 3 Steps Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <!-- Step 1 -->
+        <article
+          class="five9-card-hover p-8 bg-slate-50 border border-slate-100 rounded-2xl relative space-y-4"
+        >
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+            >01</span
+          >
+          <h3 class="text-xl font-bold text-slate-900">Ve</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Analiza voz, chat y correo de Five9 junto con las conversaciones de
+            tus agentes de voz IA.
+          </p>
+          <span
+            class="inline-block text-[10px] font-bold text-slate-400 bg-slate-200/50 px-2 py-0.5 rounded uppercase tracking-wider"
+            >Conversación + métricas Five9</span
+          >
+        </article>
+
+        <!-- Step 2 -->
+        <article
+          class="five9-card-hover p-8 bg-slate-50 border border-slate-100 rounded-2xl relative space-y-4"
+        >
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+            >02</span
+          >
+          <h3 class="text-xl font-bold text-slate-900">Explica</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Relaciona criterios, intención, sentimiento y comportamiento con
+            calidad, resolución e ingresos.
+          </p>
+          <span
+            class="inline-block text-[10px] font-bold text-slate-400 bg-slate-200/50 px-2 py-0.5 rounded uppercase tracking-wider"
+            >Causa raíz + correlaciones</span
+          >
+        </article>
+
+        <!-- Step 3 -->
+        <article
+          class="five9-card-hover p-8 bg-slate-50 border border-slate-100 rounded-2xl relative space-y-4"
+        >
+          <span
+            class="flex items-center justify-center w-10 h-10 rounded-lg bg-icqBlue/10 text-icqBlue font-extrabold text-lg"
+            >03</span
+          >
+          <h3 class="text-xl font-bold text-slate-900">Actúa</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Lleva los hallazgos a scorecards, coaching, Power BI y contenido
+            para Five9 Agent Assist.
+          </p>
+          <span
+            class="inline-block text-[10px] font-bold text-slate-400 bg-slate-200/50 px-2 py-0.5 rounded uppercase tracking-wider"
+            >Decisiones + activación</span
+          >
+        </article>
+      </div>
+    </section>
+
+    <!-- PRODUCT PROOF SECTION -->
+    <section class="bg-slate-50 border-y border-slate-100 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+        >
+          <!-- Copy Left -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="eyebrow">De la llamada al negocio</div>
+            <h2
+              class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight"
+            >
+              Una vista común para operaciones,
+              <span class="text-icqBlue">calidad y liderazgo.</span>
+            </h2>
+            <p class="text-base text-slate-600 leading-relaxed">
+              Desde el indicador ejecutivo hasta la evidencia de una
+              conversación individual, OmniVision conserva el vínculo entre
+              resultado, causa y acción.
+            </p>
+
+            <ul class="space-y-3.5 text-sm font-semibold text-slate-700">
+              <li class="flex items-center gap-2.5">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-5.5 h-5.5 bg-icqBlue/10 text-icqBlue rounded-full text-xs"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                Scorecards configurables con evidencia
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-5.5 h-5.5 bg-icqBlue/10 text-icqBlue rounded-full text-xs"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                Inteligencia de clientes y contactos repetidos
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-5.5 h-5.5 bg-icqBlue/10 text-icqBlue rounded-full text-xs"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                Resultados hacia Power BI
+              </li>
+              <li class="flex items-center gap-2.5">
+                <span
+                  class="flex-shrink-0 flex items-center justify-center w-5.5 h-5.5 bg-icqBlue/10 text-icqBlue rounded-full text-xs"
+                >
+                  <i class="fa-solid fa-check"></i>
+                </span>
+                Datos de demostración claramente identificados
+              </li>
+            </ul>
+
+            <div class="pt-4">
+              <a
+                href="https://omnivision-icq24-es.icq24.chatgpt.site/omnivision-para-five9"
+                class="btn-secondary"
+              >
+                Ver integración y arquitectura
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Mockup Right (Repeated Dashboard) -->
+          <div
+            class="lg:col-span-7 relative w-full flex items-center justify-center lg:justify-end lg:pl-12"
+          >
+            <div
+              class="w-full bg-[#eef2f6] rounded-2xl border border-slate-200/80 shadow-2xl text-slate-800 text-left font-sans select-none overflow-hidden max-w-xl lg:scale-105 xl:scale-110 transition-transform duration-500"
+            >
+              <!-- Top bar -->
+              <div
+                class="flex items-center justify-between bg-[#0f172a] px-5 py-4 border-b border-slate-800 text-white"
+              >
+                <div class="flex items-center gap-2.5">
+                  <span class="relative flex h-2 w-2">
+                    <span
+                      class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                    ></span>
+                    <span
+                      class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                    ></span>
+                  </span>
+                  <span
+                    class="text-xs font-bold tracking-wider text-slate-200 uppercase"
+                    >Centro de Inteligencia</span
+                  >
+                </div>
+                <div
+                  class="flex gap-1.5 text-[8px] sm:text-[10px] text-slate-400 font-semibold items-center"
+                >
+                  <span
+                    class="border border-slate-700 bg-slate-800/40 px-1.5 py-0.5 rounded whitespace-nowrap"
+                    >Últimos 30 días</span
+                  >
+                  <span
+                    class="border border-slate-700 bg-slate-800/40 px-1.5 py-0.5 rounded whitespace-nowrap"
+                    >Todas las campañas</span
+                  >
+                  <span
+                    class="bg-[#0263e2] hover:bg-[#002d6d] text-white px-2 py-0.5 rounded font-bold cursor-pointer transition-colors whitespace-nowrap"
+                    >Aplicar</span
+                  >
+                </div>
+              </div>
+
+              <!-- Main Content Container with padding -->
+              <div class="p-5 sm:p-6 space-y-4">
+                <!-- Metrics Row -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                  <!-- Card 1 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >Conversaciones</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >12,847</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >100%</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >CSAT Estimado</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >4.2</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >+0.4</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >Cumplimiento QA</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >86%</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >+7.1</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div
+                    class="bg-white p-3.5 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[90px]"
+                  >
+                    <span
+                      class="block text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                      >FCR</span
+                    >
+                    <div class="flex items-baseline justify-between mt-1">
+                      <strong class="text-xl font-bold text-slate-900"
+                        >74%</strong
+                      >
+                      <span class="text-[10px] text-emerald-500 font-extrabold"
+                        >+5.2</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Graphs Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <!-- Bar graph (2/3 width) -->
+                  <div
+                    class="sm:col-span-2 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex flex-col justify-between h-[180px]"
+                  >
+                    <div class="flex items-center justify-between mb-3">
+                      <b class="text-xs font-bold text-slate-800"
+                        >Volumen y satisfacción</b
+                      >
+                      <span
+                        class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                        >Semanal</span
+                      >
+                    </div>
+                    <div
+                      class="relative flex items-end justify-between h-24 px-2 gap-2"
+                    >
+                      <!-- Grid lines -->
+                      <div
+                        class="absolute inset-0 flex flex-col justify-between pointer-events-none"
+                      >
+                        <div class="w-full border-t border-slate-100"></div>
+                        <div class="w-full border-t border-slate-100"></div>
+                        <div class="w-full border-t border-slate-100"></div>
+                        <div class="w-full border-t border-slate-100"></div>
+                      </div>
+
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 74%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 48%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 86%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 60%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 92%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 68%"
+                      ></div>
+                      <div
+                        class="z-10 w-full bg-gradient-to-t from-[#0263e2] to-[#22d3ee] rounded-t-md"
+                        style="height: 80%"
+                      ></div>
+                    </div>
+                    <div
+                      class="flex justify-between text-[9px] text-slate-400 font-bold mt-2 px-1"
+                    >
+                      <span>L</span><span>M</span><span>M</span><span>J</span
+                      ><span>V</span><span>S</span><span>D</span>
+                    </div>
+                  </div>
+
+                  <!-- Donut graph (1/3 width) -->
+                  <div
+                    class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex flex-col items-center justify-between h-[180px]"
+                  >
+                    <div class="w-full flex items-center justify-between mb-2">
+                      <b class="text-xs font-bold text-slate-800"
+                        >Sentimiento</b
+                      >
+                      <span
+                        class="text-[9px] text-slate-400 font-bold uppercase tracking-wider"
+                        >Actual</span
+                      >
+                    </div>
+
+                    <div class="donut-ring">
+                      <div class="z-10 text-center">
+                        <span
+                          class="block text-sm font-extrabold text-slate-900 leading-none"
+                          >58%</span
+                        >
+                        <small class="text-[8px] text-slate-500 font-medium"
+                          >positivo</small
+                        >
+                      </div>
+                    </div>
+
+                    <div
+                      class="flex flex-wrap justify-center gap-x-2 gap-y-1 text-[8px] font-bold mt-2 text-slate-500"
+                    >
+                      <span class="flex items-center gap-1"
+                        ><i
+                          class="fa-solid fa-circle text-[6px] text-[#0263e2]"
+                        ></i>
+                        Positivo</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><i
+                          class="fa-solid fa-circle text-[6px] text-[#38bdf8]"
+                        ></i>
+                        Neutral</span
+                      >
+                      <span class="flex items-center gap-1"
+                        ><i
+                          class="fa-solid fa-circle text-[6px] text-[#f0ad0f]"
+                        ></i>
+                        Atención</span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Mini Table -->
+                <div
+                  class="bg-white rounded-xl border border-slate-200/80 shadow-sm overflow-hidden"
+                >
+                  <div
+                    class="grid grid-cols-3 bg-slate-50 px-4 py-2.5 text-[9px] font-bold text-slate-500 uppercase tracking-wider border-b border-slate-200"
+                  >
+                    <span>Señal Detectada</span>
+                    <span>Impacto</span>
+                    <span>Prioridad</span>
+                  </div>
+                  <div class="divide-y divide-slate-100 text-xs text-slate-700">
+                    <div
+                      class="grid grid-cols-3 px-4 py-2.5 items-center font-medium"
+                    >
+                      <span class="text-slate-900 font-semibold"
+                        >Objeción de precio</span
+                      >
+                      <span class="text-slate-500">Conversión</span>
+                      <span
+                        ><span
+                          class="bg-[#fef3c7] text-[#d97706] text-[10px] font-bold px-2 py-0.5 rounded"
+                          >Alta</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      class="grid grid-cols-3 px-4 py-2.5 items-center font-medium"
+                    >
+                      <span class="text-slate-900 font-semibold"
+                        >Llamada repetida</span
+                      >
+                      <span class="text-slate-500">FCR</span>
+                      <span
+                        ><span
+                          class="bg-[#fef3c7] text-[#d97706] text-[10px] font-bold px-2 py-0.5 rounded"
+                          >Alta</span
+                        ></span
+                      >
+                    </div>
+                    <div
+                      class="grid grid-cols-3 px-4 py-2.5 items-center font-medium"
+                    >
+                      <span class="text-slate-900 font-semibold"
+                        >Saludo incompleto</span
+                      >
+                      <span class="text-slate-500">QA</span>
+                      <span
+                        ><span
+                          class="bg-[#fffbeb] text-[#b45309] text-[10px] font-bold px-2 py-0.5 rounded"
+                          >Media</span
+                        ></span
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <span
+                  class="block text-center text-[9px] text-slate-400 font-bold pt-2 tracking-wide uppercase"
+                  >Datos ilustrativos para demostración</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICE SPOTLIGHT SECTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+      >
+        <!-- Left details -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="eyebrow">Humanos y agentes de voz IA</div>
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight"
+          >
+            Un solo programa de calidad.
+            <span class="text-icqBlue">Una evaluación independiente.</span>
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed">
+            Compara resolución, satisfacción y cumplimiento entre humanos y
+            agentes de voz. Detecta contención real, transferencias evitables,
+            fallas de prompt y brechas de conocimiento sin depender únicamente
+            de la calificación de la plataforma del bot.
+          </p>
+          <div class="pt-2">
+            <a
+              href="https://omnivision-icq24-es.icq24.chatgpt.site/omnivision-para-agentes-elevenlabs"
+              class="btn-primary"
+            >
+              Explorar Voice Agent Intelligence
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right indicators grid -->
+        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Signal 1 -->
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-3"
+          >
+            <span
+              class="text-lg font-black text-icqBlue bg-icqBlue/10 w-9 h-9 rounded-xl flex items-center justify-center"
+              >01</span
+            >
+            <h3 class="text-base font-bold text-slate-900">Contención</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ¿Resolvió o simplemente terminó? Evaluamos el verdadero resultado.
+            </p>
+          </div>
+
+          <!-- Signal 2 -->
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-3"
+          >
+            <span
+              class="text-lg font-black text-icqBlue bg-icqBlue/10 w-9 h-9 rounded-xl flex items-center justify-center"
+              >02</span
+            >
+            <h3 class="text-base font-bold text-slate-900">Transferencias</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ¿Fueron necesarias o evitables? Analizamos el flujo del bot.
+            </p>
+          </div>
+
+          <!-- Signal 3 -->
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-3"
+          >
+            <span
+              class="text-lg font-black text-icqBlue bg-icqBlue/10 w-9 h-9 rounded-xl flex items-center justify-center"
+              >03</span
+            >
+            <h3 class="text-base font-bold text-slate-900">Conocimiento</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ¿Qué preguntas no pudo responder el bot con precisión?
+            </p>
+          </div>
+
+          <!-- Signal 4 -->
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-3"
+          >
+            <span
+              class="text-lg font-black text-icqBlue bg-icqBlue/10 w-9 h-9 rounded-xl flex items-center justify-center"
+              >04</span
+            >
+            <h3 class="text-base font-bold text-slate-900">Prompt y ASR</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              ¿Dónde se originó la falla? ¿Reconocimiento de voz o lógica?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVATION SECTION -->
+    <section
+      class="bg-slate-900 py-20 text-white relative overflow-hidden border-t border-slate-800"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header -->
+        <div class="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <div class="eyebrow justify-center text-slate-300">
+            Activo dentro de tu ecosistema
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+            El hallazgo no termina en otro dashboard.
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+            OmniVision utiliza lo que Five9 ya produce y devuelve inteligencia a
+            los flujos donde tu equipo trabaja.
+          </p>
+        </div>
+
+        <!-- Flow Grid -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-5 gap-4 text-center items-stretch activation-flow"
+        >
+          <div
+            class="bg-slate-800/40 border border-slate-800 p-6 rounded-2xl flex flex-col items-center justify-center space-y-2"
+          >
+            <span
+              class="text-xs font-bold text-slate-500 uppercase tracking-widest"
+              >01</span
+            >
+            <b class="text-base text-slate-400">Five9</b>
+          </div>
+
+          <div
+            class="bg-icqBlue border border-icqBlue/40 p-6 rounded-2xl flex flex-col items-center justify-center space-y-2 shadow-lg shadow-icqBlue/20"
+          >
+            <span
+              class="text-xs font-bold text-blue-200 uppercase tracking-widest"
+              >02</span
+            >
+            <b class="text-base text-white">OmniVision</b>
+          </div>
+
+          <div
+            class="bg-slate-800/40 border border-slate-800 p-6 rounded-2xl flex flex-col items-center justify-center space-y-2"
+          >
+            <span
+              class="text-xs font-bold text-slate-500 uppercase tracking-widest"
+              >03</span
+            >
+            <b class="text-base text-slate-400">Scorecards</b>
+          </div>
+
+          <div
+            class="bg-slate-800/40 border border-slate-800 p-6 rounded-2xl flex flex-col items-center justify-center space-y-2"
+          >
+            <span
+              class="text-xs font-bold text-slate-500 uppercase tracking-widest"
+              >04</span
+            >
+            <b class="text-base text-slate-400">Agent Assist</b>
+          </div>
+
+          <div
+            class="bg-slate-800/40 border border-slate-800 p-6 rounded-2xl flex flex-col items-center justify-center space-y-2"
+          >
+            <span
+              class="text-xs font-bold text-slate-500 uppercase tracking-widest"
+              >05</span
+            >
+            <b class="text-base text-slate-400">Power BI</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOVERNANCE SECTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+      >
+        <!-- Left copy -->
+        <div class="lg:col-span-5 space-y-5">
+          <div class="eyebrow">Control empresarial</div>
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight"
+          >
+            Tus datos. Tu IA.<span class="text-icqBlue"> Tus decisiones.</span>
+          </h2>
+          <p class="text-base text-slate-600 leading-relaxed">
+            El control no es el titular; es la condición para operar con
+            confianza. OmniVision se despliega donde tú decidas y mantiene la
+            infraestructura, las llaves, la retención y el consumo bajo tu
+            gobierno.
+          </p>
+        </div>
+
+        <!-- Right Grid -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-2"
+          >
+            <span class="text-icqBlue font-bold text-lg"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <h3 class="text-base font-bold text-slate-900 mt-2">
+              Infraestructura
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Despliegue sobre el entorno del cliente.
+            </p>
+          </div>
+
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-2"
+          >
+            <span class="text-icqBlue font-bold text-lg"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <h3 class="text-base font-bold text-slate-900 mt-2">Audio</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Referenciado desde SFTP; no duplicado en la base.
+            </p>
+          </div>
+
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-2"
+          >
+            <span class="text-icqBlue font-bold text-lg"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <h3 class="text-base font-bold text-slate-900 mt-2">IA</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Proveedor y modelo seleccionables con tus llaves.
+            </p>
+          </div>
+
+          <div
+            class="five9-card-hover bg-slate-50 border border-slate-100 rounded-2xl p-6 space-y-2"
+          >
+            <span class="text-icqBlue font-bold text-lg"
+              ><i class="fa-solid fa-circle-check"></i
+            ></span>
+            <h3 class="text-base font-bold text-slate-900 mt-2">BI</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Acceso de solo lectura para tus tableros.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAMPLE OFFER (ANÁLISIS DE MUESTRA) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      <div
+        class="bg-slate-900 text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl"
+      >
+        <!-- Radial gradient background -->
+        <div class="absolute inset-0 pointer-events-none"></div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center relative z-10"
+        >
+          <div class="lg:col-span-6 space-y-4">
+            <span
+              class="inline-block text-[10px] font-extrabold bg-icqBlue/10 border border-icqBlue/20 px-3 py-1 rounded-full uppercase tracking-wider"
+              >Análisis de muestra</span
+            >
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+              Llega a la primera reunión con preguntas. Sal con hallazgos.
+            </h2>
+          </div>
+          <div class="lg:col-span-6 space-y-6">
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Comparte un conjunto controlado de conversaciones Five9.
+              Prepararemos una demostración enfocada en tu caso de negocio, con
+              causas de fricción, oportunidades de calidad y acciones
+              priorizadas.
+            </p>
+            <ul class="space-y-2 text-sm font-semibold text-slate-200">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-icqBlue"></i>
+                Conversaciones de tu operación
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-icqBlue"></i> Una
+                aplicación de resultados elegida
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-icqBlue"></i> Hallazgos
+                y próximos pasos
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS SECTION -->
+    <section class="bg-slate-50 border-t border-slate-100 py-20 lg:py-28">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center space-y-4 mb-16">
+          <div class="eyebrow justify-center">Respuestas directas</div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+            Preguntas frecuentes
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <div class="faq-q">
+              <span
+                class="faq-q-text font-bold text-slate-900 text-sm sm:text-base"
+                >¿Qué es OmniVision?</span
+              >
+              <div class="faq-icon">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+            <div class="faq-a">
+              <div class="faq-a-inner text-slate-600">
+                OmniVision es la solución de inteligencia de resultados
+                conversacionales de ICQ24 para operaciones Five9. Conecta el
+                contenido de voz, chat y correo con métricas operativas y
+                resultados de negocio, y convierte los patrones en evidencia y
+                acciones.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <div class="faq-q">
+              <span
+                class="faq-q-text font-bold text-slate-900 text-sm sm:text-base"
+                >¿OmniVision reemplaza Five9?</span
+              >
+              <div class="faq-icon">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+            <div class="faq-a">
+              <div class="faq-a-inner text-slate-600">
+                No. Five9 continúa siendo la plataforma operativa del contact
+                center. OmniVision trabaja alrededor de los datos y flujos que
+                Five9 ya produce para responder preguntas específicas de
+                calidad, ventas, retención, cobranzas, clientes y agentes de voz
+                IA.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <div class="faq-q">
+              <span
+                class="faq-q-text font-bold text-slate-900 text-sm sm:text-base"
+                >¿Necesito encuestas para estimar satisfacción?</span
+              >
+              <div class="faq-icon">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+            <div class="faq-a">
+              <div class="faq-a-inner text-slate-600">
+                No. OmniVision puede estimar CSAT de 1 a 5 a partir de lo
+                ocurrido en cada conversación analizada. Esto complementa las
+                encuestas con una señal consistente sobre una cobertura mucho
+                mayor.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <div class="faq-q">
+              <span
+                class="faq-q-text font-bold text-slate-900 text-sm sm:text-base"
+                >¿Dónde quedan mis datos y grabaciones?</span
+              >
+              <div class="faq-icon">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+            <div class="faq-a">
+              <div class="faq-a-inner text-slate-600">
+                OmniVision se despliega sobre la infraestructura definida con el
+                cliente. Las grabaciones pueden referenciarse desde SFTP sin
+                duplicar el audio en la base de datos, y el cliente conserva el
+                control de accesos, retención y llaves de IA.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <div class="faq-q">
+              <span
+                class="faq-q-text font-bold text-slate-900 text-sm sm:text-base"
+                >¿Funciona en español e inglés?</span
+              >
+              <div class="faq-icon">
+                <i class="fa-solid fa-chevron-down text-xs"></i>
+              </div>
+            </div>
+            <div class="faq-a">
+              <div class="faq-a-inner text-slate-600">
+                Sí. La transcripción, el análisis y la interfaz están diseñados
+                para operaciones bilingües en América Latina, Puerto Rico y
+                Estados Unidos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center space-y-6"
+    >
+      <div class="eyebrow justify-center">Empiece con evidencia</div>
+      <h2
+        class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight"
+      >
+        Descubre qué está
+        <span class="text-icqBlue">moviendo tus resultados</span>.
+      </h2>
+      <p
+        class="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto"
+      >
+        Analicemos una muestra de conversaciones Five9 y convierte la
+        demostración en tu primera sesión de inteligencia operacional.
+      </p>
+      <div class="pt-4">
+        <a
+          class="btn-primary"
+          href="https://www.icq24.com/contactus"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Analizar mis conversaciones
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- INTERACTION SCRIPTS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mobile menu toggle
+        const btn = document.getElementById("mobile-menu-btn");
+        const dropdown = document.getElementById("mobile-dropdown");
+        btn.addEventListener("click", () => {
+          dropdown.classList.toggle("hidden");
+        });
+
+        // FAQ accordion interactivity
+        const faqItems = document.querySelectorAll(".faq-item");
+        faqItems.forEach((item) => {
+          const question = item.querySelector(".faq-q");
+          question.addEventListener("click", () => {
+            // Close other FAQs
+            faqItems.forEach((other) => {
+              if (other !== item) {
+                other.classList.remove("open");
+              }
+            });
+            // Toggle current FAQ
+            item.classList.toggle("open");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -2159,13 +2159,13 @@
 
     <!-- FINAL CTA SECTION -->
     <section
-      class="mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16 bg-[#0B1120] text-white"
+      class="mx-auto px-4 sm:px-6 lg:px-8 pt-10 lg:pt-16 pb-10 lg:pb-0 bg-[#0B1120] text-white overflow-hidden"
     >
       <div
-        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-end"
       >
-        <!-- Columna Izquierda: Texto -->
-        <div class="space-y-6 text-left">
+        <!-- Columna Izquierda: Texto (con padding abajo para compensar) -->
+        <div class="space-y-6 text-left pb-0 lg:pb-16">
           <div class="eyebrow text-white">Empieza con evidencia</div>
 
           <h2
@@ -2195,12 +2195,14 @@
           </div>
         </div>
 
-        <!-- Columna Derecha: Imagen -->
-        <div class="w-full flex justify-center lg:justify-end">
+        <!-- Columna Derecha: Imagen Ubicada desde abajo -->
+        <div
+          class="w-full flex justify-center lg:justify-end items-end self-end"
+        >
           <img
-            src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Dash_Omnivision.png?raw=true"
-            alt="Análisis de conversaciones Five9"
-            class="w-full max-w-lg h-auto rounded-xl object-cover shadow-2xl"
+            src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Asesores%20call.png?raw=true"
+            alt="Asesores Call Center"
+            class="w-full max-w-lg h-auto object-contain block align-bottom"
           />
         </div>
       </div>

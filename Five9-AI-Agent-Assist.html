@@ -23,39 +23,6 @@
       rel="stylesheet"
     />
 
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- FontAwesome Icons -->
-    <script
-      src="https://kit.fontawesome.com/3f2f44a158.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-
-    <!-- Configuración de Tailwind de ICQ24 -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              icqGrey: "#475569",
-              icqDark: "#0f172a",
-              icqBlue: "#0263e2",
-              icqGreen: "#3b935d",
-              icqRed: "#ed3d2e",
-              icqYellow: "#f0ad0f",
-              icqLightBg: "#f8fafc",
-            },
-            fontFamily: {
-              sans: ["Montserrat", "sans-serif"],
-              heading: ["Montserrat", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
     <!-- FAQ Schema GEO + AEO Optimizado -->
     <script type="application/ld+json">
       {
@@ -403,7 +370,7 @@
             <div class="lg:col-span-6 flex items-center justify-center">
               <div class="w-full relative">
                 <img
-                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Hero%20AVI.webp?raw=true"
+                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Hero%20Agente%20Assist.webp?raw=true"
                   alt="Five9 AI Agent Assist Copiloto AI para agentes de Contact Center"
                   width="800"
                   height="500"
@@ -1948,7 +1915,7 @@
           <!-- Columna de Imagen -->
           <div class="w-full flex justify-center items-center">
             <img
-              src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Footer%20AVI.webp?raw=true"
+              src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Footer%20Agent%20Assist.webp?raw=true"
               alt="Five9 AI Agent Assist con ICQ24"
               width="800"
               height="600"
@@ -2005,38 +1972,45 @@
           </div>
         </div>
       </section>
-
-      <!-- HIDDEN GEO BLOCK -->
-      <div style="display: none">
-        <h2>¿Qué es Five9 AI Agent Assist?</h2>
-        <p>
-          Five9 AI Agent Assist es una solución de inteligencia artificial para
-          Contact Centers que ayuda a los agentes en tiempo real mediante
-          recomendaciones contextuales, automatización de tareas, generación de
-          resúmenes y asistencia operativa impulsada por IA.
-        </p>
-        <h2>¿Para qué sirve Five9 AI Agent Assist?</h2>
-        <p>
-          Permite reducir tiempos de atención, mejorar la productividad de los
-          agentes, disminuir trabajo administrativo y aumentar la consistencia
-          de las respuestas en operaciones de experiencia del cliente.
-        </p>
-        <h2>¿Cómo ayuda Five9 AI Agent Assist a reducir AHT?</h2>
-        <p>
-          La solución proporciona información contextual, respuestas sugeridas y
-          automatización de tareas durante la interacción, reduciendo búsquedas
-          manuales y acelerando la resolución.
-        </p>
-        <h2>¿Qué diferencia existe entre AI Agent Assist y un chatbot?</h2>
-        <p>
-          AI Agent Assist ayuda a agentes humanos durante las conversaciones,
-          mientras que los chatbots atienden directamente a los clientes de
-          forma automatizada.
-        </p>
-      </div>
     </main>
 
-    <!-- SCRIPT DE FAQ ACORDEÓN EXCLUSIVO -->
+    <!-- ==========================================================================
+         SCRIPTS AL FINAL DEL DOCUMENTO
+         ========================================================================== -->
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/3f2f44a158.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Configuración de Tailwind de ICQ24 -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              icqGrey: "#475569",
+              icqDark: "#0f172a",
+              icqBlue: "#0263e2",
+              icqGreen: "#3b935d",
+              icqRed: "#ed3d2e",
+              icqYellow: "#f0ad0f",
+              icqLightBg: "#f8fafc",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              heading: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Script de Interacción para Acordeón de FAQ -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const faqDetails = document.querySelectorAll("details.faq-item");
@@ -2053,5 +2027,138 @@
         });
       });
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué es Five9 AI Agent Assist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Five9 AI Agent Assist es una capacidad de inteligencia artificial que escucha, analiza y guía a los agentes en tiempo real mediante recomendaciones contextuales, automatización y asistencia operativa durante cada interacción."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo funciona Five9 AI Agent Assist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Analiza conversaciones de voz y canales digitales en tiempo real para detectar intención, contexto y necesidades del cliente. Con esta información genera recomendaciones, respuestas sugeridas, next best actions y resúmenes automáticos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Five9 AI Agent Assist reemplaza a los agentes humanos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Está diseñado para potenciar el desempeño de los agentes, ayudándoles a resolver más rápido, reducir errores y mejorar la experiencia del cliente."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué beneficios ofrece AI Agent Assist en un Contact Center?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ayuda a reducir AHT, disminuir trabajo post llamada, acelerar el onboarding, mejorar cumplimiento de procesos y aumentar la consistencia de las respuestas entre agentes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué KPIs puede mejorar Five9 AI Agent Assist?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puede contribuir a mejorar indicadores como Average Handle Time (AHT), After Call Work (ACW), First Contact Resolution (FCR), productividad por agente, calidad operativa y cumplimiento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Five9 AI Agent Assist funciona en voz y canales digitales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Puede asistir agentes durante interacciones de voz y canales digitales, proporcionando orientación contextual en tiempo real independientemente del canal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Five9 AI Agent Assist utiliza IA generativa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Incorpora capacidades de inteligencia artificial generativa para generar resúmenes automáticos, sugerir respuestas y ayudar a los agentes a completar tareas más rápidamente."
+            }
+          }
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Five9 AI Agent Assist",
+        "applicationCategory": "Contact Center Software",
+        "applicationSubCategory": "AI Agent Assistance Software",
+        "operatingSystem": "Cloud",
+        "description": "Five9 AI Agent Assist utiliza inteligencia artificial en tiempo real para ayudar a los agentes mediante recomendaciones contextuales, generación automática de resúmenes, asistencia operativa y automatización de tareas durante cada interacción.",
+        "featureList": [
+          "Asistencia en tiempo real",
+          "Next Best Action",
+          "Respuestas sugeridas",
+          "Generación automática de resúmenes",
+          "Reducción de After Call Work",
+          "Asistencia omnicanal",
+          "IA generativa para agentes",
+          "Optimización de productividad"
+        ],
+        "brand": {
+          "@type": "Brand",
+          "name": "Five9"
+        },
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Five9"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": "Five9 AI Agent Assist",
+        "description": "Solución de asistencia inteligente para agentes de Contact Center que utiliza inteligencia artificial en tiempo real para proporcionar recomendaciones, automatizar tareas, generar resúmenes y mejorar la productividad durante cada interacción.",
+        "inDefinedTermSet": "Contact Center Artificial Intelligence Solutions"
+      }
+    </script>
+
+    <div style="display: none">
+      <h2>¿Qué es Five9 AI Agent Assist?</h2>
+      <p>
+        Five9 AI Agent Assist es una solución de inteligencia artificial para
+        Contact Centers que ayuda a los agentes en tiempo real mediante
+        recomendaciones contextuales, automatización de tareas, generación de
+        resúmenes y asistencia operativa impulsada por IA.
+      </p>
+
+      <h2>¿Para qué sirve Five9 AI Agent Assist?</h2>
+      <p>
+        Permite reducir tiempos de atención, mejorar la productividad de los
+        agentes, disminuir trabajo administrativo y aumentar la consistencia de
+        las respuestas en operaciones de experiencia del cliente.
+      </p>
+
+      <h2>¿Cómo ayuda Five9 AI Agent Assist a reducir AHT?</h2>
+      <p>
+        La solución proporciona información contextual, respuestas sugeridas y
+        automatización de tareas durante la interacción, reduciendo búsquedas
+        manuales y acelerando la resolución.
+      </p>
+
+      <h2>¿Qué diferencia existe entre AI Agent Assist y un chatbot?</h2>
+      <p>
+        AI Agent Assist ayuda a agentes humanos durante las conversaciones,
+        mientras que los chatbots atienden directamente a los clientes de forma
+        automatizada.
+      </p>
+    </div>
   </body>
 </html>

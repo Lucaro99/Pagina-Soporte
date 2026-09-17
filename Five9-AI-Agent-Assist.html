@@ -596,6 +596,16 @@
 
       <!-- ¿QUÉ ES FIVE9 AI AGENT ASSIST? (CONCEPTOS CLAVE) SECTION -->
       <section class="py-16 lg:py-20 bg-slate-50 text-slate-900">
+        <style>
+          .five9-card-hover {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease !important;
+          }
+          .five9-card-hover:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 12px 24px rgba(2, 99, 226, 0.12) !important;
+            border-color: rgba(2, 99, 226, 0.25) !important;
+          }
+        </style>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
           <!-- Encabezado Centrado Superior -->
           <div class="max-w-3xl mx-auto text-center space-y-4">
@@ -620,24 +630,26 @@
             </p>
           </div>
 
-          <!-- Grid de 2 Columnas Equilibradas -->
+          <!-- Grid de 2 Columnas: Imagen Más Grande (7 cols) + Cards (5 cols) -->
           <div
-            class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center"
+            class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center"
           >
-            <!-- Columna Izquierda: Imagen Destacada -->
-            <div class="lg:col-span-6">
-              <div class="relative rounded-2xl overflow-hidden">
+            <!-- Columna Izquierda: Imagen Destacada Más Grande -->
+            <div class="lg:col-span-7 flex items-center justify-center">
+              <div
+                class="relative w-full flex justify-center items-center py-2"
+              >
                 <img
-                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Hero%20Agente%20Assist.webp?raw=true"
+                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Dash%20Agent%20Assist.webp?raw=true"
                   alt="Five9 AI Agent Assist en acción"
-                  class="w-full h-auto transform transition-transform duration-500 group-hover:scale-102"
+                  class="w-full h-auto max-w-xl lg:max-w-none transform transition-transform duration-500 hover:scale-105 filter drop-shadow-xl"
                   loading="lazy"
                 />
               </div>
             </div>
 
             <!-- Columna Derecha: Capacidades (Permite:) -->
-            <div class="lg:col-span-6 space-y-6 text-left">
+            <div class="lg:col-span-5 space-y-6 text-left">
               <div class="space-y-1">
                 <h3
                   class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight"
@@ -648,7 +660,8 @@
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div
-                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300"
+                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+                  style="transition: all 0.3s ease;"
                 >
                   <i
                     class="fa-solid fa-circle-check text-icqBlue text-base mt-0.5 flex-shrink-0"
@@ -660,7 +673,8 @@
                 </div>
 
                 <div
-                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300"
+                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+                  style="transition: all 0.3s ease;"
                 >
                   <i
                     class="fa-solid fa-circle-check text-icqBlue text-base mt-0.5 flex-shrink-0"
@@ -672,7 +686,8 @@
                 </div>
 
                 <div
-                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300"
+                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+                  style="transition: all 0.3s ease;"
                 >
                   <i
                     class="fa-solid fa-circle-check text-icqBlue text-base mt-0.5 flex-shrink-0"
@@ -684,7 +699,8 @@
                 </div>
 
                 <div
-                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300"
+                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+                  style="transition: all 0.3s ease;"
                 >
                   <i
                     class="fa-solid fa-circle-check text-icqBlue text-base mt-0.5 flex-shrink-0"
@@ -696,7 +712,8 @@
                 </div>
 
                 <div
-                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300"
+                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+                  style="transition: all 0.3s ease;"
                 >
                   <i
                     class="fa-solid fa-circle-check text-icqBlue text-base mt-0.5 flex-shrink-0"
@@ -708,7 +725,8 @@
                 </div>
 
                 <div
-                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300"
+                  class="flex items-start gap-3 bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm five9-card-hover transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-blue-500/10"
+                  style="transition: all 0.3s ease;"
                 >
                   <i
                     class="fa-solid fa-circle-check text-icqBlue text-base mt-0.5 flex-shrink-0"
@@ -1136,148 +1154,120 @@
         });
       </script>
 
-      <!-- FRICCIÓN OPERATIVA QUE ELIMINA SECTION (OPTIMIZACIÓN DE PROCESOS - CARRUSEL AUTOMÁTICO) -->
+      <!-- FRICCIÓN OPERATIVA QUE ELIMINA SECTION (OPTIMIZACIÓN DE PROCESOS - CARRUSEL AUTOMÁTICO OSCURO) -->
       <section
-        class="py-16 lg:py-20 bg-white text-slate-900 border-b border-slate-200 overflow-hidden"
+        class="py-16 lg:py-20 bg-[#0b132b] text-white border-b border-slate-800 overflow-hidden"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-          <!-- Header con Título y Botones de Control -->
-          <div
-            class="flex flex-col md:flex-row md:items-end justify-between gap-6"
-          >
-            <div class="max-w-3xl space-y-4 text-left">
-              <span class="eyebrow">OPTIMIZACIÓN DE PROCESOS</span>
-              <h2
-                class="text-3xl sm:text-4xl font-black text-slate-900 leading-tight"
-              >
-                La fricción operativa que Five9 AI Agent Assist elimina
-              </h2>
-            </div>
-
-            <!-- Botones de Navegación del Carrusel -->
-            <div class="flex items-center gap-3 self-start md:self-end">
-              <button
-                id="optimizacion-prev"
-                aria-label="Anterior"
-                class="w-12 h-12 rounded-full border border-slate-300 bg-white text-slate-700 hover:bg-icqBlue hover:text-white hover:border-icqBlue transition-all duration-300 flex items-center justify-center shadow-sm active:scale-95"
-              >
-                <i
-                  class="fa-solid fa-chevron-left text-base"
-                  aria-hidden="true"
-                ></i>
-              </button>
-              <button
-                id="optimizacion-next"
-                aria-label="Siguiente"
-                class="w-12 h-12 rounded-full border border-slate-300 bg-white text-slate-700 hover:bg-icqBlue hover:text-white hover:border-icqBlue transition-all duration-300 flex items-center justify-center shadow-sm active:scale-95"
-              >
-                <i
-                  class="fa-solid fa-chevron-right text-base"
-                  aria-hidden="true"
-                ></i>
-              </button>
-            </div>
+          <!-- Header con Título -->
+          <div class="max-w-3xl space-y-4 text-left">
+            <span class="eyebrow text-blue-400">OPTIMIZACIÓN DE PROCESOS</span>
+            <h2
+              class="text-3xl sm:text-4xl font-black text-white leading-tight"
+            >
+              La fricción operativa que Five9 AI Agent Assist elimina
+            </h2>
           </div>
 
-          <!-- Carrusel Contenedor (4 cards por vista en desktop) -->
+          <!-- Carrusel Contenedor (3 cards por vista en desktop) -->
           <div
             id="optimizacion-carousel"
             class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth py-4 px-1 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
           >
             <!-- Card 1 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >Búsquedas manuales durante la interacción</span
               >
             </div>
 
             <!-- Card 2 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >AHT elevado por falta de contexto</span
               >
             </div>
 
             <!-- Card 3 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >Trabajo post-llamada excesivo</span
               >
             </div>
 
             <!-- Card 4 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >Respuestas inconsistentes entre agentes</span
               >
             </div>
 
             <!-- Card 5 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >Dependencia de conocimiento individual</span
               >
             </div>
 
             <!-- Card 6 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >Errores de cumplimiento y ejecución</span
               >
             </div>
 
             <!-- Card 7 -->
             <div
-              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-sm five9-card-hover flex items-center gap-4"
+              class="snap-start flex-shrink-0 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#141e3d] p-6 rounded-2xl border border-slate-700/60 shadow-md five9-card-hover flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg hover:shadow-blue-500/20"
             >
               <div
-                class="w-10 h-10 rounded-xl bg-blue-100 text-icqBlue flex items-center justify-center text-lg font-bold flex-shrink-0"
+                class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-lg font-bold flex-shrink-0"
               >
                 <i class="fa-solid fa-check" aria-hidden="true"></i>
               </div>
-              <span class="font-bold text-slate-800 text-sm leading-snug"
+              <span class="font-bold text-slate-100 text-sm sm:text-base leading-snug"
                 >Curvas de aprendizaje prolongadas</span
               >
             </div>
@@ -1285,18 +1275,15 @@
         </div>
       </section>
 
-      <!-- SCRIPTLOGIC FOR OPTIMIZACIÓN DE PROCESOS (AUTOMÁTICO) -->
+      <!-- SCRIPTLOGIC FOR OPTIMIZACIÓN DE PROCESOS (AUTOMÁTICO CON PAUSA AL HOVER) -->
       <script>
         document.addEventListener("DOMContentLoaded", function () {
           const container = document.getElementById("optimizacion-carousel");
-          const prevBtn = document.getElementById("optimizacion-prev");
-          const nextBtn = document.getElementById("optimizacion-next");
-
-          if (!container || !prevBtn || !nextBtn) return;
+          if (!container) return;
 
           function getScrollAmount() {
             const card = container.querySelector(".snap-start");
-            return card ? card.offsetWidth + 24 : 320;
+            return card ? card.offsetWidth + 24 : 350;
           }
 
           function scrollNext() {
@@ -1311,41 +1298,19 @@
             }
           }
 
-          function scrollPrev() {
-            if (container.scrollLeft <= 10) {
-              const maxScroll = container.scrollWidth - container.clientWidth;
-              container.scrollTo({ left: maxScroll, behavior: "smooth" });
-            } else {
-              container.scrollBy({
-                left: -getScrollAmount(),
-                behavior: "smooth",
-              });
-            }
-          }
+          let autoPlayTimer = setInterval(scrollNext, 1500);
 
-          let autoPlayTimer = setInterval(scrollNext, 3000);
-
-          function resetAutoPlay() {
+          function startAutoPlay() {
             clearInterval(autoPlayTimer);
-            autoPlayTimer = setInterval(scrollNext, 3000);
+            autoPlayTimer = setInterval(scrollNext, 1500);
           }
-
-          prevBtn.addEventListener("click", function () {
-            scrollPrev();
-            resetAutoPlay();
-          });
-
-          nextBtn.addEventListener("click", function () {
-            scrollNext();
-            resetAutoPlay();
-          });
 
           container.addEventListener("mouseenter", function () {
             clearInterval(autoPlayTimer);
           });
 
           container.addEventListener("mouseleave", function () {
-            resetAutoPlay();
+            startAutoPlay();
           });
         });
       </script>
@@ -2023,7 +1988,7 @@
             <div class="pt-3">
               <a
                 href="https://www.icq24.com/contactus"
-                class="btn-primary bg-icqBlue text-white hover:bg-blue-600 px-8 py-4 text-sm sm:text-base font-bold inline-flex items-center gap-2 transition-all duration-300"
+                class="btn-primary bg-icqBlue text-white hover:bg-blue-600 px-6 py-3.5 text-sm sm:text-base font-bold rounded-full inline-flex items-center gap-2 shadow-lg shadow-icqBlue/30 hover:shadow-icqBlue/50 transition-all duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >

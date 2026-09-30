@@ -273,10 +273,16 @@
         display: flex;
         gap: 24px;
         width: max-content;
+        align-items: center;
         animation: marquee 35s linear infinite;
       }
       .marquee-container:hover .marquee-track {
         animation-play-state: paused;
+      }
+      .marquee-track > div {
+        padding: 1.25rem 1.5rem !important;
+        min-height: auto !important;
+        height: auto !important;
       }
 
       /* Estilos para el carrusel de casos de uso */
@@ -467,13 +473,12 @@
             </p>
           </div>
 
-          <!-- Desafíos organizados en 2 filas (3 y 3 cards) -->
-          <div class="mt-12">
-            <div
-              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch"
-            >
+          <!-- Desafíos organizados en carrusel infinito y automático -->
+          <div class="mt-12 marquee-container py-4">
+            <div class="marquee-track flex gap-6 items-stretch">
+              <!-- Set 1 of cards -->
               <div
-                class="bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
               >
                 <div
                   class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
@@ -491,7 +496,7 @@
               </div>
 
               <div
-                class="bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
               >
                 <div
                   class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
@@ -509,7 +514,7 @@
               </div>
 
               <div
-                class="bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
               >
                 <div
                   class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
@@ -527,7 +532,7 @@
               </div>
 
               <div
-                class="bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
               >
                 <div
                   class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
@@ -545,7 +550,7 @@
               </div>
 
               <div
-                class="bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
               >
                 <div
                   class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
@@ -563,7 +568,122 @@
               </div>
 
               <div
-                class="bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
+                >
+                  <i
+                    class="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h3
+                  class="font-bold text-slate-900 text-sm xl:text-base leading-snug"
+                >
+                  Falta de control y gobernanza sobre la IA
+                </h3>
+              </div>
+
+              <!-- Set 2 (duplicado para loop infinito continuo) -->
+              <div
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                aria-hidden="true"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
+                >
+                  <i
+                    class="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h3
+                  class="font-bold text-slate-900 text-sm xl:text-base leading-snug"
+                >
+                  Conversaciones rígidas y poco naturales
+                </h3>
+              </div>
+
+              <div
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                aria-hidden="true"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
+                >
+                  <i
+                    class="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h3
+                  class="font-bold text-slate-900 text-sm xl:text-base leading-snug"
+                >
+                  Incapacidad para resolver solicitudes complejas
+                </h3>
+              </div>
+
+              <div
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                aria-hidden="true"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
+                >
+                  <i
+                    class="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h3
+                  class="font-bold text-slate-900 text-sm xl:text-base leading-snug"
+                >
+                  Transferencias sin contexto hacia agentes humanos
+                </h3>
+              </div>
+
+              <div
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                aria-hidden="true"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
+                >
+                  <i
+                    class="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h3
+                  class="font-bold text-slate-900 text-sm xl:text-base leading-snug"
+                >
+                  Automatizaciones difíciles de mantener y escalar
+                </h3>
+              </div>
+
+              <div
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                aria-hidden="true"
+              >
+                <div
+                  class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"
+                >
+                  <i
+                    class="fa-solid fa-triangle-exclamation"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <h3
+                  class="font-bold text-slate-900 text-sm xl:text-base leading-snug"
+                >
+                  Experiencias inconsistentes entre canales
+                </h3>
+              </div>
+
+              <div
+                class="w-[320px] sm:w-[360px] flex-shrink-0 bg-red-50/60 p-6 rounded-2xl border border-red-200/70 flex items-center gap-4 transition-all duration-300 hover:-translate-y-1 hover:bg-red-50 hover:border-red-400 hover:shadow-lg hover:shadow-red-500/10 min-h-[100px]"
+                aria-hidden="true"
               >
                 <div
                   class="w-9 h-9 rounded-xl bg-red-100/80 text-icqRed flex items-center justify-center flex-shrink-0 text-sm"

@@ -1,0 +1,3460 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ══ SEO / AEO / GEO ══ -->
+    <title>
+      ICQ24 | Implementación Five9, Atlassian y Verint para Contact Center ·
+      ITSM · CX en LATAM y US
+    </title>
+    <meta
+      name="description"
+      content="ICQ24 implementa e integra Five9, Atlassian, Verint, Khomp y Odoo para transformar Contact Centers, Help Desks y operaciones empresariales con IA, automatización y métricas reales. Partner certificado en Colombia, México, Puerto Rico y US."
+    />
+    <meta
+      name="keywords"
+      content="implementación Five9 LATAM, Five9 partner Colombia México, partner Atlassian ITSM, Verint WFM implementación, CCaaS Contact Center as a Service, automatización contact center IA, Jira Service Management implementación, agentes virtuales IVA Five9, optimización operativa contact center, transformación digital contact center"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.icq24.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.icq24.com/" />
+    <meta
+      property="og:title"
+      content="ICQ24 | Tu Socio Estratégico en Tecnología para Contact Center, ITSM y CX"
+    />
+    <meta
+      property="og:description"
+      content="Somos el partner tecnológico que implementa Five9, Atlassian, Verint, Khomp y Odoo para convertir tu Contact Center en una ventaja competitiva. Resultados medibles desde la semana 8. LATAM y US."
+    />
+    <meta property="og:image" content="https://www.icq24.com/og-image.jpg" />
+
+    <!-- Schema.org / AEO: Organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ICQ24",
+        "alternateName": "ICQ24 International",
+        "description": "Socio estratégico de implementación tecnológica especializado en Contact Center, CX e ITSM. Implementamos e integramos Five9, Atlassian, Verint, Khomp y Odoo con más de 50 implementaciones exitosas en LATAM y US.",
+        "url": "https://www.icq24.com",
+        "logo": "https://www.icq24.com/logo.png",
+        "foundingDate": "2016",
+        "numberOfEmployees": { "@type": "QuantitativeValue", "value": "50" },
+        "areaServed": ["US", "MX", "CO", "PR", "DO", "LATAM"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de Implementación Tecnológica",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Implementación Five9 CCaaS"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Implementación Atlassian Jira y JSM"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Implementación Verint WFM y QA"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Implementación Khomp Outbound AMD"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Implementación Odoo ERP y CRM"
+              }
+            }
+          ]
+        },
+        "sameAs": ["https://www.linkedin.com/company/icq24"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "url": "https://www.icq24.com/contacto",
+          "availableLanguage": ["Spanish", "English"]
+        }
+      }
+    </script>
+
+    <!-- AEO: FAQ Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué hace ICQ24?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ICQ24 es un socio estratégico de implementación tecnológica especializado en Contact Center, CX e ITSM. Implementamos, integramos y optimizamos plataformas enterprise — Five9, Atlassian, Verint, Khomp y Odoo — para que las organizaciones automaticen sus operaciones, reduzcan costos y entreguen mejores experiencias al cliente con su propio equipo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué plataformas implementa ICQ24?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ICQ24 implementa Five9 CCaaS (Contact Center as a Service con IA y omnicanalidad), Atlassian (Jira Software, Jira Service Management y Confluence), Verint (Workforce Management, Quality Assurance y Speech Analytics), Khomp (infraestructura outbound con AMD con IA) y Odoo (ERP y CRM integrado). Somos partners certificados en LATAM y US."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿En qué países opera ICQ24?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ICQ24 tiene presencia y operaciones en Colombia, México, Puerto Rico, República Dominicana y Estados Unidos. Con más de 8 años de experiencia y 50+ implementaciones en estos mercados, entendemos los matices regulatorios, culturales y operativos de cada región."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo toma implementar Five9 o Atlassian con ICQ24?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "El tiempo-a-valor promedio con ICQ24 es de 8 semanas desde el kick-off hasta los primeros resultados medibles. Trabajamos con una metodología en 4 fases: Diagnóstico Operativo, Diseño de Solución, Implementación e Integración, y Optimización Continua."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿ICQ24 ofrece soporte después de la implementación?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. ICQ24 no desaparece después del go-live. Ofrecemos un modelo de Optimización Continua donde monitoreamos métricas, ajustamos configuraciones, capacitamos al equipo e identificamos nuevas oportunidades de automatización de forma permanente como socio estratégico."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/3f2f44a158.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Configuración de Tailwind de ICQ24 -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              icqGrey: "#475569",
+              icqDark: "#0f172a",
+              icqNavy: "#0a192f",
+              icqNavyDark: "#0b132b",
+              icqBlue: "#0263e2",
+              icqBlueHover: "#002d6d",
+              icqBlueLight: "#eff6ff",
+              icqGreen: "#3b935d",
+              icqGreenLight: "#e8f5ee",
+              icqRed: "#ed3d2e",
+              icqRedLight: "#fef2f2",
+              icqYellow: "#f0ad0f",
+              icqYellowLight: "#fef6e4",
+              icqLightBg: "#f8fafc",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              heading: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* ==========================================================================
+         DESIGN SYSTEM – ICQ24 / FIVE9 THEME (CSS Variables & Global Rules)
+         ========================================================================== */
+      :root {
+        --brand-primary: #0263e2;
+        --brand-primary-hover: #002d6d;
+        --brand-primary-light: #eff6ff;
+        --brand-primary-mid: #1d4ed8;
+        --navy: #0a192f;
+        --navy-dark: #0b132b;
+        --yellow: #f0ad0f;
+        --yellow-bg: #fef6e4;
+        --red: #ed3d2e;
+        --green: #3b935d;
+        --green-bg: #e8f5ee;
+
+        --bg-white: #ffffff;
+        --bg-light: #f8fafc;
+        --bg-card: #f9fafb;
+        --bg-dark: #0f172a;
+        --bg-dark-elevated: #1e293b;
+
+        --text-main: #0f172a;
+        --text-muted: #475569;
+        --text-light: #94a3b8;
+        --text-inverse: #ffffff;
+
+        --border-light: #e2e8f0;
+        --border-dark: #334155;
+
+        --shadow-card: 0 4px 20px rgba(2, 99, 226, 0.1);
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #1e293b;
+        background-color: #f8fafc;
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+        letter-spacing: -0.02em;
+      }
+
+      .gradient-hero {
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.92),
+          rgba(255, 255, 255, 0.97)
+        );
+      }
+
+      .gradient-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 80% 60% at 50% 0%,
+          rgba(2, 99, 226, 0.09) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+
+      /* ══════════════════════════════════════
+         EYEBROW BADGE SYSTEM
+         ══════════════════════════════════════ */
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 11px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #475569;
+        margin-bottom: 14px;
+        letter-spacing: 0.14em;
+        line-height: 1.2;
+        transition: color 0.25s ease;
+      }
+
+      .eyebrow::before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 2.5px;
+        background-color: #0263e2;
+        border-radius: 9999px;
+        flex-shrink: 0;
+        transition: width 0.3s ease, background-color 0.3s ease;
+      }
+
+      .eyebrow:hover {
+        color: #0263e2;
+      }
+
+      .eyebrow:hover::before {
+        width: 22px;
+        background-color: #002d6d;
+      }
+
+      /* Eyebrow Dark Theme Variant */
+      .eyebrow.eyebrow-dark,
+      .eyebrow-dark {
+        color: #94a3b8 !important;
+      }
+
+      .eyebrow.eyebrow-dark::before,
+      .eyebrow-dark::before {
+        background-color: #38bdf8 !important;
+      }
+
+      .eyebrow.eyebrow-dark:hover,
+      .eyebrow-dark:hover {
+        color: #ffffff !important;
+      }
+
+      .eyebrow.eyebrow-dark:hover::before,
+      .eyebrow-dark:hover::before {
+        background-color: #60a5fa !important;
+        width: 22px;
+      }
+
+      /* ══════════════════════════════════════
+         BUTTONS SYSTEM
+         ══════════════════════════════════════ */
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 14px 28px;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 9999px;
+        cursor: pointer;
+        background: #0263e2;
+        color: #ffffff;
+        border: 2px solid transparent;
+        text-decoration: none;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease,
+          background-color 0.25s ease;
+      }
+
+      .btn-primary:hover {
+        background: #002d6d;
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px -4px rgba(2, 99, 226, 0.35);
+      }
+
+      .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 14px 28px;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 15px;
+        border-radius: 9999px;
+        cursor: pointer;
+        background: transparent;
+        color: #0263e2;
+        border: 2px solid #0263e2;
+        text-decoration: none;
+        transition: all 0.25s ease;
+      }
+
+      .btn-secondary:hover {
+        background: #0263e2;
+        color: #ffffff;
+        transform: translateY(-2px);
+      }
+
+      /* ══════════════════════════════════════
+         INTERACTIVE CARD HOVERS
+         ══════════════════════════════════════ */
+      .five9-card-hover {
+        transition:
+          transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+          box-shadow 0.3s ease,
+          border-color 0.3s ease !important;
+      }
+      .five9-card-hover:hover {
+        transform: translateY(-4px) !important;
+        box-shadow: 0 14px 28px rgba(2, 99, 226, 0.12) !important;
+        border-color: rgba(2, 99, 226, 0.35) !important;
+      }
+
+      @keyframes pulse-subtle {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.7;
+          transform: scale(0.96);
+        }
+      }
+      .animate-pulse-subtle {
+        animation: pulse-subtle 3s infinite ease-in-out;
+      }
+
+      /* Marquee Animation */
+      .marquee-container {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+      }
+      .marquee-track {
+        display: flex;
+        flex-shrink: 0;
+        width: max-content;
+        min-width: 100%;
+        animation: marquee 25s linear infinite;
+      }
+      .marquee-track:hover {
+        animation-play-state: paused;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* Scrollbar utilities */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+
+  <body
+    class="min-h-screen flex flex-col justify-between text-slate-800 bg-slate-50"
+  >
+    <main class="flex-grow">
+      <!-- ══════════════════════════════════════
+         3. HERO CAROUSEL SECTION
+    ══════════════════════════════════════ -->
+      <section
+        class="relative py-16 lg:py-24 overflow-hidden border-b border-slate-200 bg-cover bg-center bg-no-repeat"
+        style="
+          background-image: url(&quot;https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Background.webp?raw=true&quot;);
+        "
+        role="banner"
+        id="hero-carousel-section"
+      >
+        <!-- Nav Arrow Left -->
+        <button
+          id="hero-prev"
+          aria-label="Slide anterior"
+          class="absolute left-3 sm:left-6 lg:left-12 top-[42%] -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-white text-slate-800 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer hover:scale-105"
+        >
+          <i
+            class="fa-solid fa-chevron-left text-base sm:text-xl text-slate-900"
+            aria-hidden="true"
+          ></i>
+        </button>
+
+        <!-- Nav Arrow Right -->
+        <button
+          id="hero-next"
+          aria-label="Siguiente slide"
+          class="absolute right-3 sm:right-6 lg:right-12 top-[42%] -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/90 hover:bg-white text-slate-800 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer hover:scale-105"
+        >
+          <i
+            class="fa-solid fa-chevron-right text-base sm:text-xl text-slate-900"
+            aria-hidden="true"
+          ></i>
+        </button>
+
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+        >
+          <!-- Slides Container -->
+          <div
+            class="relative h-[750px] sm:h-[650px] lg:h-[550px] xl:h-[500px] w-full flex items-center justify-center overflow-hidden"
+          >
+            <!-- SLIDE 1: Contenido de la Imagen -->
+            <div
+              class="hero-slide absolute inset-0 w-full h-full flex flex-col items-center justify-center transition-all duration-500 transform opacity-100 translate-x-0"
+              data-slide="0"
+            >
+              <h1
+                class="text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight max-w-4xl mx-auto mb-3 sm:mb-4 px-2 sm:px-0"
+              >
+                Cuando la tecnología trabaja bien, tu equipo entrega<br />
+                <span class="text-icqBlue font-black italic"
+                  >experiencias que fidelizan.</span
+                >
+              </h1>
+
+              <p
+                class="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto mb-6 sm:mb-8 px-4 sm:px-0"
+              >
+                En <strong>ICQ24</strong> no solo implementamos tecnología.
+                Integramos IA, automatización y omnicanalidad con eficiencia
+                dentro de tu operación de
+                <strong>Contact Center, Help Desk y CX</strong>, para generar
+                resultados medibles y reales.
+              </p>
+
+              <div
+                class="flex flex-wrap items-center justify-center gap-3 sm:gap-4"
+              >
+                <a
+                  href="/contacto"
+                  id="hero-cta-slide1-primary"
+                  class="btn-primary text-sm sm:text-base !px-8 !py-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
+                >
+                  <span>Descubrir cómo optimizar tu operación</span>
+                </a>
+                <a
+                  href="/casos-exito"
+                  id="hero-cta-slide1-secondary"
+                  class="btn-secondary text-sm sm:text-base !px-8 !py-4"
+                >
+                  <span>Ver casos de éxito →</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: Contenido Existente -->
+            <div
+              class="hero-slide absolute inset-0 w-full h-full flex flex-col items-center justify-center transition-all duration-500 transform opacity-0 translate-x-8 pointer-events-none"
+              data-slide="1"
+            >
+              <div
+                class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200/80 px-4 py-1.5 rounded-full text-xs font-bold text-icqBlue mb-6 shadow-sm"
+              >
+                <i class="fa-solid fa-robot text-xs" aria-hidden="true"></i>
+                <span
+                  >IA Conversacional &nbsp;·&nbsp; Omnicanalidad &nbsp;·&nbsp;
+                  Automatización Inteligente</span
+                >
+              </div>
+
+              <h2
+                class="text-xl sm:text-3xl lg:text-4xl xl:text-5xl font-black text-slate-900 leading-[1.15] tracking-tight max-w-4xl mx-auto mb-3 sm:mb-4 px-2 sm:px-0"
+              >
+                La IA ya resuelve el
+                <span class="text-icqBlue relative inline-block">68%</span
+                ><br />
+                de las interacciones.<br />
+                <span class="text-slate-900">Tu operación también puede.</span>
+              </h2>
+
+              <p
+                class="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto mb-6 sm:mb-8 px-4 sm:px-0"
+              >
+                Implementamos
+                <strong>Five9, Atlassian, Verint, Khomp y Odoo</strong> para
+                convertir Contact Centers, Help Desks y operaciones CX en
+                ventajas competitivas reales — con automatización profunda, IA y
+                soporte estratégico continuo en LATAM y US.
+              </p>
+
+              <div
+                class="flex flex-wrap items-center justify-center gap-3 sm:gap-4"
+              >
+                <a
+                  href="/contacto"
+                  id="hero-cta-slide2-primary"
+                  class="btn-primary text-sm sm:text-base !px-8 !py-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
+                >
+                  <span>Agendar sesión estratégica gratuita</span>
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square text-xs"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+                <a
+                  href="/casos-exito"
+                  id="hero-cta-slide2-secondary"
+                  class="btn-secondary text-sm sm:text-base !px-8 !py-4"
+                >
+                  <span>Ver casos de éxito →</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Dots Indicator -->
+          <div
+            class="flex items-center justify-center gap-2.5 mt-8 mb-12"
+            id="hero-dots"
+          >
+            <button
+              class="hero-dot w-3 h-3 rounded-full bg-slate-900 transition-all duration-300 cursor-pointer"
+              aria-label="Ir a Slide 1"
+              data-index="0"
+            ></button>
+            <button
+              class="hero-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 cursor-pointer"
+              aria-label="Ir a Slide 2"
+              data-index="1"
+            ></button>
+          </div>
+
+          <!-- Partners Floating Pill Bar (From Mockup Image) -->
+          <div class="max-w-4xl mx-auto">
+            <span
+              class="text-xs sm:text-sm font-semibold text-slate-500 mb-3 block text-center"
+            >
+              Implementamos &amp; somos partners de
+            </span>
+            <div
+              class="bg-white/95 backdrop-blur-md rounded-full border border-slate-200 shadow-md py-3.5 px-6 sm:px-10 overflow-hidden marquee-container"
+            >
+              <div class="marquee-track flex items-center">
+                <!-- Group 1 -->
+                <div
+                  class="flex items-center gap-10 sm:gap-14 shrink-0 whitespace-nowrap pr-10 sm:pr-14"
+                >
+                  <img
+                    src="Assets/Logos Partner/Atlassian.webp"
+                    alt="Atlassian"
+                    class="h-[15px] sm:h-[17px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/Odoo.webp"
+                    alt="Odoo"
+                    class="h-[18px] sm:h-[21px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/khomp.webp"
+                    alt="Khomp"
+                    class="h-[25px] sm:h-[29px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/Verint.webp"
+                    alt="Verint"
+                    class="h-[12px] sm:h-[14px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/Five9.webp"
+                    alt="Five9"
+                    class="h-[15px] sm:h-[17px] w-auto shrink-0 object-contain"
+                  />
+                </div>
+                <!-- Group 2 (Duplicate for Seamless Marquee Loop) -->
+                <div
+                  class="flex items-center gap-10 sm:gap-14 shrink-0 whitespace-nowrap pr-10 sm:pr-14"
+                  aria-hidden="true"
+                >
+                  <img
+                    src="Assets/Logos Partner/Atlassian.webp"
+                    alt="Atlassian"
+                    class="h-[15px] sm:h-[17px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/Odoo.webp"
+                    alt="Odoo"
+                    class="h-[18px] sm:h-[21px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/khomp.webp"
+                    alt="Khomp"
+                    class="h-[25px] sm:h-[29px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/Verint.webp"
+                    alt="Verint"
+                    class="h-[12px] sm:h-[14px] w-auto shrink-0 object-contain"
+                  />
+                  <img
+                    src="Assets/Logos Partner/Five9.webp"
+                    alt="Five9"
+                    class="h-[15px] sm:h-[17px] w-auto shrink-0 object-contain"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         6. NUESTRAS SOLUCIONES
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-20 bg-white border-b border-slate-200"
+        id="soluciones"
+        aria-labelledby="sol-title"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="max-w-3xl">
+            <span class="eyebrow">NUESTRAS SOLUCIONES</span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4"
+              id="sol-title"
+            >
+              Una Arquitectura operativa para Contact Center, ITSM y CX
+              orientada a resultados reales.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal"
+            >
+              Acompañamos a las organizaciones en el diseño, implementación y
+              evolución de su operación, integrando IA, automatización y
+              plataformas enterprise para lograr eficiencia, control y
+              escalabilidad.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Card 1: Contact Center & Experiencia del Cliente -->
+            <article
+              class="bg-white border border-slate-200 rounded-2xl p-6 lg:p-8 flex flex-col justify-between five9-card-hover shadow-sm border-t-4 border-t-icqBlue group"
+            >
+              <div>
+                <span
+                  class="text-[10px] font-bold text-icqBlue uppercase tracking-wider block mb-3"
+                >
+                  CONTACT CENTER · CCAAS · IA · AUTOMATIZACIÓN - OMNICANALIDAD
+                </span>
+                <img
+                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Hero_soporte.webp?raw=true"
+                  alt="Contact Center"
+                  class="w-full h-32 object-cover rounded-xl mb-4"
+                />
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-headset" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-1">
+                  Contact Center &amp; Experiencia del Cliente
+                </h3>
+                <p class="text-xs font-semibold text-icqBlue mb-3">
+                  Interacciones conectadas, automatizadas y con contexto.
+                </p>
+                <p
+                  class="text-slate-600 text-sm leading-relaxed mb-6 font-medium"
+                >
+                  Evolucionamos tu operación con Five9 hacia un modelo omnicanal
+                  donde la IA reduce la carga operativa y mejora la calidad de
+                  cada interacción.
+                </p>
+
+                <!-- Highlights list -->
+                <div
+                  class="flex flex-col gap-2 p-3.5 bg-slate-50 rounded-xl border border-slate-100 mb-6 text-xs font-bold text-slate-700"
+                >
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i> Menor
+                    fricción
+                  </span>
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i> Mejor
+                    experiencia
+                  </span>
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i> Mayor
+                    eficiencia
+                  </span>
+                </div>
+              </div>
+
+              <a
+                class="text-sm font-bold text-icqBlue inline-flex items-center gap-2 group-hover:gap-3 transition-all pt-2"
+                href="/plataformas/five9"
+                id="sol-cc"
+              >
+                <span>Conoce la solución para Contact Center</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </article>
+
+            <!-- Card 2: Help Desk & Operaciones IT -->
+            <article
+              class="bg-white border border-slate-200 rounded-2xl p-6 lg:p-8 flex flex-col justify-between five9-card-hover shadow-sm border-t-4 border-t-icqBlue group"
+            >
+              <div>
+                <span
+                  class="text-[10px] font-bold text-icqBlue uppercase tracking-wider block mb-3"
+                >
+                  ITSM · HELP DESK · AUTOMATIZACIÓN DE SERVICIOS TI
+                </span>
+                <img
+                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Dash%20Agent%20Assist.webp?raw=true"
+                  alt="Help Desk"
+                  class="w-full h-32 object-cover rounded-xl mb-4"
+                />
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-ticket-simple" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-1">
+                  Help Desk &amp; Operaciones IT
+                </h3>
+                <p class="text-xs font-semibold text-icqBlue mb-3">
+                  Soporte estructurado, no reactivo.
+                </p>
+                <p
+                  class="text-slate-600 text-sm leading-relaxed mb-6 font-medium"
+                >
+                  Definimos modelos de gestión donde los procesos, la
+                  automatización y la visibilidad permiten cumplir SLAs y operar
+                  con mayor control.
+                </p>
+
+                <!-- Highlights list -->
+                <div
+                  class="flex flex-col gap-2 p-3.5 bg-slate-50 rounded-xl border border-slate-100 mb-6 text-xs font-bold text-slate-700"
+                >
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i> Procesos
+                    claros
+                  </span>
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    Respuestas más rápidas
+                  </span>
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    Operación predecible
+                  </span>
+                </div>
+              </div>
+
+              <a
+                class="text-sm font-bold text-icqBlue inline-flex items-center gap-2 group-hover:gap-3 transition-all pt-2"
+                href="/plataformas/atlassian"
+                id="sol-itsm"
+              >
+                <span>Conoce la solución para ITSM</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </article>
+
+            <!-- Card 3: Gestión & Optimización de Operaciones -->
+            <article
+              class="bg-white border border-slate-200 rounded-2xl p-6 lg:p-8 flex flex-col justify-between five9-card-hover shadow-sm border-t-4 border-t-icqBlue group"
+            >
+              <div>
+                <span
+                  class="text-[10px] font-bold text-icqBlue uppercase tracking-wider block mb-3"
+                >
+                  CX INTELLIGENCE · WFM · QUALITY ANALYTICS · IA
+                </span>
+                <img
+                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/hero_AQM.webp?raw=true"
+                  alt="Gestión de Operaciones"
+                  class="w-full h-32 object-cover rounded-xl mb-4"
+                />
+                <div
+                  class="w-12 h-12 rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform"
+                >
+                  <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-1">
+                  Gestión &amp; Optimización de Operaciones
+                </h3>
+                <p class="text-xs font-semibold text-icqBlue mb-3">
+                  Operaciones que se miden, se entienden y se optimizan.
+                </p>
+                <p
+                  class="text-slate-600 text-sm leading-relaxed mb-6 font-medium"
+                >
+                  Integramos analítica con IA, planificación y automatización
+                  para mejorar la productividad de tus agentes y la toma de
+                  decisiones en toda la operación.
+                </p>
+
+                <!-- Highlights list -->
+                <div
+                  class="flex flex-col gap-2 p-3.5 bg-slate-50 rounded-xl border border-slate-100 mb-6 text-xs font-bold text-slate-700"
+                >
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i> Mayor
+                    productividad
+                  </span>
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i> Mejor
+                    uso de recursos
+                  </span>
+                  <span class="flex items-center gap-2 text-icqBlue">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    Decisiones basadas en datos
+                  </span>
+                </div>
+              </div>
+
+              <a
+                class="text-sm font-bold text-icqBlue inline-flex items-center gap-2 group-hover:gap-3 transition-all pt-2"
+                href="/plataformas/verint"
+                id="sol-cx"
+              >
+                <span>Conoce la solución para Operaciones</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         7. ECOSISTEMA TECNOLÓGICO
+     ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-20 bg-slate-50 border-b border-slate-200"
+        id="plataformas"
+        aria-labelledby="plt-title"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div class="max-w-3xl mx-auto text-center">
+            <span class="eyebrow mx-auto justify-center"
+              >ECOSISTEMA TECNOLÓGICO</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4"
+              id="plt-title"
+            >
+              Plataformas enterprise para operar con más control, automatización
+              e inteligencia.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal"
+            >
+              Trabajamos con tecnologías líderes en CX, ITSM y operaciones para
+              diseñar ecosistemas conectados, escalables y alineados a cada
+              organización. Más que implementar herramientas, conectamos
+              procesos, IA, datos y equipos bajo una misma lógica operativa.
+            </p>
+          </div>
+
+          <div class="relative max-w-4xl mx-auto w-full group mt-12">
+            <!-- Carousel Container -->
+            <div class="relative overflow-hidden w-full h-[480px] sm:h-[400px]">
+              <!-- Card 1: Five9 -->
+              <article
+                class="plt-slide absolute top-0 left-0 w-full h-full bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-xl transition-all duration-500 ease-in-out opacity-100 translate-x-0"
+              >
+                <div class="text-left">
+                  <span
+                    class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider block mb-6"
+                  >
+                    CCAAS · CONTACT CENTER AS A SERVICE · IA
+                  </span>
+                  <div class="flex justify-start mb-6">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Five9_Logo.svg/512px-Five9_Logo.svg.png"
+                      alt="Five9"
+                      class="h-10 sm:h-14 object-contain"
+                    />
+                  </div>
+                  <div
+                    class="text-sm sm:text-base font-bold text-slate-900 mt-1 mb-4"
+                  >
+                    Contact Center Cloud para una experiencia más ágil y
+                    conectada
+                  </div>
+                  <p
+                    class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-medium max-w-2xl"
+                  >
+                    Una plataforma diseñada para centralizar la operación de
+                    atención, automatizar interacciones y conectar cada canal
+                    bajo una misma experiencia. Ideal para organizaciones que
+                    buscan escalar CX con más eficiencia, contexto y control.
+                  </p>
+                </div>
+                <div class="text-left">
+                  <a
+                    class="text-sm sm:text-base font-bold text-icqBlue inline-flex items-center gap-1.5 hover:gap-2.5 transition-all"
+                    href="/plataformas/five9"
+                  >
+                    <span>Conoce más sobre Five9</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 2: Atlassian -->
+              <article
+                class="plt-slide absolute top-0 left-0 w-full h-full bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-xl transition-all duration-500 ease-in-out opacity-0 translate-x-8 pointer-events-none"
+              >
+                <div class="text-left">
+                  <span
+                    class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider block mb-6"
+                  >
+                    ITSM · HELP DESK
+                  </span>
+                  <div class="flex justify-start mb-6">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Atlassian_logo.svg/512px-Atlassian_logo.svg.png"
+                      alt="Atlassian"
+                      class="h-10 sm:h-14 object-contain"
+                    />
+                  </div>
+                  <div
+                    class="text-sm sm:text-base font-bold text-slate-900 mt-1 mb-4"
+                  >
+                    Gestión de servicios y proyectos con mayor estructura y
+                    visibilidad
+                  </div>
+                  <p
+                    class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-medium max-w-2xl"
+                  >
+                    Un ecosistema pensado para organizar operaciones internas,
+                    estandarizar procesos y dar visibilidad a equipos de TI,
+                    soporte y gestión. Desde mesas de ayuda hasta proyectos
+                    complejos, todo bajo un mismo modelo de trabajo.
+                  </p>
+                </div>
+                <div class="text-left">
+                  <a
+                    class="text-sm sm:text-base font-bold text-icqBlue inline-flex items-center gap-1.5 hover:gap-2.5 transition-all"
+                    href="/plataformas/atlassian"
+                  >
+                    <span>Conoce más sobre Atlassian</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 3: Verint -->
+              <article
+                class="plt-slide absolute top-0 left-0 w-full h-full bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-xl transition-all duration-500 ease-in-out opacity-0 translate-x-8 pointer-events-none"
+              >
+                <div class="text-left">
+                  <span
+                    class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider block mb-6"
+                  >
+                    WFM · QUALITY ASSURANCE · SPEECH ANALYTICS · IA
+                  </span>
+                  <div class="flex justify-start mb-6">
+                    <img
+                      src="https://companieslogo.com/img/orig/VRNT_BIG-2cfeb0cb.png?t=1602677943"
+                      alt="Verint"
+                      class="h-10 sm:h-14 object-contain"
+                    />
+                  </div>
+                  <div
+                    class="text-sm sm:text-base font-bold text-slate-900 mt-1 mb-4"
+                  >
+                    Inteligencia operativa para optimizar calidad, desempeño y
+                    decisiones
+                  </div>
+                  <p
+                    class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-medium max-w-2xl"
+                  >
+                    Una plataforma enfocada en analizar interacciones, optimizar
+                    recursos y mejorar el desempeño operativo a través de
+                    analítica, automatización y visibilidad continua.
+                  </p>
+                </div>
+                <div class="text-left">
+                  <a
+                    class="text-sm sm:text-base font-bold text-icqBlue inline-flex items-center gap-1.5 hover:gap-2.5 transition-all"
+                    href="/plataformas/verint"
+                  >
+                    <span>Conoce más sobre Verint</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 4: Khomp -->
+              <article
+                class="plt-slide absolute top-0 left-0 w-full h-full bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-xl transition-all duration-500 ease-in-out opacity-0 translate-x-8 pointer-events-none"
+              >
+                <div class="text-left">
+                  <span
+                    class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider block mb-6"
+                  >
+                    OUTBOUND · AMD INTELIGENTE · CONTACTABILIDAD CON IA
+                  </span>
+                  <div class="flex justify-start mb-6">
+                    <img
+                      src="https://www.khomp.com/wp-content/uploads/2018/02/Logo-Khomp-Horizontal.png"
+                      alt="Khomp"
+                      class="h-10 sm:h-14 object-contain"
+                    />
+                  </div>
+                  <div
+                    class="text-sm sm:text-base font-bold text-slate-900 mt-1 mb-4"
+                  >
+                    Infraestructura de voz y contactabilidad más precisa y
+                    eficiente
+                  </div>
+                  <p
+                    class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-medium max-w-2xl"
+                  >
+                    Tecnología especializada para operaciones outbound que
+                    necesitan mejorar contactabilidad, optimizar intentos y
+                    hacer más eficiente cada conexión.
+                  </p>
+                </div>
+                <div class="text-left">
+                  <a
+                    class="text-sm sm:text-base font-bold text-icqBlue inline-flex items-center gap-1.5 hover:gap-2.5 transition-all"
+                    href="/plataformas/khomp"
+                  >
+                    <span>Conoce más sobre Khomp</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 5: Odoo -->
+              <article
+                class="plt-slide absolute top-0 left-0 w-full h-full bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 flex flex-col justify-between shadow-xl transition-all duration-500 ease-in-out opacity-0 translate-x-8 pointer-events-none"
+              >
+                <div class="text-left">
+                  <span
+                    class="text-[10px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider block mb-6"
+                  >
+                    ERP · CRM
+                  </span>
+                  <div class="flex justify-start mb-6">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Odoo_logo.svg/512px-Odoo_logo.svg.png"
+                      alt="Odoo"
+                      class="h-10 sm:h-14 object-contain"
+                    />
+                  </div>
+                  <div
+                    class="text-sm sm:text-base font-bold text-slate-900 mt-1 mb-4"
+                  >
+                    Procesos conectados para una operación más integrada
+                  </div>
+                  <p
+                    class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6 font-medium max-w-2xl"
+                  >
+                    Una plataforma flexible para centralizar procesos, conectar
+                    áreas y unificar información entre operación, servicio y
+                    negocio en un solo entorno.
+                  </p>
+                </div>
+                <div class="text-left">
+                  <a
+                    class="text-sm sm:text-base font-bold text-icqBlue inline-flex items-center gap-1.5 hover:gap-2.5 transition-all"
+                    href="/plataformas/odoo"
+                  >
+                    <span>Conoce más sobre Odoo</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- Carousel Nav Arrows -->
+            <button
+              id="plt-prev"
+              aria-label="Plataforma anterior"
+              class="absolute -left-4 sm:-left-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white text-slate-800 flex items-center justify-center shadow-md hover:shadow-xl hover:scale-105 transition-all z-10 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer border border-slate-100"
+            >
+              <i class="fa-solid fa-chevron-left text-xl"></i>
+            </button>
+            <button
+              id="plt-next"
+              aria-label="Siguiente plataforma"
+              class="absolute -right-4 sm:-right-12 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white text-slate-800 flex items-center justify-center shadow-md hover:shadow-xl hover:scale-105 transition-all z-10 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer border border-slate-100"
+            >
+              <i class="fa-solid fa-chevron-right text-xl"></i>
+            </button>
+
+            <!-- Carousel Dots -->
+            <div class="flex justify-center items-center gap-3 mt-8">
+              <button
+                class="plt-dot w-3 h-3 rounded-full bg-slate-900 transition-all cursor-pointer"
+                aria-label="Ir a plataforma 1"
+              ></button>
+              <button
+                class="plt-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer"
+                aria-label="Ir a plataforma 2"
+              ></button>
+              <button
+                class="plt-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer"
+                aria-label="Ir a plataforma 3"
+              ></button>
+              <button
+                class="plt-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer"
+                aria-label="Ir a plataforma 4"
+              ></button>
+              <button
+                class="plt-dot w-2.5 h-2.5 rounded-full bg-slate-300 hover:bg-slate-400 transition-all cursor-pointer"
+                aria-label="Ir a plataforma 5"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Closing Statement Banner -->
+          <div
+            class="bg-[#0b132b] text-white rounded-2xl p-6 sm:p-8 text-center border border-slate-800 shadow-md"
+          >
+            <p
+              class="text-base sm:text-lg lg:text-xl font-bold text-slate-100 leading-snug"
+            >
+              La tecnología no genera valor por sí sola.<br
+                class="hidden sm:inline"
+              />
+              <span class="text-blue-400"
+                >El valor aparece cuando todo el ecosistema opera
+                conectado</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         7.5 INDUSTRIAS QUE IMPULSAMOS
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-[#0B1120] text-white border-b border-slate-800"
+        id="industrias"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center mb-12">
+            <span class="eyebrow eyebrow-dark mx-auto justify-center"
+              >INDUSTRIAS</span
+            >
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-6"
+            >
+              Especialistas en los sectores donde el CX define el negocio.
+            </h2>
+            <p
+              class="text-slate-400 text-base sm:text-lg leading-relaxed font-medium"
+            >
+              Conocemos los matices operativos, regulatorios y de experiencia de
+              cliente de cada industria — eso es lo que hace que nuestras
+              implementaciones entreguen resultados, no solo tecnología
+              instalada.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel / Scroll Container -->
+        <div
+          class="marquee-container w-full relative pt-4 pb-12 overflow-hidden mx-auto"
+        >
+          <!-- We override the animation duration to make it slower than the default 25s -->
+          <div
+            class="marquee-track flex gap-4 sm:gap-6"
+            style="animation-duration: 40s"
+          >
+            <!-- Group 1: Original 8 Cards -->
+            <div class="flex gap-4 sm:gap-6 shrink-0 pr-4 sm:pr-6">
+              <!-- Card 1 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Banca & Finanzas
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Automatización regulada · Fraude · Cobranzas
+                </p>
+              </article>
+
+              <!-- Card 2 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  BPO & Contact Center
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Eficiencia operativa · Calidad · Contactabilidad
+                </p>
+              </article>
+
+              <!-- Card 3 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Retail & E-commerce
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Omnicanalidad · CX · Soporte digital
+                </p>
+              </article>
+
+              <!-- Card 4 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Salud & Seguros
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  ITSM · Compliance · Atención al afiliado
+                </p>
+              </article>
+
+              <!-- Card 5 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Telecomunicaciones
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Retención · Soporte técnico · Self-service
+                </p>
+              </article>
+
+              <!-- Card 6 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-landmark"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Gobierno & Sector Público
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Atención ciudadana · Eficiencia operativa
+                </p>
+              </article>
+
+              <!-- Card 7 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Servicios Públicos
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Help Desk · Gestión de incidentes
+                </p>
+              </article>
+
+              <!-- Card 8 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Tecnología & SaaS
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  ITSM · Customer Success · Soporte
+                </p>
+              </article>
+            </div>
+
+            <!-- Group 2: Duplicated for Infinite Marquee -->
+            <div class="flex gap-4 sm:gap-6 shrink-0 pr-4 sm:pr-6">
+              <!-- Card 1 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Banca & Finanzas
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Automatización regulada · Fraude · Cobranzas
+                </p>
+              </article>
+
+              <!-- Card 2 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  BPO & Contact Center
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Eficiencia operativa · Calidad · Contactabilidad
+                </p>
+              </article>
+
+              <!-- Card 3 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Retail & E-commerce
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Omnicanalidad · CX · Soporte digital
+                </p>
+              </article>
+
+              <!-- Card 4 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Salud & Seguros
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  ITSM · Compliance · Atención al afiliado
+                </p>
+              </article>
+
+              <!-- Card 5 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-satellite-dish"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Telecomunicaciones
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Retención · Soporte técnico · Self-service
+                </p>
+              </article>
+
+              <!-- Card 6 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-landmark"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Gobierno & Sector Público
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Atención ciudadana · Eficiencia operativa
+                </p>
+              </article>
+
+              <!-- Card 7 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Servicios Públicos
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  Help Desk · Gestión de incidentes
+                </p>
+              </article>
+
+              <!-- Card 8 -->
+              <article
+                class="w-[280px] sm:w-[320px] bg-white rounded-2xl p-6 sm:p-8 text-center shadow-lg transition-transform hover:-translate-y-1"
+              >
+                <div
+                  class="w-12 h-12 mx-auto rounded-xl bg-blue-50 text-icqBlue flex items-center justify-center text-xl mb-4"
+                >
+                  <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mb-2">
+                  Tecnología & SaaS
+                </h3>
+                <p
+                  class="text-[11px] text-slate-500 font-bold uppercase tracking-wide"
+                >
+                  ITSM · Customer Success · Soporte
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8">
+          <p class="text-white font-bold text-lg sm:text-xl mb-3">
+            Cada operación tiene retos distintos. La solución no debería ser
+            estándar.
+          </p>
+          <p class="text-slate-400 text-sm sm:text-base mb-8">
+            Evalúa tu operación actual y conoce dónde hay fricción, ineficiencia
+            y oportunidades concretas de mejora con tecnología.
+          </p>
+          <a href="#contacto" class="btn-primary inline-flex !px-6 !py-3">
+            <span>Solicita diagnóstico personalizado</span>
+            <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         8. IMPACTO REAL (ROI)
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-white border-b border-slate-200"
+        id="impacto"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+            <span class="eyebrow mx-auto justify-center">
+              BENEFICIOS PARA TU OPERACIÓN · CONTACT CENTER · ITSM · CX
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6"
+            >
+              El impacto real de implementar tecnología correctamente.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal"
+            >
+              Logra mejoras medibles en tu Contact Center, Help Desk y CX
+              implementando plataformas líderes con metodología y experiencia
+              certificada.
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-16"
+          >
+            <!-- Left: Illustration -->
+            <div class="flex justify-center lg:justify-end">
+              <!-- Reemplaza el src con la URL de tu imagen de dashboards real -->
+              <img
+                src="https://placehold.co/600x400/f8fafc/cbd5e1?text=Dashboard+Illustration"
+                alt="Dashboard metrics"
+                class="w-full max-w-md rounded-2xl shadow-sm border border-slate-100"
+              />
+            </div>
+
+            <!-- Right: 2x2 Grid -->
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-lg mx-auto lg:mx-0 w-full"
+            >
+              <!-- Card 1 -->
+              <div class="bg-slate-50 rounded-2xl p-6 text-center shadow-sm">
+                <div class="text-4xl sm:text-5xl font-black text-icqBlue mb-2">
+                  -40%
+                </div>
+                <div class="text-sm font-medium text-slate-600">
+                  Reducción potencial en<br />costo por contacto
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-slate-50 rounded-2xl p-6 text-center shadow-sm">
+                <div class="text-4xl sm:text-5xl font-black text-icqBlue mb-2">
+                  +68%
+                </div>
+                <div class="text-sm font-medium text-slate-600">
+                  Interacciones que pueden<br />automatizarse con IA
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-slate-50 rounded-2xl p-6 text-center shadow-sm">
+                <div class="text-4xl sm:text-5xl font-black text-icqBlue mb-2">
+                  -55%
+                </div>
+                <div class="text-sm font-medium text-slate-600">
+                  Reducción en tiempos<br />de resolución ITSM
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="bg-slate-50 rounded-2xl p-6 text-center shadow-sm">
+                <div class="text-4xl sm:text-5xl font-black text-icqBlue mb-2">
+                  +20%
+                </div>
+                <div class="text-sm font-medium text-slate-600">
+                  Más contactos productivos<br />en campañas outbound
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom CTA -->
+          <div class="text-center">
+            <h3 class="text-xl sm:text-2xl font-black text-slate-900 mb-6">
+              ¿Buscas resultados que
+              <span class="text-icqBlue">optimicen tu operación?</span>
+            </h3>
+            <a
+              href="#contacto"
+              class="btn-primary inline-flex !px-8 !py-3.5 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50"
+            >
+              <span>Agenda una DEMO con un experto</span>
+              <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         9. NUESTRA METODOLOGÍA
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-white border-b border-slate-200"
+        id="metodologia"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Header -->
+          <div class="max-w-3xl mx-auto text-center mb-16">
+            <span class="eyebrow mx-auto justify-center">
+              NUESTRA METODOLOGÍA
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6"
+            >
+              Así es como convertimos tecnología en resultados reales
+            </h2>
+            <div
+              class="text-slate-600 text-sm sm:text-base leading-relaxed font-normal space-y-4 max-w-2xl mx-auto"
+            >
+              <p>
+                Nuestra metodología de 4 fases, probada en proyectos enterprise,
+                está diseñada para garantizar resultados medibles en Contact
+                Center, ITSM y CX.
+              </p>
+              <p>
+                Más que implementar tecnología, transformamos tu operación —
+                dentro del alcance, tiempo y con acompañamiento continuo.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cards Row -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-16"
+          >
+            <!-- Card 1 -->
+            <div
+              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <h3
+                class="text-sm font-bold text-slate-900 leading-snug relative z-10 w-full pr-8"
+              >
+                Diagnóstico<br />Operativo
+              </h3>
+              <span
+                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+              >
+                01
+              </span>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
+              >
+                <i class="fa-solid fa-puzzle-piece"></i>
+              </div>
+              <h3
+                class="text-sm font-bold text-slate-900 leading-snug relative z-10 w-full pr-8"
+              >
+                Arquitectura &<br />Diseño
+              </h3>
+              <span
+                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+              >
+                02
+              </span>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
+              >
+                <i class="fa-solid fa-gears"></i>
+              </div>
+              <h3
+                class="text-sm font-bold text-slate-900 leading-snug relative z-10 w-full pr-8"
+              >
+                Implementación<br />& Integración
+              </h3>
+              <span
+                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+              >
+                03
+              </span>
+            </div>
+
+            <!-- Card 4 -->
+            <div
+              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
+              >
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3
+                class="text-sm font-bold text-slate-900 leading-snug relative z-10 w-full pr-8"
+              >
+                Optimización<br />Continua
+              </h3>
+              <span
+                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+              >
+                04
+              </span>
+            </div>
+          </div>
+
+          <!-- Bottom CTA -->
+          <div class="text-center">
+            <a
+              href="#contacto"
+              class="btn-primary inline-flex !px-8 !py-3.5 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50"
+            >
+              <span>Conocé más sobre nuestra metodología</span>
+              <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         11. CASOS DE ÉXITO
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative overflow-hidden"
+        id="casos-exito"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Header -->
+          <div class="max-w-3xl mx-auto text-center mb-16">
+            <span class="eyebrow mx-auto justify-center"> CASOS DE ÉXITO </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6"
+            >
+              Operaciones transformadas.<br />Resultados que hablan por sí
+              solos.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto"
+            >
+              Resultados reales que demuestran el impacto de nuestra
+              implementación estratégica.
+            </p>
+          </div>
+
+          <!-- Cards Row -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-16">
+            <!-- Card 1 -->
+            <div
+              class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-2"
+            >
+              <div class="relative">
+                <img
+                  src="https://placehold.co/600x400/0263e2/ffffff?text=SaaS+Fintech"
+                  alt="SaaS Fintech"
+                  class="w-full h-48 object-cover rounded-2xl"
+                />
+                <div class="absolute -bottom-4 left-1/2 -translate-x-1/2">
+                  <span
+                    class="bg-white text-icqBlue text-xs font-bold px-4 py-2 rounded-full shadow-md whitespace-nowrap"
+                  >
+                    Colombia · SaaS / Fintech
+                  </span>
+                </div>
+              </div>
+              <div class="pt-10 pb-6 px-6 flex-1 flex flex-col">
+                <span
+                  class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase mb-3"
+                >
+                  IA Generativa · Autoservicio · Soporte
+                </span>
+                <h3
+                  class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug"
+                >
+                  Empresa SaaS reduce 75% el tiempo de búsqueda con Chatbot
+                  GenAI + Five9
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-500 mb-6 flex-1">
+                  Clientes frustrados por búsquedas ineficientes y alto volumen
+                  de tickets repetitivos. Implementamos chatbot con GenAI
+                  integrado a la base de conocimiento usando Five9 DIVA +
+                  OpenAI.
+                </p>
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                  <div class="bg-slate-50 rounded-xl p-3 text-center">
+                    <div
+                      class="text-xl sm:text-2xl font-black text-icqBlue mb-1"
+                    >
+                      -75%
+                    </div>
+                    <div
+                      class="text-[10px] text-slate-400 font-medium leading-tight"
+                    >
+                      Tiempo de búsqueda
+                    </div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3 text-center">
+                    <div
+                      class="text-xl sm:text-2xl font-black text-icqBlue mb-1"
+                    >
+                      -40%
+                    </div>
+                    <div
+                      class="text-[10px] text-slate-400 font-medium leading-tight"
+                    >
+                      Consultas repetitivas
+                    </div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3 text-center">
+                    <div
+                      class="text-xl sm:text-2xl font-black text-icqBlue mb-1"
+                    >
+                      -25%
+                    </div>
+                    <div
+                      class="text-[10px] text-slate-400 font-medium leading-tight"
+                    >
+                      Costo operativo
+                    </div>
+                  </div>
+                  <div class="bg-slate-50 rounded-xl p-3 text-center">
+                    <div
+                      class="text-xl sm:text-2xl font-black text-icqBlue mb-1"
+                    >
+                      +CX
+                    </div>
+                    <div
+                      class="text-[10px] text-slate-400 font-medium leading-tight"
+                    >
+                      Acceso autónomo info
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="text-[10px] font-bold text-slate-400 border-t border-slate-100 pt-4 text-center"
+                >
+                  Five9 DIVA · OpenAI GenAI · Base de conocimiento
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+              class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-2"
+            >
+              <div class="relative">
+                <img
+                  src="https://placehold.co/600x400/0263e2/ffffff?text=Multinacional"
+                  alt="Multinacional"
+                  class="w-full h-48 object-cover rounded-2xl"
+                />
+                <div class="absolute -bottom-4 left-1/2 -translate-x-1/2">
+                  <span
+                    class="bg-white text-icqBlue text-xs font-bold px-4 py-2 rounded-full shadow-md whitespace-nowrap"
+                  >
+                    Puerto Rico · Multinacional
+                  </span>
+                </div>
+              </div>
+              <div class="pt-10 pb-6 px-6 flex-1 flex flex-col">
+                <span
+                  class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase mb-3"
+                >
+                  CCaaS · Autogestión · Trabajo Remoto
+                </span>
+                <h3
+                  class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug"
+                >
+                  Multinacional migra a Contact Center 100% remoto con Five9 +
+                  Agent Assist
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-500 mb-6 flex-1">
+                  Dependencia de infraestructura física limitaba escalabilidad y
+                  eficiencia. Implementamos Five9 cloud con Agent Assist
+                  (Copilot) y canales de autogestión digital para operación
+                  completamente remota.
+                </p>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-2"
+            >
+              <div class="relative">
+                <img
+                  src="https://placehold.co/600x400/0263e2/ffffff?text=Finanzas+Credito"
+                  alt="Finanzas Crédito"
+                  class="w-full h-48 object-cover rounded-2xl"
+                />
+                <div class="absolute -bottom-4 left-1/2 -translate-x-1/2">
+                  <span
+                    class="bg-white text-icqBlue text-xs font-bold px-4 py-2 rounded-full shadow-md whitespace-nowrap"
+                  >
+                    Colombia · Finanzas / Crédito
+                  </span>
+                </div>
+              </div>
+              <div class="pt-10 pb-6 px-6 flex-1 flex flex-col">
+                <span
+                  class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase mb-3"
+                >
+                  Cobranza · IVA Proactivo · Automatización
+                </span>
+                <h3
+                  class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug"
+                >
+                  Entidad financiera automatiza cobranza y libera 80% del tiempo
+                  de agentes con IVA
+                </h3>
+                <p class="text-xs sm:text-sm text-slate-500 mb-6 flex-1">
+                  Proceso de cobranza 100% manual, costoso y poco escalable.
+                  Implementamos IVA de cobranza proactivo que personaliza cada
+                  llamada, gestiona acuerdos de pago y transfiere solo casos
+                  complejos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom CTA -->
+          <div class="text-center">
+            <a
+              href="https://www.icq24.com/casos-de-uso"
+              class="btn-primary inline-flex !px-8 !py-3.5 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50"
+            >
+              <span>¿Quieres conocer más casos? Hablemos</span>
+              <i class="fa-solid fa-arrow-right text-sm ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         12. CASOS DE USO & RECURSOS
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden"
+        id="recursos"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Header -->
+          <div class="max-w-3xl mx-auto text-center mb-16">
+            <span class="eyebrow mx-auto justify-center">
+              CASOS DE USO &amp; RECURSOS
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6"
+            >
+              Guías estratégicas y modelos aplicados para operaciones que
+              quieren liderar.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto"
+            >
+              Contenido desarrollado por ICQ24. Recursos diseñados para ayudarte
+              a evaluar tu operación, entender casos reales y tomar decisiones
+              informadas sobre tecnología y transformación.
+            </p>
+          </div>
+
+          <!-- Carousel Container with Dots Navigation -->
+          <div class="relative mb-14 px-2 sm:px-6">
+            <!-- Track -->
+            <div
+              id="recursos-container"
+              class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide gap-6 py-4 px-1"
+            >
+              <!-- Card 1 -->
+              <div
+                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+              >
+                <!-- Vector Icon -->
+                <div
+                  class="p-3 bg-slate-50 rounded-2xl shrink-0 border border-slate-100"
+                >
+                  <svg
+                    class="w-10 h-10 sm:w-12 sm:h-12 text-slate-900"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect
+                      x="2"
+                      y="3"
+                      width="20"
+                      height="13"
+                      rx="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M8 21h8M12 16v5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6 7h5M6 10h8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="16"
+                      cy="11"
+                      r="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1 flex flex-col h-full justify-between">
+                  <div>
+                    <span
+                      class="text-xs font-semibold text-slate-500 mb-1.5 block"
+                    >
+                      Caso de Uso Aplicado
+                    </span>
+                    <h3
+                      class="text-base sm:text-lg font-bold text-icqBlue leading-snug mb-3"
+                    >
+                      AVIs en el área de ventas: prospecta, califica y convierte
+                      24/7 con IA conversacional
+                    </h3>
+                    <p
+                      class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed mb-6"
+                    >
+                      Descubre cómo los Agentes Virtuales Inteligentes
+                      transforman la operación comercial con prospección
+                      automática y acompañamiento sin incrementar el headcount.
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-xs sm:text-sm font-bold text-icqBlue hover:underline inline-flex items-center gap-1.5 group"
+                  >
+                    <span>Explorar caso de uso</span>
+                    <i
+                      class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+              >
+                <!-- Vector Icon -->
+                <div
+                  class="p-3 bg-slate-50 rounded-2xl shrink-0 border border-slate-100"
+                >
+                  <svg
+                    class="w-10 h-10 sm:w-12 sm:h-12 text-slate-900"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.663 17h4.674M12 3a7 7 0 00-7 7c0 2.38 1.157 4.49 2.95 5.814l.325.239v1.947h7.45v-1.947l.325-.239A7.002 7.002 0 0019 10a7 7 0 00-7-7z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10 21h4"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9.5 8.5a2.5 2.5 0 015 0c0 1.5-1 2-2.5 3M12 11.5v1"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1 flex flex-col h-full justify-between">
+                  <div>
+                    <span
+                      class="text-xs font-semibold text-slate-500 mb-1.5 block"
+                    >
+                      Caso de Uso Aplicado
+                    </span>
+                    <h3
+                      class="text-base sm:text-lg font-bold text-icqBlue leading-snug mb-3"
+                    >
+                      La falsa omnicanalidad está costando millones: modelo para
+                      una operación realmente integrada
+                    </h3>
+                    <p
+                      class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed mb-6"
+                    >
+                      Analizamos la diferencia entre operar con silos invisibles
+                      y una arquitectura omnicanal real. Aprende a estructurar
+                      un modelo verdaderamente automatizado.
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-xs sm:text-sm font-bold text-icqBlue hover:underline inline-flex items-center gap-1.5 group"
+                  >
+                    <span>Explorar caso de uso</span>
+                    <i
+                      class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div
+                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+              >
+                <!-- Vector Icon -->
+                <div
+                  class="p-3 bg-slate-50 rounded-2xl shrink-0 border border-slate-100"
+                >
+                  <svg
+                    class="w-10 h-10 sm:w-12 sm:h-12 text-slate-900"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M11 4a2 2 0 10-4 0H3v4a2 2 0 100 4v4h4a2 2 0 104 0v-3h3a2 2 0 100-4h-3V4z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13 4a2 2 0 114 0h4v4a2 2 0 110 4v4h-4a2 2 0 11-4 0v-3"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1 flex flex-col h-full justify-between">
+                  <div>
+                    <span
+                      class="text-xs font-semibold text-slate-500 mb-1.5 block"
+                    >
+                      Caso de Uso Aplicado
+                    </span>
+                    <h3
+                      class="text-base sm:text-lg font-bold text-icqBlue leading-snug mb-3"
+                    >
+                      Integración Five9 + CRM en operación de cobranza: elimina
+                      silos y mejora contactabilidad
+                    </h3>
+                    <p
+                      class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed mb-6"
+                    >
+                      Optimiza el ciclo de recuperación de cartera. Automatiza
+                      el registro de llamadas y fortalece el control integrando
+                      tu plataforma de voz cloud con tu CRM.
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-xs sm:text-sm font-bold text-icqBlue hover:underline inline-flex items-center gap-1.5 group"
+                  >
+                    <span>Explorar caso de uso</span>
+                    <i
+                      class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div
+                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+              >
+                <!-- Vector Icon -->
+                <div
+                  class="p-3 bg-slate-50 rounded-2xl shrink-0 border border-slate-100"
+                >
+                  <svg
+                    class="w-10 h-10 sm:w-12 sm:h-12 text-slate-900"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex-1 flex flex-col h-full justify-between">
+                  <div>
+                    <div class="mb-2">
+                      <span
+                        class="bg-[#0263e2]/10 text-[#0263e2] border border-[#0263e2]/20 text-[11px] font-bold px-3 py-1 rounded-full inline-block"
+                      >
+                        Guía de Evaluación · Herramienta
+                      </span>
+                    </div>
+                    <h3
+                      class="text-base sm:text-lg font-bold text-icqBlue leading-snug mb-3"
+                    >
+                      Diagnóstico Estratégico de Operaciones CX: evalúa la
+                      madurez y escalabilidad de tu Contact Center
+                    </h3>
+                    <p
+                      class="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed mb-6"
+                    >
+                      Herramienta gratuita de autoevaluación para identificar
+                      brechas estructurales, fricciones invisibles y
+                      oportunidades de optimización en tiempo real.
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-xs sm:text-sm font-bold text-icqBlue hover:underline inline-flex items-center gap-1.5 group"
+                  >
+                    <span>Acceder a la Guía CX</span>
+                    <i
+                      class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"
+                    ></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicator Dots Navigation -->
+            <div
+              class="flex justify-center items-center gap-3 mt-8"
+              id="recursos-dots-bar"
+            >
+              <button
+                onclick="goToRecursoSlide(0)"
+                aria-label="Ver slide 1"
+                class="recursos-dot w-8 h-3 rounded-full bg-icqBlue transition-all duration-300 cursor-pointer"
+              ></button>
+              <button
+                onclick="goToRecursoSlide(1)"
+                aria-label="Ver slide 2"
+                class="recursos-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 cursor-pointer"
+              ></button>
+              <button
+                onclick="goToRecursoSlide(2)"
+                aria-label="Ver slide 3"
+                class="recursos-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 cursor-pointer"
+              ></button>
+              <button
+                onclick="goToRecursoSlide(3)"
+                aria-label="Ver slide 4"
+                class="recursos-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 cursor-pointer"
+              ></button>
+            </div>
+
+            <script>
+              function goToRecursoSlide(idx) {
+                const container = document.getElementById("recursos-container");
+                if (!container) return;
+                const card = container.children[idx];
+                if (card) {
+                  container.scrollTo({
+                    left: card.offsetLeft - container.offsetLeft,
+                    behavior: "smooth",
+                  });
+                }
+              }
+
+              document.addEventListener("DOMContentLoaded", () => {
+                const container = document.getElementById("recursos-container");
+                if (!container) return;
+                const dots = document.querySelectorAll(".recursos-dot");
+
+                container.addEventListener("scroll", () => {
+                  const cardWidth = container.children[0]?.offsetWidth || 500;
+                  const scrollPos = container.scrollLeft;
+                  let activeIdx = Math.round(scrollPos / (cardWidth + 24));
+                  activeIdx = Math.max(0, Math.min(activeIdx, dots.length - 1));
+
+                  dots.forEach((dot, i) => {
+                    if (i === activeIdx) {
+                      dot.className =
+                        "recursos-dot w-8 h-3 rounded-full bg-icqBlue transition-all duration-300 cursor-pointer";
+                    } else {
+                      dot.className =
+                        "recursos-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300 cursor-pointer";
+                    }
+                  });
+                });
+              });
+            </script>
+          </div>
+
+          <!-- Bottom CTA Button -->
+          <div class="text-center">
+            <a
+              href="https://www.icq24.com/casos-de-uso"
+              class="btn-primary inline-flex !px-8 !py-3.5 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50"
+            >
+              <span>Ver todos los casos de uso y recursos</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         13. HERRAMIENTA / CALCULADORA DE EFICIENCIA
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-[#0A1120] relative overflow-hidden text-white"
+        id="calculadora"
+      >
+        <!-- Background Ambient Glow -->
+        <div
+          class="absolute -top-40 -left-40 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"
+        ></div>
+        <div
+          class="absolute -bottom-40 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Header -->
+          <div class="max-w-3xl mx-auto text-center mb-12">
+            <span class="eyebrow eyebrow-dark mx-auto justify-center">
+              HERRAMIENTA
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4"
+            >
+              ¿Qué tan eficiente es tu operación hoy?<br
+                class="hidden sm:inline"
+              />
+              Descúbrelo con nuestra Calculadora de Eficiencia.
+            </h2>
+          </div>
+
+          <!-- Content Grid -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16"
+          >
+            <!-- Left Column: Description & Pills -->
+            <div class="space-y-8">
+              <p
+                class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal"
+              >
+                Nuestra Calculadora de Eficiencia Operativa analiza las métricas
+                clave de tu Contact Center, detecta dónde estás perdiendo
+                eficiencia y te muestra qué impacto tendría implementar las
+                herramientas y automatizaciones correctas — en tu operación
+                específica.
+              </p>
+
+              <!-- Pill Badges (Exact 2x2 layout with + icons) -->
+              <div class="flex flex-wrap gap-2.5 sm:gap-3 pt-2">
+                <div
+                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  <span class="text-icqBlue font-black text-sm leading-none"
+                    >+</span
+                  >
+                  <span>Diagnóstico de eficiencia real</span>
+                </div>
+                <div
+                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  <span class="text-icqBlue font-black text-sm leading-none"
+                    >+</span
+                  >
+                  <span>Identifica brechas operativas</span>
+                </div>
+                <div
+                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  <span class="text-icqBlue font-black text-sm leading-none"
+                    >+</span
+                  >
+                  <span>Estima el impacto de automatizar</span>
+                </div>
+                <div
+                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  <span class="text-icqBlue font-black text-sm leading-none"
+                    >+</span
+                  >
+                  <span>PDF exportable gratuito</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Result Preview Card -->
+            <div
+              class="bg-white rounded-[2rem] p-6 sm:p-10 shadow-2xl text-slate-900 border border-slate-100 relative"
+            >
+              <span
+                class="text-xs font-semibold text-slate-400 uppercase tracking-wider block mb-2"
+              >
+                Potencial de mejora estimado
+              </span>
+
+              <div class="flex items-baseline gap-2 mb-4 flex-wrap">
+                <span
+                  class="text-5xl sm:text-6xl font-black text-icqBlue tracking-tight"
+                  >72%</span
+                >
+                <span class="text-xs sm:text-sm text-slate-500 font-medium">
+                  de eficiencia sin aprovechar · Ejemplo referencial
+                </span>
+              </div>
+
+              <!-- Animated Percentage Progress Bar -->
+              <div
+                class="relative w-full h-3 bg-slate-100 rounded-full overflow-hidden mb-2"
+              >
+                <div
+                  id="efficiency-bar"
+                  class="h-full bg-gradient-to-r from-red-500 via-amber-400 to-emerald-500 rounded-full w-0 transition-all duration-1000 ease-out relative"
+                >
+                  <!-- Pulse effect glow on the edge -->
+                  <div
+                    class="absolute right-0 top-0 bottom-0 w-3 bg-white/70 animate-pulse rounded-full"
+                  ></div>
+                </div>
+              </div>
+
+              <p class="text-xs text-slate-500 font-medium mb-6">
+                Con la tecnología correcta, tu operación puede hacer mucho más
+              </p>
+
+              <hr class="border-slate-100 my-6" />
+
+              <!-- Metrics Summary List -->
+              <div class="space-y-4">
+                <div
+                  class="flex justify-between items-center text-xs sm:text-sm font-medium"
+                >
+                  <span class="text-slate-600"
+                    >Interacciones automatizables (IVA)</span
+                  >
+                  <span class="font-bold text-slate-900 text-base sm:text-lg"
+                    >+68%</span
+                  >
+                </div>
+                <div
+                  class="flex justify-between items-center text-xs sm:text-sm font-medium"
+                >
+                  <span class="text-slate-600">Reducción potencial de AHT</span>
+                  <span class="font-bold text-slate-900 text-base sm:text-lg"
+                    >-32%</span
+                  >
+                </div>
+                <div
+                  class="flex justify-between items-center text-xs sm:text-sm font-medium"
+                >
+                  <span class="text-slate-600"
+                    >Mejora en contactabilidad outbound</span
+                  >
+                  <span class="font-bold text-slate-900 text-base sm:text-lg"
+                    >+20%</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom CTA Button -->
+          <div class="text-center">
+            <a
+              href="#contacto"
+              class="bg-[#0263e2] hover:bg-blue-700 text-white font-bold text-base px-9 py-4 rounded-full shadow-lg hover:shadow-blue-500/40 transition-all duration-300 inline-flex items-center gap-2 group"
+            >
+              <span>Medir la eficiencia de mi operación</span>
+              <i
+                class="fa-solid fa-arrow-right text-sm transition-transform group-hover:translate-x-1"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const bar = document.getElementById("efficiency-bar");
+            if (!bar) return;
+
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    bar.style.width = "72%";
+                    observer.unobserve(entry.target);
+                  }
+                });
+              },
+              { threshold: 0.3 },
+            );
+
+            observer.observe(bar);
+          });
+        </script>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         14. BLOG & RECURSOS
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-white border-b border-slate-200"
+        id="blog"
+        aria-labelledby="blog-title"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <!-- Header (Centered) -->
+          <div class="text-center max-w-3xl mx-auto">
+            <span class="eyebrow mx-auto justify-center">
+              BLOG &amp; RECURSOS
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4"
+              id="blog-title"
+            >
+              Conocimiento técnico-estratégico<br class="hidden sm:inline" />
+              para líderes que deciden con datos.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal"
+            >
+              Explora las tendencias y guías de implementación escritas por
+              nuestro equipo experto para transformar tu Contact Center e ITSM
+              con tecnología de vanguardia.
+            </p>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Post 1 -->
+            <article
+              class="bg-white border border-slate-100 rounded-[1.75rem] p-7 sm:p-8 flex flex-col justify-between shadow-[0_10px_35px_-5px_rgba(0,0,0,0.07)] five9-card-hover"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+            >
+              <div class="flex flex-col flex-grow">
+                <div
+                  class="inline-flex items-center px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-icqBlue font-bold text-[11px] sm:text-xs tracking-tight self-start mb-4"
+                >
+                  Automatización · IA · Contact Center
+                </div>
+                <h3
+                  class="text-base sm:text-lg font-bold text-slate-900 leading-snug mb-3"
+                  itemprop="headline"
+                >
+                  Cómo implementar exitosamente un sistema de automatización en
+                  atención al cliente
+                </h3>
+                <p
+                  class="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6 font-normal flex-grow"
+                >
+                  La automatización en atención al cliente no depende solo de la
+                  tecnología — requiere un enfoque estructurado que conecte
+                  procesos, experiencia y eficiencia operativa. Guía práctica
+                  para líderes que quieren hacerlo bien desde el inicio.
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-medium"
+              >
+                <span class="text-slate-400">Feb 2026 · 8 min</span>
+                <a
+                  class="text-icqBlue font-bold inline-flex items-center gap-1 hover:underline"
+                  href="/blog/como-implementar-automatizacion-atencion-al-cliente"
+                  id="blog-1"
+                >
+                  <span>Leer artículo</span>
+                  <span class="text-sm leading-none">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article
+              class="bg-white border border-slate-100 rounded-[1.75rem] p-7 sm:p-8 flex flex-col justify-between shadow-[0_10px_35px_-5px_rgba(0,0,0,0.07)] five9-card-hover"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+            >
+              <div class="flex flex-col flex-grow">
+                <div
+                  class="inline-flex items-center px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-icqBlue font-bold text-[11px] sm:text-xs tracking-tight self-start mb-4"
+                >
+                  Atlassian · System of Work · Productividad
+                </div>
+                <h3
+                  class="text-base sm:text-lg font-bold text-slate-900 leading-snug mb-3"
+                  itemprop="headline"
+                >
+                  System of Work de Atlassian: el modelo que está cambiando cómo
+                  trabajan las empresas
+                </h3>
+                <p
+                  class="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6 font-normal flex-grow"
+                >
+                  El System of Work de Atlassian es un sistema operativo
+                  empresarial que alinea personas, procesos, conocimiento y
+                  tecnología para convertir la estrategia en resultados medibles
+                  — no se trata de usar más herramientas, sino de conectarlas
+                  correctamente.
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-medium"
+              >
+                <span class="text-slate-400">Ene 2026 · 7 min</span>
+                <a
+                  class="text-icqBlue font-bold inline-flex items-center gap-1 hover:underline"
+                  href="/blog/system-of-work-atlassian"
+                  id="blog-2"
+                >
+                  <span>Leer artículo</span>
+                  <span class="text-sm leading-none">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article
+              class="bg-white border border-slate-100 rounded-[1.75rem] p-7 sm:p-8 flex flex-col justify-between shadow-[0_10px_35px_-5px_rgba(0,0,0,0.07)] five9-card-hover"
+              itemscope
+              itemtype="https://schema.org/BlogPosting"
+            >
+              <div class="flex flex-col flex-grow">
+                <div
+                  class="inline-flex items-center px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-icqBlue font-bold text-[11px] sm:text-xs tracking-tight self-start mb-4"
+                >
+                  Tendencias CX · Contact Center · IA 2026
+                </div>
+                <h3
+                  class="text-base sm:text-lg font-bold text-slate-900 leading-snug mb-3"
+                  itemprop="headline"
+                >
+                  Tendencias CX y Contact Centers 2026: IA avanzada, analítica
+                  emocional y el nuevo estándar de experiencia
+                </h3>
+                <p
+                  class="text-xs sm:text-sm text-slate-500 leading-relaxed mb-6 font-normal flex-grow"
+                >
+                  En 2026, la experiencia del cliente en Contact Centers está
+                  siendo transformada por inteligencia artificial avanzada,
+                  analítica emocional y nuevas expectativas de inmediatez. ¿Tu
+                  operación está preparada para el nuevo estándar?
+                </p>
+              </div>
+              <div
+                class="flex items-center justify-between pt-4 border-t border-slate-100 text-xs font-medium"
+              >
+                <span class="text-slate-400">Ene 2026 · 10 min</span>
+                <a
+                  class="text-icqBlue font-bold inline-flex items-center gap-1 hover:underline"
+                  href="/blog/tendencias-cx-contact-centers-2026"
+                  id="blog-3"
+                >
+                  <span>Leer artículo</span>
+                  <span class="text-sm leading-none">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         15. CERTIFICACIONES & PARTNERS (CARRUSEL)
+    ══════════════════════════════════════ -->
+      <section
+        class="py-16 lg:py-24 bg-white border-b border-slate-200 relative overflow-hidden"
+        id="certificaciones"
+        aria-labelledby="cert-title"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <!-- Header -->
+          <div class="max-w-4xl mx-auto mb-12 sm:mb-16">
+            <span class="eyebrow mx-auto justify-center">
+              CERTIFICACIONES &amp; PARTNERS
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-6 tracking-tight"
+              id="cert-title"
+            >
+              No somos un implementador más.<br class="hidden sm:inline" />
+              Somos el partner que los fabricantes certifican.
+            </h2>
+            <p
+              class="text-slate-600 text-base sm:text-lg leading-relaxed font-normal max-w-3xl mx-auto"
+            >
+              Nuestras certificaciones son el respaldo técnico que garantiza
+              implementaciones bajo estándares oficiales. Contamos con acceso a
+              soporte prioritario y recursos avanzados para asegurar que tu
+              tecnología funcione al máximo nivel.
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel Track with Ambient Edge Fade -->
+        <div class="relative w-full overflow-hidden py-4">
+          <!-- Left/Right Gradient Fades -->
+          <div
+            class="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-10"
+          ></div>
+          <div
+            class="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-10"
+          ></div>
+
+          <!-- Marquee Track -->
+          <div class="marquee-track flex gap-5 sm:gap-6 py-2">
+            <!-- Card 1: Atlassian -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Atlassian
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Platinum<br />Solution Partner
+              </div>
+            </div>
+
+            <!-- Card 2: Verint -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Verint
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Certified Partner
+              </div>
+            </div>
+
+            <!-- Card 3: Khomp -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Khomp
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Implementation<br />Partner
+              </div>
+            </div>
+
+            <!-- Card 4: Odoo -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Odoo
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Official Partner
+              </div>
+            </div>
+
+            <!-- Card 5: Google Cloud -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Google Cloud
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                AI Partner
+              </div>
+            </div>
+
+            <!-- Card 6: Five9 -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Five9
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Global Partner
+              </div>
+            </div>
+
+            <!-- Repeat for Infinite Seamless Loop -->
+            <!-- Card 1 Duplicate: Atlassian -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+              aria-hidden="true"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Atlassian
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Platinum<br />Solution Partner
+              </div>
+            </div>
+
+            <!-- Card 2 Duplicate: Verint -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+              aria-hidden="true"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Verint
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Certified Partner
+              </div>
+            </div>
+
+            <!-- Card 3 Duplicate: Khomp -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+              aria-hidden="true"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Khomp
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Implementation<br />Partner
+              </div>
+            </div>
+
+            <!-- Card 4 Duplicate: Odoo -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+              aria-hidden="true"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Odoo
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Official Partner
+              </div>
+            </div>
+
+            <!-- Card 5 Duplicate: Google Cloud -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+              aria-hidden="true"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Google Cloud
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                AI Partner
+              </div>
+            </div>
+
+            <!-- Card 6 Duplicate: Five9 -->
+            <div
+              class="shrink-0 w-44 sm:w-52 h-44 sm:h-48 bg-slate-50/90 hover:bg-white border border-slate-100 rounded-2xl sm:rounded-3xl p-5 flex flex-col items-center justify-center text-center five9-card-hover shadow-sm"
+              aria-hidden="true"
+            >
+              <div class="text-[#0263e2] text-3xl sm:text-4xl mb-2.5">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div
+                class="font-extrabold text-slate-900 text-sm sm:text-base mb-1"
+              >
+                Five9
+              </div>
+              <div class="text-xs text-slate-500 font-medium leading-snug">
+                Global Partner
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         16. FINAL HERO CTA (DARK THEME)
+    ══════════════════════════════════════ -->
+      <section
+        class="py-20 lg:py-28 bg-[#070F1E] text-white border-t border-slate-800 relative overflow-hidden"
+        id="final-cta"
+        aria-labelledby="final-section-title"
+      >
+        <!-- Ambient Glowing Background Accents -->
+        <div
+          class="absolute -top-40 -right-40 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"
+        ></div>
+        <div
+          class="absolute -bottom-40 -left-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"
+        ></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <!-- Header (Centered) -->
+          <div class="max-w-4xl mx-auto text-center mb-14 lg:mb-16">
+            <span class="eyebrow eyebrow-dark mx-auto justify-center">
+              Tu operación merece más que tecnología instalada
+            </span>
+            <h2
+              class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-[1.18] tracking-tight mt-2"
+              id="final-section-title"
+            >
+              Tu operación puede hacer más,<br class="hidden sm:inline" />
+              costar menos y escalar sin límites.
+            </h2>
+          </div>
+
+          <!-- Content Grid: 2 Columns -->
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+          >
+            <!-- Left Column: Copy, Pills & CTAs -->
+            <div class="lg:col-span-6 xl:col-span-7 space-y-8">
+              <p
+                class="text-slate-300 text-base sm:text-lg leading-relaxed font-normal"
+              >
+                Los retos de los directores de Contact Center, CX e IT se
+                resuelven con la tecnología correcta aplicada con la metodología
+                adecuada. Llevamos más de 8 años transformando operaciones en
+                LATAM y US.
+              </p>
+
+              <!-- Pill Badges -->
+              <div class="flex flex-wrap gap-2.5 sm:gap-3 pt-1">
+                <div
+                  class="bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  Automatiza sin perder control
+                </div>
+                <div
+                  class="bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  Integra todo tu ecosistema
+                </div>
+                <div
+                  class="bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5"
+                >
+                  Decide con datos reales
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="flex flex-wrap items-center gap-4 pt-4">
+                <a
+                  href="#contacto"
+                  class="btn-primary !px-7 !py-3.5 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 inline-flex items-center gap-2 group"
+                >
+                  <span>Quiero transformar mi operación</span>
+                  <span
+                    class="text-sm transition-transform group-hover:translate-x-1"
+                    >→</span
+                  >
+                </a>
+                <a
+                  href="/calculadora"
+                  class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-md transition-all duration-300 inline-flex items-center"
+                >
+                  <span>Medir la eficiencia de mi operación</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Visual Dashboard Analytics Cards -->
+            <div
+              class="lg:col-span-6 xl:col-span-5 relative flex items-center justify-center"
+            >
+              <!-- Background Secondary Glass Card (Layered Offset) -->
+              <div
+                class="absolute right-0 bottom-[-15px] sm:bottom-[-20px] w-[82%] bg-slate-800/50 backdrop-blur-md rounded-2xl border border-slate-700/60 p-5 shadow-2xl z-0 transform translate-x-3 translate-y-3 pointer-events-none"
+              >
+                <div class="h-3 w-28 bg-slate-700/80 rounded-full mb-3"></div>
+                <div
+                  class="h-20 bg-slate-900/60 rounded-xl overflow-hidden relative border border-slate-700/40 flex items-end px-3 pb-2"
+                >
+                  <svg
+                    class="w-full h-14"
+                    viewBox="0 0 200 60"
+                    preserveAspectRatio="none"
+                  >
+                    <path
+                      d="M0,45 Q50,30 100,20 T200,10 L200,60 L0,60 Z"
+                      fill="rgba(2,99,226,0.15)"
+                    />
+                    <path
+                      d="M0,45 Q50,30 100,20 T200,10"
+                      fill="none"
+                      stroke="#0263e2"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="flex gap-2 mt-3">
+                  <div class="h-2 w-12 bg-slate-700 rounded-full"></div>
+                  <div class="h-2 w-16 bg-slate-700 rounded-full"></div>
+                </div>
+              </div>
+
+              <!-- Foreground Primary Glass Dashboard Card -->
+              <div
+                class="relative w-full bg-slate-900/90 backdrop-blur-xl rounded-2xl border border-slate-700/90 p-5 sm:p-7 shadow-[0_20px_50px_rgba(0,0,0,0.5)] z-10"
+              >
+                <!-- Top UI Bar -->
+                <div class="h-2.5 w-full bg-slate-800 rounded-full mb-5"></div>
+
+                <!-- Tabs/Filters Mockup -->
+                <div class="flex gap-3 mb-5">
+                  <div class="h-3.5 w-16 bg-slate-700/90 rounded-full"></div>
+                  <div class="h-3.5 w-20 bg-slate-700/90 rounded-full"></div>
+                </div>
+
+                <!-- Charts Dual Panels -->
+                <div class="grid grid-cols-2 gap-3 sm:gap-4 mb-5">
+                  <!-- Chart Panel 1 -->
+                  <div
+                    class="bg-slate-950/70 border border-slate-800 rounded-xl p-3 sm:p-4 flex flex-col justify-between"
+                  >
+                    <div class="h-2 w-12 bg-slate-700 rounded-full mb-2"></div>
+                    <svg
+                      class="w-full h-24 sm:h-28"
+                      viewBox="0 0 100 60"
+                      preserveAspectRatio="none"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="chartGrad1"
+                          x1="0%"
+                          y1="0%"
+                          x2="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stop-color="#0263e2"
+                            stop-opacity="0.5"
+                          />
+                          <stop
+                            offset="100%"
+                            stop-color="#0263e2"
+                            stop-opacity="0.0"
+                          />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M0,15 L20,28 L40,22 L60,40 L80,48 L100,55 L100,60 L0,60 Z"
+                        fill="url(#chartGrad1)"
+                      />
+                      <path
+                        d="M0,15 L20,28 L40,22 L60,40 L80,48 L100,55"
+                        fill="none"
+                        stroke="#38bdf8"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M0,25 L20,38 L40,32 L60,48 L80,54 L100,58"
+                        fill="none"
+                        stroke="#60a5fa"
+                        stroke-width="1.5"
+                        stroke-dasharray="2,2"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- Chart Panel 2 -->
+                  <div
+                    class="bg-slate-950/70 border border-slate-800 rounded-xl p-3 sm:p-4 flex flex-col justify-between"
+                  >
+                    <div class="h-2 w-12 bg-slate-700 rounded-full mb-2"></div>
+                    <svg
+                      class="w-full h-24 sm:h-28"
+                      viewBox="0 0 100 60"
+                      preserveAspectRatio="none"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="chartGrad2"
+                          x1="0%"
+                          y1="0%"
+                          x2="0%"
+                          y2="100%"
+                        >
+                          <stop
+                            offset="0%"
+                            stop-color="#38bdf8"
+                            stop-opacity="0.45"
+                          />
+                          <stop
+                            offset="100%"
+                            stop-color="#0263e2"
+                            stop-opacity="0.0"
+                          />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        d="M0,10 Q50,20 100,38 L100,60 L0,60 Z"
+                        fill="url(#chartGrad2)"
+                      />
+                      <path
+                        d="M0,10 Q50,20 100,38"
+                        fill="none"
+                        stroke="#38bdf8"
+                        stroke-width="2"
+                      />
+                      <path
+                        d="M0,20 Q50,30 100,48"
+                        fill="none"
+                        stroke="#818cf8"
+                        stroke-width="1.5"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Bottom Metrics Bars Mockup -->
+                <div class="flex justify-between items-center pt-2">
+                  <div class="h-2.5 w-14 bg-slate-700 rounded-full"></div>
+                  <div class="h-2.5 w-18 bg-slate-700 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ══════════════════════════════════════
+         INTERACTION SCRIPTS
+    ══════════════════════════════════════ -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+          anchor.addEventListener("click", function (e) {
+            var target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              e.preventDefault();
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        });
+
+        // Hero Carousel Logic
+        const slides = document.querySelectorAll(".hero-slide");
+        const dots = document.querySelectorAll(".hero-dot");
+        const prevBtn = document.getElementById("hero-prev");
+        const nextBtn = document.getElementById("hero-next");
+        let currentSlide = 0;
+        let slideInterval = null;
+
+        function goToSlide(index) {
+          currentSlide = (index + slides.length) % slides.length;
+          slides.forEach((slide, i) => {
+            if (i === currentSlide) {
+              slide.classList.remove(
+                "opacity-0",
+                "translate-x-8",
+                "-translate-x-8",
+                "pointer-events-none",
+              );
+              slide.classList.add("opacity-100", "translate-x-0");
+            } else {
+              slide.classList.remove("opacity-100", "translate-x-0");
+              slide.classList.add("opacity-0", "pointer-events-none");
+              if (i < currentSlide) {
+                slide.classList.add("-translate-x-8");
+              } else {
+                slide.classList.add("translate-x-8");
+              }
+            }
+          });
+
+          dots.forEach((dot, i) => {
+            if (i === currentSlide) {
+              dot.classList.add("w-3", "h-3", "bg-slate-900");
+              dot.classList.remove("w-2.5", "h-2.5", "bg-slate-300");
+            } else {
+              dot.classList.remove("w-3", "h-3", "bg-slate-900");
+              dot.classList.add("w-2.5", "h-2.5", "bg-slate-300");
+            }
+          });
+        }
+
+        if (prevBtn && nextBtn && slides.length > 0) {
+          prevBtn.addEventListener("click", function () {
+            goToSlide(currentSlide - 1);
+            resetAutoplay();
+          });
+          nextBtn.addEventListener("click", function () {
+            goToSlide(currentSlide + 1);
+            resetAutoplay();
+          });
+
+          dots.forEach(function (dot, idx) {
+            dot.addEventListener("click", function () {
+              goToSlide(idx);
+              resetAutoplay();
+            });
+          });
+
+          function startAutoplay() {
+            slideInterval = setInterval(function () {
+              goToSlide(currentSlide + 1);
+            }, 7000);
+          }
+
+          function resetAutoplay() {
+            clearInterval(slideInterval);
+            startAutoplay();
+          }
+
+          startAutoplay();
+
+          const carouselSec = document.getElementById("hero-carousel-section");
+          if (carouselSec) {
+            carouselSec.addEventListener("mouseenter", function () {
+              clearInterval(slideInterval);
+            });
+            carouselSec.addEventListener("mouseleave", function () {
+              startAutoplay();
+            });
+          }
+        }
+
+        // Plataformas Carousel Logic
+        const pltSlides = document.querySelectorAll(".plt-slide");
+        const pltDots = document.querySelectorAll(".plt-dot");
+        const pltPrevBtn = document.getElementById("plt-prev");
+        const pltNextBtn = document.getElementById("plt-next");
+        let pltCurrentSlide = 0;
+        let pltSlideInterval = null;
+
+        function goToPltSlide(index) {
+          pltCurrentSlide = (index + pltSlides.length) % pltSlides.length;
+          pltSlides.forEach((slide, i) => {
+            if (i === pltCurrentSlide) {
+              slide.classList.remove(
+                "opacity-0",
+                "translate-x-8",
+                "-translate-x-8",
+                "pointer-events-none",
+              );
+              slide.classList.add("opacity-100", "translate-x-0");
+            } else {
+              slide.classList.remove("opacity-100", "translate-x-0");
+              slide.classList.add("opacity-0", "pointer-events-none");
+              if (i < pltCurrentSlide) {
+                slide.classList.add("-translate-x-8");
+              } else {
+                slide.classList.add("translate-x-8");
+              }
+            }
+          });
+
+          pltDots.forEach((dot, i) => {
+            if (i === pltCurrentSlide) {
+              dot.classList.add("w-3", "h-3", "bg-slate-900");
+              dot.classList.remove("w-2.5", "h-2.5", "bg-slate-300");
+            } else {
+              dot.classList.remove("w-3", "h-3", "bg-slate-900");
+              dot.classList.add("w-2.5", "h-2.5", "bg-slate-300");
+            }
+          });
+        }
+
+        if (pltPrevBtn && pltNextBtn && pltSlides.length > 0) {
+          pltPrevBtn.addEventListener("click", function () {
+            goToPltSlide(pltCurrentSlide - 1);
+            resetPltAutoplay();
+          });
+          pltNextBtn.addEventListener("click", function () {
+            goToPltSlide(pltCurrentSlide + 1);
+            resetPltAutoplay();
+          });
+
+          pltDots.forEach(function (dot, idx) {
+            dot.addEventListener("click", function () {
+              goToPltSlide(idx);
+              resetPltAutoplay();
+            });
+          });
+
+          function startPltAutoplay() {
+            pltSlideInterval = setInterval(function () {
+              goToPltSlide(pltCurrentSlide + 1);
+            }, 5000);
+          }
+
+          function resetPltAutoplay() {
+            clearInterval(pltSlideInterval);
+            startPltAutoplay();
+          }
+
+          startPltAutoplay();
+
+          const pltCarouselSec = document.getElementById("plataformas");
+          if (pltCarouselSec) {
+            pltCarouselSec.addEventListener("mouseenter", function () {
+              clearInterval(pltSlideInterval);
+            });
+            pltCarouselSec.addEventListener("mouseleave", function () {
+              startPltAutoplay();
+            });
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -335,20 +335,30 @@
         font-size: 15px;
         border-radius: 9999px;
         cursor: pointer;
-        background: #0263e2;
-        color: #ffffff;
-        border: 2px solid transparent;
-        text-decoration: none;
+        background: #0263e2 !important;
+        color: #ffffff !important;
+        border: 2px solid transparent !important;
+        text-decoration: none !important;
         transition:
           transform 0.25s ease,
           box-shadow 0.25s ease,
-          background-color 0.25s ease;
+          background-color 0.25s ease !important;
+      }
+
+      .btn-primary * {
+        color: #ffffff !important;
       }
 
       .btn-primary:hover {
-        background: #002d6d;
-        transform: translateY(-2px);
-        box-shadow: 0 12px 24px -4px rgba(2, 99, 226, 0.35);
+        background: #1a73e8 !important;
+        color: #ffffff !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 12px 24px -4px rgba(2, 99, 226, 0.45) !important;
+        text-decoration: none !important;
+      }
+
+      .btn-primary:hover * {
+        color: #ffffff !important;
       }
 
       .btn-secondary {
@@ -376,18 +386,216 @@
       }
 
       /* ══════════════════════════════════════
-         INTERACTIVE CARD HOVERS
+         INTERACTIVE HOVER & CARD SYSTEM (ODOO & BOOTSTRAP RESILIENT)
          ══════════════════════════════════════ */
-      .five9-card-hover {
+      .five9-card-hover,
+      .partner-card,
+      .methodology-card,
+      .case-card,
+      .resource-card,
+      .roi-card {
         transition:
           transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
           box-shadow 0.3s ease,
-          border-color 0.3s ease !important;
+          border-color 0.3s ease,
+          background-color 0.3s ease !important;
       }
-      .five9-card-hover:hover {
+      .five9-card-hover:hover,
+      .partner-card:hover {
         transform: translateY(-4px) !important;
         box-shadow: 0 14px 28px rgba(2, 99, 226, 0.12) !important;
         border-color: rgba(2, 99, 226, 0.35) !important;
+        background-color: #ffffff !important;
+      }
+      .methodology-card:hover {
+        transform: translateY(-4px) !important;
+        border-color: rgba(2, 99, 226, 0.4) !important;
+        box-shadow: 0 12px 24px -4px rgba(2, 99, 226, 0.12) !important;
+      }
+      .methodology-card:hover .methodology-num {
+        transform: translateY(-50%) scale(1.15) !important;
+        color: #0263e2 !important;
+        opacity: 0.22 !important;
+      }
+      .case-card:hover {
+        transform: translateY(-4px) !important;
+        border-color: rgba(2, 99, 226, 0.35) !important;
+        box-shadow: 0 16px 32px -6px rgba(2, 99, 226, 0.12) !important;
+      }
+      .case-stat-badge {
+        transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+      }
+      .case-stat-badge:hover {
+        transform: scale(1.05) !important;
+        background-color: #ffffff !important;
+        border-color: rgba(2, 99, 226, 0.25) !important;
+        box-shadow: 0 8px 16px -2px rgba(2, 99, 226, 0.12) !important;
+      }
+      .resource-card:hover {
+        transform: translateY(-4px) !important;
+        border-color: rgba(2, 99, 226, 0.4) !important;
+        box-shadow: 0 16px 32px -6px rgba(2, 99, 226, 0.12) !important;
+      }
+      .roi-card:hover {
+        transform: translateY(-5px) !important;
+        background-color: #ffffff !important;
+        border-color: rgba(2, 99, 226, 0.3) !important;
+        box-shadow: 0 16px 32px -8px rgba(2, 99, 226, 0.15) !important;
+      }
+
+      /* Buttons & Pills Hovers */
+      .hero-pill-primary,
+      .calc-cta-btn {
+        background-color: #0263e2 !important;
+        color: #ffffff !important;
+        text-decoration: none !important;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease !important;
+      }
+      .hero-pill-primary *,
+      .calc-cta-btn * {
+        color: #ffffff !important;
+      }
+      .hero-pill-primary:hover,
+      .calc-cta-btn:hover {
+        background-color: #1a73e8 !important;
+        color: #ffffff !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 10px 25px -2px rgba(2, 99, 226, 0.5) !important;
+        text-decoration: none !important;
+      }
+      .hero-pill-primary:hover *,
+      .calc-cta-btn:hover * {
+        color: #ffffff !important;
+      }
+
+      /* Dark Sections Specific Glowing Buttons */
+      #industrias .btn-primary:hover,
+      #calculadora .calc-cta-btn:hover,
+      #final-cta .btn-primary:hover {
+        background-color: #257bf4 !important;
+        color: #ffffff !important;
+        box-shadow: 0 0 28px rgba(37, 123, 244, 0.7), 0 10px 20px -2px rgba(0, 0, 0, 0.4) !important;
+      }
+      #industrias .btn-primary:hover *,
+      #calculadora .calc-cta-btn:hover *,
+      #final-cta .btn-primary:hover * {
+        color: #ffffff !important;
+      }
+
+      .hero-pill-secondary {
+        background-color: #eff6ff !important;
+        border: 1.5px solid #0263e2 !important;
+        color: #0263e2 !important;
+        text-decoration: none !important;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, border-color 0.25s ease !important;
+      }
+      .hero-pill-secondary:hover {
+        background-color: #dbeafe !important;
+        border-color: #002d6d !important;
+        color: #002d6d !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 8px 16px -3px rgba(2, 99, 226, 0.15) !important;
+      }
+
+      .footer-btn-white {
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease, color 0.25s ease !important;
+      }
+      .footer-btn-white:hover {
+        background-color: #f1f5f9 !important;
+        color: #0263e2 !important;
+        transform: translateY(-2px) !important;
+        box-shadow: 0 10px 22px -3px rgba(0, 0, 0, 0.2) !important;
+      }
+
+      .footer-pill {
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease !important;
+      }
+      .footer-pill:hover {
+        transform: translateY(-2px) !important;
+        border-color: rgba(2, 99, 226, 0.5) !important;
+        background-color: rgba(30, 41, 59, 1) !important;
+      }
+
+      .calc-pill {
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease !important;
+      }
+      .calc-pill:hover {
+        transform: translateY(-3px) !important;
+        background-color: #f8fafc !important;
+        box-shadow: 0 8px 18px rgba(2, 99, 226, 0.18) !important;
+      }
+
+      /* Arrows Navigation */
+      #hero-prev, #hero-next {
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease !important;
+      }
+      #hero-prev:hover, #hero-next:hover {
+        background-color: #ffffff !important;
+        transform: translateY(-50%) scale(1.08) !important;
+        box-shadow: 0 12px 25px -4px rgba(0, 0, 0, 0.25) !important;
+      }
+
+      #sol-prev, #sol-next, #plt-prev, #plt-next, #cases-prev, #cases-next, #cases-prev-side, #cases-next-side, #recursos-prev, #recursos-next {
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease !important;
+      }
+      #sol-prev:hover, #sol-next:hover, #plt-prev:hover, #plt-next:hover, #cases-prev:hover, #cases-next:hover, #cases-prev-side:hover, #cases-next-side:hover, #recursos-prev:hover, #recursos-next:hover {
+        background-color: #ffffff !important;
+        transform: scale(1.08) !important;
+        box-shadow: 0 8px 20px -3px rgba(2, 99, 226, 0.2) !important;
+      }
+
+      /* Dots */
+      .hero-dot, .plt-dot, .sol-dot, #cases-dots button {
+        transition: transform 0.25s ease, background-color 0.25s ease !important;
+      }
+      .hero-dot:hover, .plt-dot:hover, .sol-dot:hover, #cases-dots button:hover {
+        transform: scale(1.25) !important;
+      }
+
+      /* Accordion Toggle */
+      .case-toggle-btn {
+        transition: color 0.2s ease !important;
+      }
+      .case-toggle-btn:hover {
+        color: #002d6d !important;
+      }
+      .case-toggle-btn:hover .chevron-icon {
+        background-color: #dbeafe !important;
+        transform: scale(1.1) !important;
+      }
+
+      /* Universal Interactive Text Links (Excludes Buttons) */
+      a.text-icqBlue:not(.btn-primary):not(.btn-secondary):not(.hero-pill-primary):not(.hero-pill-secondary):not(.calc-cta-btn):hover,
+      .hover\:underline:hover {
+        color: #0052cc !important;
+        text-decoration: underline !important;
+      }
+
+      a.btn-primary,
+      a.btn-primary:hover,
+      a.btn-secondary,
+      a.btn-secondary:hover,
+      a.footer-btn-white,
+      a.footer-btn-white:hover,
+      a.hero-pill-primary,
+      a.hero-pill-primary:hover,
+      a.calc-cta-btn,
+      a.calc-cta-btn:hover {
+        text-decoration: none !important;
+      }
+
+      .group:hover .group-hover\:translate-x-1,
+      a:hover .fa-arrow-right,
+      button:hover .fa-arrow-right {
+        transform: translateX(4px) !important;
+        transition: transform 0.25s ease !important;
+      }
+
+      .group:hover .group-hover\:scale-105,
+      .partner-card:hover img,
+      .five9-card-hover:hover img {
+        transform: scale(1.06) !important;
+        transition: transform 0.3s ease !important;
       }
 
       @keyframes pulse-subtle {
@@ -517,7 +725,7 @@
         <button
           id="hero-prev"
           aria-label="Slide anterior"
-          class="absolute left-3 sm:left-6 lg:left-8 xl:left-12 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-[#0066ff] cursor-pointer hover:scale-105"
+          class="absolute left-3 sm:left-6 lg:left-8 xl:left-12 top-[260px] sm:top-[280px] lg:top-[310px] xl:top-[330px] -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer hover:scale-105"
         >
           <svg class="w-5 h-5 sm:w-6 sm:h-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 19l-7-7 7-7"/>
@@ -528,7 +736,7 @@
         <button
           id="hero-next"
           aria-label="Siguiente slide"
-          class="absolute right-3 sm:right-6 lg:right-8 xl:right-12 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-[#0066ff] cursor-pointer hover:scale-105"
+          class="absolute right-3 sm:right-6 lg:right-8 xl:right-12 top-[260px] sm:top-[280px] lg:top-[310px] xl:top-[330px] -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer hover:scale-105"
         >
           <svg class="w-5 h-5 sm:w-6 sm:h-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 5l7 7-7 7"/>
@@ -550,7 +758,7 @@
               <h1
                 class="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-black text-slate-900 leading-[1.18] tracking-tight max-w-4xl mx-auto mb-2 sm:mb-3 px-2 sm:px-0"
               >
-                <span class="text-[#0066ff] font-black"
+                <span class="text-icqBlue font-black"
                   >Transforma tu Contact Center</span
                 ><br class="hidden sm:inline" />
                 en una operación más inteligente, conectada y escalable.
@@ -572,14 +780,14 @@
                 <a
                   href="#contacto"
                   id="hero-cta-slide1-primary"
-                  class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0066ff] hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
+                  class="hero-pill-primary inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold text-sm sm:text-base shadow-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
                 >
                   <span>Hablemos de tu operación+</span>
                 </a>
                 <a
                   href="https://www.icq24.com/casos-de-uso"
                   id="hero-cta-slide1-secondary"
-                  class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#ebf3ff] hover:bg-blue-100 border border-[#0066ff] text-[#0066ff] font-semibold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
+                  class="hero-pill-secondary inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold text-sm sm:text-base cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
                 >
                   <span>Explorar casos de uso+</span>
                 </a>
@@ -588,7 +796,7 @@
               <div class="relative z-10 mb-1">
                 <a
                   href="#calculadora"
-                  class="text-xs sm:text-sm font-semibold text-[#0066ff] hover:text-blue-700 inline-flex items-center gap-1 transition-colors hover:underline"
+                  class="text-xs sm:text-sm font-semibold text-icqBlue hover:text-icqBlueHover inline-flex items-center gap-1 transition-colors hover:underline"
                 >
                   <span>Calcular potencial de eficiencia →</span>
                 </a>
@@ -617,7 +825,7 @@
                   <h2
                     class="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-black leading-[1.18] tracking-tight mb-3 sm:mb-4"
                   >
-                    <span class="text-[#0066ff] font-black"
+                    <span class="text-icqBlue font-black"
                       >Lleva la IA a cada<br />nivel de tu operación</span
                     ><br />
                     <span class="text-slate-900 font-black"
@@ -641,14 +849,14 @@
                     <a
                       href="#soluciones"
                       id="hero-cta-slide2-primary"
-                      class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0066ff] hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
+                      class="hero-pill-primary inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold text-sm sm:text-base shadow-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
                     >
                       <span>Explorar nuestras soluciones de IA +</span>
                     </a>
                     <a
                       href="https://www.icq24.com/casos-de-uso"
                       id="hero-cta-slide2-secondary"
-                      class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#ebf3ff] hover:bg-blue-100 border border-[#0066ff] text-[#0066ff] font-semibold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
+                      class="hero-pill-secondary inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold text-sm sm:text-base cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
                     >
                       <span>Ver capacidades aplicadas a CX +</span>
                     </a>
@@ -694,7 +902,7 @@
                   <h2
                     class="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-black leading-[1.18] tracking-tight mb-2 sm:mb-2.5"
                   >
-                    <span class="text-[#0066ff] font-black"
+                    <span class="text-icqBlue font-black"
                       >Convierte la<br />eficiencia de tu<br />operación</span
                     >
                     <span class="text-slate-900 font-black"
@@ -703,7 +911,7 @@
                   </h2>
 
                   <p
-                    class="text-xs sm:text-sm font-bold text-[#0066ff] uppercase tracking-wider mb-3 sm:mb-4"
+                    class="text-xs sm:text-sm font-bold text-icqBlue uppercase tracking-wider mb-3 sm:mb-4"
                   >
                     Más productividad. Más capacidad. Mejores experiencias.
                   </p>
@@ -724,13 +932,13 @@
                     <a
                       href="#contacto"
                       id="hero-cta-slide3-primary"
-                      class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0066ff] hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
+                      class="hero-pill-primary inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full font-semibold text-sm sm:text-base shadow-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue"
                     >
                       <span>Elevar el desempeño de mi operación</span>
                     </a>
                     <a
                       href="#calculadora"
-                      class="text-xs sm:text-sm font-semibold text-[#0066ff] hover:text-blue-700 inline-flex items-center gap-1 transition-colors hover:underline pl-2 pt-0.5"
+                      class="text-xs sm:text-sm font-semibold text-icqBlue hover:text-icqBlueHover inline-flex items-center gap-1 transition-colors hover:underline pl-2 pt-0.5"
                     >
                       <span>Calcular potencial de eficiencia →</span>
                     </a>
@@ -857,11 +1065,11 @@
             <div class="flex items-center gap-8 sm:gap-12 shrink-0 whitespace-nowrap pr-8 sm:pr-12">
               <!-- Item 1: 50+ Implementaciones -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">50+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">50+</span>
                   <span class="font-semibold text-white">Implementaciones exitosas</span>
                   <span class="text-slate-400 font-normal">en LATAM y Estados Unidos</span>
                 </div>
@@ -869,11 +1077,11 @@
 
               <!-- Item 2: 10+ Años de experiencia -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">10+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">10+</span>
                   <span class="font-semibold text-white">Años de experiencia</span>
                   <span class="text-slate-400 font-normal">como socio estratégico</span>
                 </div>
@@ -881,11 +1089,11 @@
 
               <!-- Item 3: 6 Países -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">6</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">6</span>
                   <span class="font-semibold text-white">Países con operaciones activas</span>
                   <span class="text-slate-400 font-normal">CO · MX · US · PR · DO · LATAM</span>
                 </div>
@@ -893,33 +1101,33 @@
 
               <!-- Repeat item set within group for ultra-wide screen density -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">50+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">50+</span>
                   <span class="font-semibold text-white">Implementaciones exitosas</span>
                   <span class="text-slate-400 font-normal">en LATAM y Estados Unidos</span>
                 </div>
               </div>
 
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">10+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">10+</span>
                   <span class="font-semibold text-white">Años de experiencia</span>
                   <span class="text-slate-400 font-normal">como socio estratégico</span>
                 </div>
               </div>
 
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">6</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">6</span>
                   <span class="font-semibold text-white">Países con operaciones activas</span>
                   <span class="text-slate-400 font-normal">CO · MX · US · PR · DO · LATAM</span>
                 </div>
@@ -930,11 +1138,11 @@
             <div class="flex items-center gap-8 sm:gap-12 shrink-0 whitespace-nowrap pr-8 sm:pr-12" aria-hidden="true">
               <!-- Item 1: 50+ Implementaciones -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">50+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">50+</span>
                   <span class="font-semibold text-white">Implementaciones exitosas</span>
                   <span class="text-slate-400 font-normal">en LATAM y Estados Unidos</span>
                 </div>
@@ -942,11 +1150,11 @@
 
               <!-- Item 2: 10+ Años de experiencia -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">10+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">10+</span>
                   <span class="font-semibold text-white">Años de experiencia</span>
                   <span class="text-slate-400 font-normal">como socio estratégico</span>
                 </div>
@@ -954,11 +1162,11 @@
 
               <!-- Item 3: 6 Países -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">6</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">6</span>
                   <span class="font-semibold text-white">Países con operaciones activas</span>
                   <span class="text-slate-400 font-normal">CO · MX · US · PR · DO · LATAM</span>
                 </div>
@@ -966,33 +1174,33 @@
 
               <!-- Repeat item set within group -->
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">50+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">50+</span>
                   <span class="font-semibold text-white">Implementaciones exitosas</span>
                   <span class="text-slate-400 font-normal">en LATAM y Estados Unidos</span>
                 </div>
               </div>
 
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">10+</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">10+</span>
                   <span class="font-semibold text-white">Años de experiencia</span>
                   <span class="text-slate-400 font-normal">como socio estratégico</span>
                 </div>
               </div>
 
               <div class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <svg class="w-4 h-4 text-icqBlue shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
                 <div class="flex items-baseline gap-1.5 text-xs sm:text-sm">
-                  <span class="font-extrabold text-sky-400 text-sm sm:text-base">6</span>
+                  <span class="font-extrabold text-icqBlue text-sm sm:text-base">6</span>
                   <span class="font-semibold text-white">Países con operaciones activas</span>
                   <span class="text-slate-400 font-normal">CO · MX · US · PR · DO · LATAM</span>
                 </div>
@@ -1559,7 +1767,7 @@
               La tecnología no genera valor por sí sola.<br
                 class="hidden sm:inline"
               />
-              <span class="text-blue-400"
+              <span class="text-icqBlue"
                 >El valor aparece cuando todo el ecosistema opera
                 conectado</span
               >
@@ -1572,11 +1780,11 @@
          7.5 INDUSTRIAS QUE IMPULSAMOS
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-[#0B1120] text-white border-b border-slate-800"
+        class="py-16 lg:py-20 bg-[#0B1120] text-white border-b border-slate-800"
         id="industrias"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl mx-auto text-center mb-12">
+          <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
             <span class="eyebrow eyebrow-dark mx-auto justify-center"
               >INDUSTRIAS</span
             >
@@ -1601,7 +1809,7 @@
 
         <!-- Carousel / Scroll Container -->
         <div
-          class="marquee-container w-full relative pt-4 pb-12 overflow-hidden mx-auto"
+          class="marquee-container w-full relative pt-2 pb-6 overflow-hidden mx-auto"
         >
           <!-- We override the animation duration to make it slower than the default 25s -->
           <div class="marquee-track flex" style="animation-duration: 40s">
@@ -1839,7 +2047,7 @@
           </div>
         </div>
 
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-8">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-6">
           <p class="text-white font-bold text-lg sm:text-xl mb-3">
             Cada operación tiene retos distintos. La solución no debería ser
             estándar.
@@ -1859,11 +2067,11 @@
          8. IMPACTO REAL (ROI)
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-white border-b border-slate-200"
+        class="py-16 lg:py-20 bg-white border-b border-slate-200"
         id="impacto"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="max-w-3xl mx-auto text-center mb-12 lg:mb-16">
+          <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-12 lg:mb-14">
             <span class="eyebrow mx-auto justify-center">
               BENEFICIOS PARA TU OPERACIÓN · CONTACT CENTER · ITSM · CX
             </span>
@@ -1883,7 +2091,7 @@
           </div>
 
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-16"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12 sm:mb-14"
           >
             <!-- Left: Illustration -->
             <div class="flex justify-center lg:justify-end w-full">
@@ -1900,7 +2108,7 @@
             >
               <!-- Card 1 -->
               <div
-                class="group bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-[0_16px_32px_-8px_rgba(2,99,226,0.12)] hover:-translate-y-1.5 transition-all duration-300 cursor-default"
+                class="roi-card group bg-slate-50/90 border border-slate-100 rounded-2xl p-6 text-center shadow-sm cursor-default"
               >
                 <div
                   class="text-3xl sm:text-4xl font-black text-icqBlue group-hover:scale-105 transition-transform duration-300 mb-2 inline-block"
@@ -1916,7 +2124,7 @@
 
               <!-- Card 2 -->
               <div
-                class="group bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-[0_16px_32px_-8px_rgba(2,99,226,0.12)] hover:-translate-y-1.5 transition-all duration-300 cursor-default"
+                class="roi-card group bg-slate-50/90 border border-slate-100 rounded-2xl p-6 text-center shadow-sm cursor-default"
               >
                 <div
                   class="text-3xl sm:text-4xl font-black text-icqBlue group-hover:scale-105 transition-transform duration-300 mb-2 inline-block"
@@ -1932,7 +2140,7 @@
 
               <!-- Card 3 -->
               <div
-                class="group bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-[0_16px_32px_-8px_rgba(2,99,226,0.12)] hover:-translate-y-1.5 transition-all duration-300 cursor-default"
+                class="roi-card group bg-slate-50/90 border border-slate-100 rounded-2xl p-6 text-center shadow-sm cursor-default"
               >
                 <div
                   class="text-3xl sm:text-4xl font-black text-icqBlue group-hover:scale-105 transition-transform duration-300 mb-2 inline-block"
@@ -1948,7 +2156,7 @@
 
               <!-- Card 4 -->
               <div
-                class="group bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-200 rounded-2xl p-6 text-center shadow-sm hover:shadow-[0_16px_32px_-8px_rgba(2,99,226,0.12)] hover:-translate-y-1.5 transition-all duration-300 cursor-default"
+                class="roi-card group bg-slate-50/90 border border-slate-100 rounded-2xl p-6 text-center shadow-sm cursor-default"
               >
                 <div
                   class="text-3xl sm:text-4xl font-black text-icqBlue group-hover:scale-105 transition-transform duration-300 mb-2 inline-block"
@@ -1985,12 +2193,12 @@
          9. NUESTRA METODOLOGÍA
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-white border-b border-slate-200"
+        class="py-16 lg:py-20 bg-slate-50 border-b border-slate-200"
         id="metodologia"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <!-- Header -->
-          <div class="max-w-3xl mx-auto text-center mb-16">
+          <div class="max-w-3xl mx-auto text-center mb-10 sm:mb-12 lg:mb-14">
             <span class="eyebrow mx-auto justify-center">
               NUESTRA METODOLOGÍA
             </span>
@@ -2023,7 +2231,7 @@
           >
             <!-- Card 1 -->
             <div
-              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+              class="methodology-card bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group transition-all"
             >
               <div
                 class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
@@ -2036,7 +2244,7 @@
                 Diagnóstico<br />Operativo
               </h3>
               <span
-                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+                class="methodology-num absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-all duration-300"
               >
                 01
               </span>
@@ -2044,7 +2252,7 @@
 
             <!-- Card 2 -->
             <div
-              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+              class="methodology-card bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group transition-all"
             >
               <div
                 class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
@@ -2057,7 +2265,7 @@
                 Arquitectura &<br />Diseño
               </h3>
               <span
-                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+                class="methodology-num absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-all duration-300"
               >
                 02
               </span>
@@ -2065,7 +2273,7 @@
 
             <!-- Card 3 -->
             <div
-              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+              class="methodology-card bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group transition-all"
             >
               <div
                 class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
@@ -2078,7 +2286,7 @@
                 Implementación<br />& Integración
               </h3>
               <span
-                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+                class="methodology-num absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-all duration-300"
               >
                 03
               </span>
@@ -2086,7 +2294,7 @@
 
             <!-- Card 4 -->
             <div
-              class="bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group hover:border-icqBlue/30 hover:shadow-md transition-all"
+              class="methodology-card bg-white border border-slate-200 rounded-xl p-4 flex items-center shadow-sm relative overflow-hidden group transition-all"
             >
               <div
                 class="w-10 h-10 rounded-lg bg-blue-50 text-icqBlue flex flex-shrink-0 items-center justify-center text-lg mr-4 relative z-10"
@@ -2099,7 +2307,7 @@
                 Optimización<br />Continua
               </h3>
               <span
-                class="absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-transform group-hover:scale-110"
+                class="methodology-num absolute right-4 top-1/2 -translate-y-1/2 text-[42px] font-black text-slate-100/70 select-none z-0 transition-all duration-300"
               >
                 04
               </span>
@@ -2130,13 +2338,13 @@
          11. CASOS DE ÉXITO
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-slate-50 border-b border-slate-200 relative overflow-hidden"
+        class="py-16 lg:py-20 bg-white border-b border-slate-200 relative overflow-hidden"
         id="casos-exito"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <!-- Header with Navigation Arrows -->
           <div
-            class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 lg:mb-16"
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 sm:mb-12 lg:mb-14"
           >
             <div class="max-w-3xl">
               <span class="eyebrow"> CASOS DE ÉXITO </span>
@@ -2158,16 +2366,16 @@
           </div>
 
           <!-- Cards Carousel Container -->
-          <div class="relative group/casestrack mb-16">
+          <div class="relative group/casestrack mb-12 sm:mb-14">
             <div class="overflow-hidden pb-4">
               <div
                 id="cases-track"
-                class="flex transition-transform duration-500 ease-out gap-6 lg:gap-8 items-start"
+                class="flex transition-transform duration-500 ease-out gap-6 lg:gap-8 items-stretch"
                 style="transform: translateX(0px)"
               >
               <!-- Card 1 -->
               <div
-                class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] shrink-0 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-2"
+                class="case-card w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] shrink-0 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col p-2 h-full justify-between"
               >
                 <div class="relative">
                   <img
@@ -2184,19 +2392,19 @@
                   </div>
                 </div>
                 <div class="pt-10 pb-6 px-6 flex-1 flex flex-col justify-between">
-                  <div class="flex flex-col">
+                  <div class="flex flex-col flex-1">
                     <span
                       class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase mb-2 block"
                     >
                       IA Generativa · Autoservicio · Soporte
                     </span>
                     <h3
-                      class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug min-h-[44px] md:min-h-[50px] lg:min-h-[56px] flex items-start"
+                      class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug min-h-[48px] sm:min-h-[52px] lg:min-h-[58px] flex items-start"
                     >
                       Empresa SaaS reduce 75% el tiempo de búsqueda con Chatbot
                       GenAI + Five9
                     </h3>
-                    <p class="text-xs sm:text-sm text-slate-500 mb-4 font-normal leading-relaxed min-h-[85px] md:min-h-[92px] lg:min-h-[96px]">
+                    <p class="text-xs sm:text-sm text-slate-500 mb-4 font-normal leading-relaxed min-h-[96px] sm:min-h-[105px] lg:min-h-[110px] flex-1">
                       Clientes frustrados por búsquedas ineficientes y alto
                       volumen de tickets repetitivos. Implementamos chatbot con
                       GenAI integrado a la base de conocimiento usando Five9 DIVA
@@ -2205,7 +2413,7 @@
                   </div>
 
                   <!-- Metrics Expandable Section -->
-                  <div class="pt-4 border-t border-slate-100">
+                  <div class="pt-4 border-t border-slate-100 mt-auto">
                     <button
                       type="button"
                       class="case-toggle-btn w-full flex items-center justify-between py-1 text-xs font-bold text-icqBlue hover:text-blue-700 transition-colors cursor-pointer focus:outline-none group"
@@ -2231,7 +2439,7 @@
                     >
                       <div class="grid grid-cols-2 gap-2 sm:gap-2.5">
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2245,7 +2453,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2259,7 +2467,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2273,7 +2481,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2294,7 +2502,7 @@
 
               <!-- Card 2 -->
               <div
-                class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] shrink-0 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-2"
+                class="case-card w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] shrink-0 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col p-2 h-full justify-between"
               >
                 <div class="relative">
                   <img
@@ -2311,19 +2519,19 @@
                   </div>
                 </div>
                 <div class="pt-10 pb-6 px-6 flex-1 flex flex-col justify-between">
-                  <div class="flex flex-col">
+                  <div class="flex flex-col flex-1">
                     <span
                       class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase mb-2 block"
                     >
                       CCaaS · Autogestión · Trabajo Remoto
                     </span>
                     <h3
-                      class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug min-h-[44px] md:min-h-[50px] lg:min-h-[56px] flex items-start"
+                      class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug min-h-[48px] sm:min-h-[52px] lg:min-h-[58px] flex items-start"
                     >
                       Multinacional migra a Contact Center 100% remoto con Five9 +
                       Agent Assist
                     </h3>
-                    <p class="text-xs sm:text-sm text-slate-500 mb-4 font-normal leading-relaxed min-h-[85px] md:min-h-[92px] lg:min-h-[96px]">
+                    <p class="text-xs sm:text-sm text-slate-500 mb-4 font-normal leading-relaxed min-h-[96px] sm:min-h-[105px] lg:min-h-[110px] flex-1">
                       Dependencia de infraestructura física limitaba escalabilidad
                       y eficiencia. Implementamos Five9 cloud con Agent Assist
                       (Copilot) y canales de autogestión digital para operación
@@ -2332,7 +2540,7 @@
                   </div>
 
                   <!-- Metrics Expandable Section -->
-                  <div class="pt-4 border-t border-slate-100">
+                  <div class="pt-4 border-t border-slate-100 mt-auto">
                     <button
                       type="button"
                       class="case-toggle-btn w-full flex items-center justify-between py-1 text-xs font-bold text-icqBlue hover:text-blue-700 transition-colors cursor-pointer focus:outline-none group"
@@ -2358,7 +2566,7 @@
                     >
                       <div class="grid grid-cols-2 gap-2 sm:gap-2.5">
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2372,7 +2580,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2386,7 +2594,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2400,7 +2608,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2421,7 +2629,7 @@
 
               <!-- Card 3 -->
               <div
-                class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] shrink-0 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col p-2"
+                class="case-card w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-22px)] shrink-0 bg-white border border-slate-200 rounded-3xl overflow-hidden shadow-sm flex flex-col p-2 h-full justify-between"
               >
                 <div class="relative">
                   <img
@@ -2438,19 +2646,19 @@
                   </div>
                 </div>
                 <div class="pt-10 pb-6 px-6 flex-1 flex flex-col justify-between">
-                  <div class="flex flex-col">
+                  <div class="flex flex-col flex-1">
                     <span
                       class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase mb-2 block"
                     >
                       Cobranza · IVA Proactivo · Automatización
                     </span>
                     <h3
-                      class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug min-h-[44px] md:min-h-[50px] lg:min-h-[56px] flex items-start"
+                      class="text-sm sm:text-base font-black text-slate-900 mb-3 leading-snug min-h-[48px] sm:min-h-[52px] lg:min-h-[58px] flex items-start"
                     >
                       Entidad financiera automatiza cobranza y libera 80% del
                       tiempo de agentes con IVA
                     </h3>
-                    <p class="text-xs sm:text-sm text-slate-500 mb-4 font-normal leading-relaxed min-h-[85px] md:min-h-[92px] lg:min-h-[96px]">
+                    <p class="text-xs sm:text-sm text-slate-500 mb-4 font-normal leading-relaxed min-h-[96px] sm:min-h-[105px] lg:min-h-[110px] flex-1">
                       Proceso de cobranza 100% manual, costoso y poco escalable.
                       Implementamos IVA de cobranza proactivo que personaliza cada
                       llamada, gestiona acuerdos de pago y transfiere solo casos
@@ -2459,7 +2667,7 @@
                   </div>
 
                   <!-- Metrics Expandable Section -->
-                  <div class="pt-4 border-t border-slate-100">
+                  <div class="pt-4 border-t border-slate-100 mt-auto">
                     <button
                       type="button"
                       class="case-toggle-btn w-full flex items-center justify-between py-1 text-xs font-bold text-icqBlue hover:text-blue-700 transition-colors cursor-pointer focus:outline-none group"
@@ -2485,7 +2693,7 @@
                     >
                       <div class="grid grid-cols-2 gap-2 sm:gap-2.5">
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2499,7 +2707,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2513,7 +2721,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-lg sm:text-xl font-black text-icqBlue leading-tight mb-1"
@@ -2527,7 +2735,7 @@
                           </div>
                         </div>
                         <div
-                          class="bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center transition-all duration-300 hover:shadow-md hover:scale-105 hover:bg-white hover:border-blue-100 cursor-default"
+                          class="case-stat-badge bg-slate-50 border border-slate-100 rounded-2xl p-3 text-center cursor-default"
                         >
                           <div
                             class="text-base sm:text-lg font-black text-icqBlue leading-tight mb-1 tracking-tight"
@@ -2572,13 +2780,13 @@
          12. CASOS DE USO & RECURSOS
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden"
+        class="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden"
         id="recursos"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <!-- Header with Navigation Controls -->
           <div
-            class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12"
+            class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 sm:mb-12"
           >
             <div class="max-w-3xl">
               <span class="eyebrow">
@@ -2625,7 +2833,7 @@
           </div>
 
           <!-- Carousel Container with Dots Navigation -->
-          <div class="relative mb-14 px-2 sm:px-6">
+          <div class="relative mb-10 sm:mb-12 px-2 sm:px-6">
             <!-- Track -->
             <div
               id="recursos-container"
@@ -2633,7 +2841,7 @@
             >
               <!-- Card 1 -->
               <div
-                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+                class="resource-card snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] flex flex-row items-stretch gap-4 sm:gap-6"
               >
                 <!-- Vector Icon -->
                 <div
@@ -2709,7 +2917,7 @@
 
               <!-- Card 2 -->
               <div
-                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+                class="resource-card snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] flex flex-row items-stretch gap-4 sm:gap-6"
               >
                 <!-- Vector Icon -->
                 <div
@@ -2774,7 +2982,7 @@
 
               <!-- Card 3 -->
               <div
-                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+                class="resource-card snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] flex flex-row items-stretch gap-4 sm:gap-6"
               >
                 <!-- Vector Icon -->
                 <div
@@ -2834,7 +3042,7 @@
 
               <!-- Card 4 -->
               <div
-                class="snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:border-blue-300 hover:shadow-xl transition-all duration-300 flex flex-row items-start gap-4 sm:gap-6"
+                class="resource-card snap-start shrink-0 w-[90vw] sm:w-[500px] lg:w-[calc(50%-0.75rem)] bg-white border-4 border-slate-200/90 rounded-[2.2rem] p-6 sm:p-8 shadow-[0_10px_30px_rgba(0,0,0,0.04)] flex flex-row items-stretch gap-4 sm:gap-6"
               >
                 <!-- Vector Icon -->
                 <div
@@ -3006,7 +3214,7 @@
          13. HERRAMIENTA / CALCULADORA DE EFICIENCIA
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-[#0A1120] relative overflow-hidden text-white"
+        class="py-16 lg:py-20 bg-[#0A1120] relative overflow-hidden text-white"
         id="calculadora"
       >
         <!-- Background Ambient Glow -->
@@ -3018,27 +3226,26 @@
         ></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <!-- Header -->
-          <div class="max-w-3xl mx-auto text-center mb-12">
-            <span class="eyebrow eyebrow-dark mx-auto justify-center">
-              HERRAMIENTA
-            </span>
-            <h2
-              class="text-2xl sm:text-3xl font-black text-white leading-tight mb-4"
-            >
-              <span class="text-icqBlue font-black"
-                >¿Qué tan eficiente es tu operación hoy?</span
-              ><br class="hidden sm:inline" />
-              Descúbrelo con nuestra Calculadora de Eficiencia.
-            </h2>
-          </div>
-
           <!-- Content Grid -->
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-6 lg:mb-10"
           >
-            <!-- Left Column: Description & Pills -->
-            <div class="space-y-8">
+            <!-- Left Column: Header, Description & Pills -->
+            <div class="space-y-6 text-left">
+              <div>
+                <span class="eyebrow eyebrow-dark mb-3">
+                  HERRAMIENTA
+                </span>
+                <h2
+                  class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight mb-4"
+                >
+                  <span class="text-icqBlue font-black"
+                    >¿Qué tan eficiente es tu operación hoy?</span
+                  ><br />
+                  Descúbrelo con nuestra Calculadora de Eficiencia.
+                </h2>
+              </div>
+
               <p
                 class="text-slate-300 text-sm sm:text-base leading-relaxed font-normal"
               >
@@ -3050,9 +3257,9 @@
               </p>
 
               <!-- Pill Badges (Exact 2x2 layout with + icons) -->
-              <div class="flex flex-wrap gap-2.5 sm:gap-3 pt-2">
+              <div class="flex flex-wrap gap-2.5 sm:gap-3 pt-1">
                 <div
-                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                  class="calc-pill bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap cursor-default"
                 >
                   <span class="text-icqBlue font-black text-sm leading-none"
                     >+</span
@@ -3060,7 +3267,7 @@
                   <span>Diagnóstico de eficiencia real</span>
                 </div>
                 <div
-                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                  class="calc-pill bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap cursor-default"
                 >
                   <span class="text-icqBlue font-black text-sm leading-none"
                     >+</span
@@ -3068,7 +3275,7 @@
                   <span>Identifica brechas operativas</span>
                 </div>
                 <div
-                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                  class="calc-pill bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap cursor-default"
                 >
                   <span class="text-icqBlue font-black text-sm leading-none"
                     >+</span
@@ -3076,7 +3283,7 @@
                   <span>Estima el impacto de automatizar</span>
                 </div>
                 <div
-                  class="bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap transition-transform duration-200 hover:-translate-y-0.5"
+                  class="calc-pill bg-white text-icqBlue font-bold text-xs sm:text-[13px] px-4 sm:px-5 py-2 rounded-full shadow-md inline-flex items-center gap-1.5 whitespace-nowrap cursor-default"
                 >
                   <span class="text-icqBlue font-black text-sm leading-none"
                     >+</span
@@ -3183,7 +3390,7 @@
           <div class="text-center">
             <a
               href="#contacto"
-              class="bg-[#0263e2] hover:bg-blue-700 text-white font-bold text-base px-9 py-4 rounded-full shadow-lg hover:shadow-blue-500/40 transition-all duration-300 inline-flex items-center gap-2 group"
+              class="calc-cta-btn font-bold text-base px-9 py-4 rounded-full shadow-lg transition-all duration-300 inline-flex items-center gap-2 group"
             >
               <span>Medir la eficiencia de mi operación</span>
               <i
@@ -3219,11 +3426,11 @@
          14. BLOG & RECURSOS
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-white border-b border-slate-200"
+        class="py-16 lg:py-20 bg-white border-b border-slate-200"
         id="blog"
         aria-labelledby="blog-title"
       >
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10 sm:space-y-12">
           <!-- Header (Centered) -->
           <div class="text-center max-w-3xl mx-auto">
             <span class="eyebrow mx-auto justify-center">
@@ -3386,13 +3593,13 @@
          15. CERTIFICACIONES & PARTNERS (CARRUSEL)
     ══════════════════════════════════════ -->
       <section
-        class="py-16 lg:py-24 bg-white border-b border-slate-200 relative overflow-hidden"
+        class="py-16 lg:py-20 bg-slate-50 border-b border-slate-200 relative overflow-hidden"
         id="certificaciones"
         aria-labelledby="cert-title"
       >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <!-- Header -->
-          <div class="max-w-4xl mx-auto mb-12 sm:mb-16">
+          <div class="max-w-4xl mx-auto mb-10 sm:mb-12 lg:mb-14">
             <span class="eyebrow mx-auto justify-center">
               CERTIFICACIONES &amp; PARTNERS
             </span>
@@ -3420,20 +3627,20 @@
         <div class="relative w-full overflow-hidden py-4">
           <!-- Left/Right Gradient Fades -->
           <div
-            class="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white to-transparent z-10"
+            class="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-slate-50 to-transparent z-10"
           ></div>
           <div
-            class="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white to-transparent z-10"
+            class="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-slate-50 to-transparent z-10"
           ></div>
 
           <!-- Marquee Track -->
           <div class="marquee-track flex gap-5 sm:gap-6 py-2">
             <!-- Card 1: Google Cloud -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3455,10 +3662,10 @@
 
             <!-- Card 2: Five9 -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3480,10 +3687,10 @@
 
             <!-- Card 3: Atlassian -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3505,10 +3712,10 @@
 
             <!-- Card 4: Verint -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3530,10 +3737,10 @@
 
             <!-- Card 5: Khomp -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3555,10 +3762,10 @@
 
             <!-- Card 6: Odoo -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3581,11 +3788,11 @@
             <!-- Repeat for Infinite Seamless Loop -->
             <!-- Card 1 Duplicate: Google Cloud -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
               aria-hidden="true"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3607,11 +3814,11 @@
 
             <!-- Card 2 Duplicate: Five9 -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
               aria-hidden="true"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3633,11 +3840,11 @@
 
             <!-- Card 3 Duplicate: Atlassian -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
               aria-hidden="true"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3659,11 +3866,11 @@
 
             <!-- Card 4 Duplicate: Verint -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
               aria-hidden="true"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3685,11 +3892,11 @@
 
             <!-- Card 5 Duplicate: Khomp -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
               aria-hidden="true"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3711,11 +3918,11 @@
 
             <!-- Card 6 Duplicate: Odoo -->
             <div
-              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-slate-50/90 hover:bg-white border border-slate-100 hover:border-blue-100 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
+              class="shrink-0 w-44 sm:w-52 h-36 sm:h-40 bg-white hover:bg-slate-50 border border-slate-200 hover:border-blue-200 rounded-2xl sm:rounded-3xl p-3 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-2.5 text-center five9-card-hover shadow-sm hover:shadow-md transition-all duration-300 group"
               aria-hidden="true"
             >
               <div
-                class="h-8 sm:h-9 flex items-center justify-center text-[#0263e2] text-2xl sm:text-3xl"
+                class="h-8 sm:h-9 flex items-center justify-center text-icqNavy text-2xl sm:text-3xl"
               >
                 <i class="fa-solid fa-award"></i>
               </div>
@@ -3742,7 +3949,7 @@
          16. FINAL HERO CTA (DARK THEME)
     ══════════════════════════════════════ -->
       <section
-        class="py-20 lg:py-28 bg-[#070F1E] text-white border-t border-slate-800 relative overflow-hidden"
+        class="py-16 lg:py-20 bg-[#070F1E] text-white border-t border-slate-800 relative overflow-hidden"
         id="final-cta"
         aria-labelledby="final-section-title"
       >
@@ -3756,7 +3963,7 @@
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <!-- Header (Centered) -->
-          <div class="max-w-4xl mx-auto text-center mb-14 lg:mb-16">
+          <div class="max-w-4xl mx-auto text-center mb-10 sm:mb-12 lg:mb-14">
             <span class="eyebrow eyebrow-dark mx-auto justify-center">
               Tu operación merece más que tecnología instalada
             </span>
@@ -3789,17 +3996,17 @@
               <!-- Pill Badges -->
               <div class="flex flex-wrap gap-2.5 sm:gap-3 pt-1">
                 <div
-                  class="bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5"
+                  class="footer-pill bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm cursor-default"
                 >
                   Automatiza sin perder control
                 </div>
                 <div
-                  class="bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5"
+                  class="footer-pill bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm cursor-default"
                 >
                   Integra todo tu ecosistema
                 </div>
                 <div
-                  class="bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5"
+                  class="footer-pill bg-slate-800/90 border border-slate-700/80 text-slate-200 text-xs sm:text-[13px] font-semibold px-4 sm:px-5 py-2 rounded-full shadow-sm backdrop-blur-sm cursor-default"
                 >
                   Decide con datos reales
                 </div>
@@ -3819,7 +4026,7 @@
                 </a>
                 <a
                   href="/calculadora"
-                  class="bg-white hover:bg-slate-100 text-slate-900 font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-md transition-all duration-300 inline-flex items-center"
+                  class="footer-btn-white bg-white text-slate-900 font-bold text-sm sm:text-base px-7 py-3.5 rounded-full shadow-md inline-flex items-center"
                 >
                   <span>Medir la eficiencia de mi operación</span>
                 </a>

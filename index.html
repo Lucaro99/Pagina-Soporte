@@ -493,18 +493,31 @@
          3. HERO CAROUSEL SECTION
     ══════════════════════════════════════ -->
       <section
-        class="relative pt-6 pb-8 sm:pt-8 sm:pb-10 lg:pt-8 lg:pb-12 overflow-hidden border-b border-slate-200 bg-cover bg-center bg-no-repeat"
-        style="
-          background-image: url(&quot;https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Background.webp?raw=true&quot;);
-        "
+        class="relative pt-6 pb-8 sm:pt-8 sm:pb-10 lg:pt-8 lg:pb-12 overflow-hidden border-b border-slate-200"
         role="banner"
         id="hero-carousel-section"
       >
+        <!-- Backgrounds for slides -->
+        <div class="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-hidden" id="hero-bg-container">
+          <div
+            class="hero-bg absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-700 opacity-100"
+            style="background-image: url('https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home%20Fondo%201.webp?raw=true');"
+          ></div>
+          <div
+            class="hero-bg absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-700 opacity-0"
+            style="background-image: url('https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home%20Fondo%202%20y%203.webp?raw=true');"
+          ></div>
+          <div
+            class="hero-bg absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-opacity duration-700 opacity-0"
+            style="background-image: url('https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home%20Fondo%202%20y%203.webp?raw=true');"
+          ></div>
+        </div>
+
         <!-- Nav Arrow Left -->
         <button
           id="hero-prev"
           aria-label="Slide anterior"
-          class="absolute left-3 sm:left-6 lg:left-8 xl:left-12 top-[270px] sm:top-[280px] lg:top-[290px] -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer hover:scale-105"
+          class="absolute left-3 sm:left-6 lg:left-8 xl:left-12 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-[#0066ff] cursor-pointer hover:scale-105"
         >
           <svg class="w-5 h-5 sm:w-6 sm:h-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M15 19l-7-7 7-7"/>
@@ -515,7 +528,7 @@
         <button
           id="hero-next"
           aria-label="Siguiente slide"
-          class="absolute right-3 sm:right-6 lg:right-8 xl:right-12 top-[270px] sm:top-[280px] lg:top-[290px] -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-icqBlue cursor-pointer hover:scale-105"
+          class="absolute right-3 sm:right-6 lg:right-8 xl:right-12 top-1/2 -translate-y-1/2 w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-white/95 hover:bg-white text-slate-800 flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-300 z-30 focus:outline-none focus:ring-2 focus:ring-[#0066ff] cursor-pointer hover:scale-105"
         >
           <svg class="w-5 h-5 sm:w-6 sm:h-6 text-slate-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 5l7 7-7 7"/>
@@ -527,7 +540,7 @@
         >
           <!-- Slides Container -->
           <div
-            class="relative h-[560px] sm:h-[580px] lg:h-[590px] xl:h-[610px] w-full flex items-start justify-center overflow-hidden"
+            class="relative h-[620px] sm:h-[650px] lg:h-[680px] xl:h-[720px] w-full flex items-start justify-center overflow-hidden"
           >
             <!-- SLIDE 1: Hero Opción 1 -->
             <div
@@ -535,16 +548,16 @@
               data-slide="0"
             >
               <h1
-                class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-[1.18] tracking-tight max-w-4xl mx-auto mb-2 sm:mb-2.5 px-2 sm:px-0"
+                class="text-2xl sm:text-3xl lg:text-4xl xl:text-[42px] font-black text-slate-900 leading-[1.18] tracking-tight max-w-4xl mx-auto mb-2 sm:mb-3 px-2 sm:px-0"
               >
-                <span class="text-icqBlue font-black"
+                <span class="text-[#0066ff] font-black"
                   >Transforma tu Contact Center</span
                 ><br class="hidden sm:inline" />
                 en una operación más inteligente, conectada y escalable.
               </h1>
 
               <p
-                class="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto mb-3 sm:mb-3.5 px-4 sm:px-0"
+                class="text-xs sm:text-sm lg:text-[15px] text-slate-600 leading-relaxed font-normal max-w-3xl mx-auto mb-3 sm:mb-4 px-4 sm:px-0"
               >
                 Integramos IA, automatización, omnicanalidad y analítica con tu
                 operación para optimizar CX, potenciar la productividad de tus
@@ -552,60 +565,44 @@
                 mayor visibilidad y control sobre cada interacción.
               </p>
 
-              <!-- CTAs Principales con z-10 para clickeabilidad -->
+              <!-- CTAs Principales -->
               <div
-                class="relative z-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-1.5"
+                class="relative z-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-2"
               >
                 <a
                   href="#contacto"
                   id="hero-cta-slide1-primary"
-                  class="btn-primary text-sm sm:text-base !px-7 sm:!px-8 !py-3 sm:!py-3.5 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue inline-flex items-center gap-2"
+                  class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0066ff] hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
                 >
-                  <span>Hablemos de tu operación</span>
-                  <i
-                    class="fa-solid fa-arrow-right text-xs"
-                    aria-hidden="true"
-                  ></i>
+                  <span>Hablemos de tu operación+</span>
                 </a>
                 <a
                   href="https://www.icq24.com/casos-de-uso"
                   id="hero-cta-slide1-secondary"
-                  class="btn-secondary text-sm sm:text-base !px-7 sm:!px-8 !py-3 sm:!py-3.5 inline-flex items-center gap-2"
+                  class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#ebf3ff] hover:bg-blue-100 border border-[#0066ff] text-[#0066ff] font-semibold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
                 >
-                  <span>Explorar casos de uso</span>
-                  <i
-                    class="fa-solid fa-arrow-right text-xs"
-                    aria-hidden="true"
-                  ></i>
+                  <span>Explorar casos de uso+</span>
                 </a>
               </div>
 
-              <div class="relative z-10 mb-0">
+              <div class="relative z-10 mb-1">
                 <a
                   href="#calculadora"
-                  class="text-xs sm:text-sm font-bold text-icqBlue hover:text-blue-700 inline-flex items-center gap-1.5 transition-colors hover:underline"
+                  class="text-xs sm:text-sm font-semibold text-[#0066ff] hover:text-blue-700 inline-flex items-center gap-1 transition-colors hover:underline"
                 >
-                  <i
-                    class="fa-solid fa-calculator text-xs"
-                    aria-hidden="true"
-                  ></i>
                   <span>Calcular potencial de eficiencia →</span>
                 </a>
               </div>
 
-              <!-- Dashboard Image Preview Mockup (Amplia, rodeando los botones con iconos laterales y degradado inferior) -->
-              <div class="relative z-0 w-full max-w-5xl lg:max-w-6xl xl:max-w-[1240px] mx-auto px-2 sm:px-4 -mt-14 sm:-mt-18 lg:-mt-22 xl:-mt-24 pointer-events-none select-none flex justify-center">
-                <div class="relative w-full max-h-[260px] sm:max-h-[300px] lg:max-h-[340px] xl:max-h-[370px] overflow-hidden [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_55%,rgba(0,0,0,0.3)_80%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_55%,rgba(0,0,0,0.3)_80%,rgba(0,0,0,0)_100%)]">
-                  <img
-                    src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home_Slide_3.webp?raw=true"
-                    onerror="this.src='Assets/Home/Home_Slide_3.webp'"
-                    alt="ICQ24 Contact Center Inteligente - Interacción y Automatización"
-                    class="w-full h-auto object-contain object-top drop-shadow-lg mx-auto min-w-[720px] sm:min-w-[900px] lg:min-w-[1050px]"
-                    loading="eager"
-                  />
-                  <!-- Degradado difuminado suave inferior -->
-                  <div class="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-white via-white/85 to-transparent pointer-events-none"></div>
-                </div>
+              <!-- Graphic Image Slide 1 (Overlaps upward so buttons sit in the curved notch) -->
+              <div class="relative z-0 w-full max-w-5xl lg:max-w-6xl xl:max-w-[1260px] mx-auto px-2 sm:px-4 pointer-events-none select-none flex justify-center -mt-16 sm:-mt-24 md:-mt-32 lg:-mt-40 xl:-mt-44">
+                <img
+                  src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home_Img_Slide1.webp?raw=true"
+                  onerror="this.src='Assets/Home/Home_Img_Slide1.webp'"
+                  alt="ICQ24 Contact Center Inteligente - Integración de IA, Telefonía, Chatbot, WhatsApp y Omnicanalidad"
+                  class="w-full h-auto object-contain object-top drop-shadow-sm mx-auto"
+                  loading="eager"
+                />
               </div>
             </div>
 
@@ -614,20 +611,22 @@
               class="hero-slide absolute inset-0 w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 transition-all duration-700 ease-out transform opacity-0 translate-x-8 pointer-events-none"
               data-slide="1"
             >
-              <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
-                <!-- Columna Izquierda: Información Centrada Verticalmente -->
-                <div class="lg:col-span-6 xl:col-span-6 text-center lg:text-left flex flex-col items-center lg:items-start justify-center">
+              <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-10 items-center">
+                <!-- Columna Izquierda: Información y CTAs -->
+                <div class="lg:col-span-6 xl:col-span-6 text-left flex flex-col items-start justify-center">
                   <h2
-                    class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-[1.18] tracking-tight mb-3 sm:mb-4"
+                    class="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-black leading-[1.18] tracking-tight mb-3 sm:mb-4"
                   >
-                    <span class="text-icqBlue font-black"
-                      >Lleva la IA a cada nivel de tu operación</span
-                    ><br class="hidden sm:inline" />
-                    y desbloquea nuevas capacidades de CX.
+                    <span class="text-[#0066ff] font-black"
+                      >Lleva la IA a cada<br />nivel de tu operación</span
+                    ><br />
+                    <span class="text-slate-900 font-black"
+                      >y desbloquea nuevas<br />capacidades de CX.</span
+                    >
                   </h2>
 
                   <p
-                    class="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-medium mb-5 sm:mb-6 max-w-xl"
+                    class="text-xs sm:text-sm lg:text-[15px] text-slate-600 leading-relaxed font-normal mb-5 sm:mb-6 max-w-xl"
                   >
                     Ya implementaste IA, ahora es momento de que actúe donde tu
                     operación más lo necesita: resolviendo interacciones, asistiendo
@@ -637,41 +636,33 @@
                   </p>
 
                   <div
-                    class="flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4"
+                    class="flex flex-col items-start gap-3 w-full sm:w-auto"
                   >
                     <a
                       href="#soluciones"
                       id="hero-cta-slide2-primary"
-                      class="btn-primary text-sm sm:text-base !px-6 sm:!px-8 !py-3.5 sm:!py-4 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue inline-flex items-center gap-2"
+                      class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0066ff] hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
                     >
-                      <span>Explorar nuestras soluciones de IA</span>
-                      <i
-                        class="fa-solid fa-arrow-right text-xs"
-                        aria-hidden="true"
-                      ></i>
+                      <span>Explorar nuestras soluciones de IA +</span>
                     </a>
                     <a
                       href="https://www.icq24.com/casos-de-uso"
                       id="hero-cta-slide2-secondary"
-                      class="btn-secondary text-sm sm:text-base !px-6 sm:!px-8 !py-3.5 sm:!py-4 inline-flex items-center gap-2"
+                      class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#ebf3ff] hover:bg-blue-100 border border-[#0066ff] text-[#0066ff] font-semibold text-sm sm:text-base transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
                     >
-                      <span>Ver capacidades aplicadas a CX</span>
-                      <i
-                        class="fa-solid fa-arrow-right text-xs"
-                        aria-hidden="true"
-                      ></i>
+                      <span>Ver capacidades aplicadas a CX +</span>
                     </a>
                   </div>
                 </div>
 
-                <!-- Columna Derecha: Imagen Destacada Centrada -->
+                <!-- Columna Derecha: Imagen Destacada de Asesores e IA -->
                 <div class="lg:col-span-6 xl:col-span-6 flex items-center justify-center lg:justify-end">
-                  <div class="relative w-full max-w-[380px] sm:max-w-[460px] lg:max-w-[540px] xl:max-w-[600px] group">
+                  <div class="relative w-full max-w-[440px] sm:max-w-[500px] lg:max-w-[560px] xl:max-w-[620px] pointer-events-none select-none">
                     <img
-                      src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home_Slide_1.webp?raw=true"
-                      onerror="this.src='Assets/Home/Home_Slide_1.webp'"
-                      alt="Lleva la IA a cada nivel - Soluciones ICQ24"
-                      class="w-full h-auto max-h-[340px] sm:max-h-[420px] lg:max-h-[480px] xl:max-h-[520px] object-contain drop-shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                      src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home_Img_Slide2.webp?raw=true"
+                      onerror="this.src='Assets/Home/Home_Img_Slide2.webp'"
+                      alt="Lleva la IA a cada nivel de tu operación - Asesores y Soluciones ICQ24"
+                      class="w-full h-auto max-h-[460px] sm:max-h-[520px] lg:max-h-[560px] xl:max-h-[600px] object-contain object-center drop-shadow-xl mx-auto"
                       loading="lazy"
                     />
                   </div>
@@ -681,77 +672,69 @@
 
             <!-- SLIDE 3: Hero Opción 3 -->
             <div
-              class="hero-slide absolute inset-0 w-full h-full flex flex-col items-center justify-start pt-1 sm:pt-2 lg:pt-3 transition-all duration-700 ease-out transform opacity-0 translate-x-8 pointer-events-none"
+              class="hero-slide absolute inset-0 w-full h-full flex items-center justify-center px-4 sm:px-6 lg:px-8 transition-all duration-700 ease-out transform opacity-0 translate-x-8 pointer-events-none"
               data-slide="2"
             >
-              <h2
-                class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 leading-[1.18] tracking-tight max-w-4xl mx-auto mb-1.5 sm:mb-2 px-2 sm:px-0"
-              >
-                <span class="text-icqBlue font-black"
-                  >Convierte la eficiencia de tu operación</span
-                ><br class="hidden sm:inline" />
-                en una ventaja competitiva.
-              </h2>
+              <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 xl:gap-10 items-center">
+                <!-- Columna Izquierda: Imagen Destacada de Analítica y Asesora -->
+                <div class="lg:col-span-6 xl:col-span-6 flex items-center justify-center lg:justify-start order-2 lg:order-1">
+                  <div class="relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[530px] xl:max-w-[570px] pointer-events-none select-none">
+                    <img
+                      src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home_Img_Slide3.webp?raw=true"
+                      onerror="this.src='Assets/Home/Home_Img_Slide3.webp'"
+                      alt="Convierte la eficiencia de tu operación en una ventaja competitiva - ICQ24"
+                      class="w-full h-auto max-h-[460px] sm:max-h-[520px] lg:max-h-[560px] xl:max-h-[600px] object-contain object-center drop-shadow-xl mx-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
 
-              <p
-                class="text-xs sm:text-sm font-bold text-icqBlue uppercase tracking-wider mb-1 sm:mb-1.5"
-              >
-                Más productividad. Más capacidad. Mejores experiencias.
-              </p>
-
-              <p
-                class="text-xs sm:text-sm lg:text-base text-slate-600 leading-relaxed font-medium max-w-3xl mx-auto mb-2.5 sm:mb-3 px-4 sm:px-0"
-              >
-                Conecta capacidad, productividad, analítica, calidad y
-                experiencia para obtener una visión más precisa de tu operación,
-                optimizar recursos y actuar donde realmente puedes ganar
-                eficiencia y mejorar cada experiencia.
-              </p>
-
-              <!-- CTAs Principales con z-10 para clickeabilidad -->
-              <div
-                class="relative z-10 flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-1.5"
-              >
-                <a
-                  href="#contacto"
-                  id="hero-cta-slide3-primary"
-                  class="btn-primary text-sm sm:text-base !px-7 sm:!px-8 !py-3 sm:!py-3.5 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-icqBlue inline-flex items-center gap-2"
-                >
-                  <span>Elevar el desempeño de mi operación</span>
-                  <i
-                    class="fa-solid fa-arrow-right text-xs"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
-
-              <div class="relative z-10 mb-0">
-                <a
-                  href="#calculadora"
-                  class="text-xs sm:text-sm font-bold text-icqBlue hover:text-blue-700 inline-flex items-center gap-1.5 transition-colors hover:underline"
-                >
-                  <i
-                    class="fa-solid fa-calculator text-xs"
-                    aria-hidden="true"
-                  ></i>
-                  <span
-                    >Calcula el potencial de eficiencia de tu operación →</span
+                <!-- Columna Derecha: Información y CTAs -->
+                <div class="lg:col-span-6 xl:col-span-6 text-left flex flex-col items-start justify-center order-1 lg:order-2">
+                  <h2
+                    class="text-3xl sm:text-4xl lg:text-[40px] xl:text-[44px] font-black leading-[1.18] tracking-tight mb-2 sm:mb-2.5"
                   >
-                </a>
-              </div>
+                    <span class="text-[#0066ff] font-black"
+                      >Convierte la<br />eficiencia de tu<br />operación</span
+                    >
+                    <span class="text-slate-900 font-black"
+                      >en una<br />ventaja competitiva.</span
+                    >
+                  </h2>
 
-              <!-- Dashboard Image Preview Mockup (Amplia, rodeando el botón con iconos laterales y degradado inferior) -->
-              <div class="relative z-0 w-full max-w-5xl lg:max-w-6xl xl:max-w-[1240px] mx-auto px-2 sm:px-4 -mt-14 sm:-mt-18 lg:-mt-22 xl:-mt-24 pointer-events-none select-none flex justify-center">
-                <div class="relative w-full max-h-[260px] sm:max-h-[300px] lg:max-h-[340px] xl:max-h-[370px] overflow-hidden [mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_55%,rgba(0,0,0,0.3)_80%,rgba(0,0,0,0)_100%)] [-webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,1)_0%,rgba(0,0,0,1)_55%,rgba(0,0,0,0.3)_80%,rgba(0,0,0,0)_100%)]">
-                  <img
-                    src="https://github.com/Lucaro99/Pagina-Soporte/blob/main/Assets/Home/Home_Slide_2.webp?raw=true"
-                    onerror="this.src='Assets/Home/Home_Slide_2.webp'"
-                    alt="ICQ24 Eficiencia Operacional y Contact Center"
-                    class="w-full h-auto object-contain object-top drop-shadow-lg mx-auto min-w-[720px] sm:min-w-[900px] lg:min-w-[1050px]"
-                    loading="lazy"
-                  />
-                  <!-- Degradado difuminado suave inferior -->
-                  <div class="absolute inset-x-0 bottom-0 h-16 sm:h-24 bg-gradient-to-t from-white via-white/85 to-transparent pointer-events-none"></div>
+                  <p
+                    class="text-xs sm:text-sm font-bold text-[#0066ff] uppercase tracking-wider mb-3 sm:mb-4"
+                  >
+                    Más productividad. Más capacidad. Mejores experiencias.
+                  </p>
+
+                  <p
+                    class="text-xs sm:text-sm lg:text-[15px] text-slate-600 leading-relaxed font-normal mb-5 sm:mb-6 max-w-xl"
+                  >
+                    Conecta capacidad, productividad, analítica, calidad y
+                    experiencia para obtener una visión más precisa de tu operación,
+                    optimizar recursos y actuar donde realmente puedes ganar
+                    eficiencia y mejorar cada experiencia.
+                  </p>
+
+                  <!-- CTAs Principales -->
+                  <div
+                    class="flex flex-col items-start gap-2.5 w-full sm:w-auto"
+                  >
+                    <a
+                      href="#contacto"
+                      id="hero-cta-slide3-primary"
+                      class="inline-flex items-center justify-center px-7 sm:px-8 py-3 sm:py-3.5 rounded-full bg-[#0066ff] hover:bg-blue-700 text-white font-semibold text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0066ff]"
+                    >
+                      <span>Elevar el desempeño de mi operación</span>
+                    </a>
+                    <a
+                      href="#calculadora"
+                      class="text-xs sm:text-sm font-semibold text-[#0066ff] hover:text-blue-700 inline-flex items-center gap-1 transition-colors hover:underline pl-2 pt-0.5"
+                    >
+                      <span>Calcular potencial de eficiencia →</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -3877,6 +3860,7 @@
         // Hero Carousel Logic
         const slides = document.querySelectorAll(".hero-slide");
         const dots = document.querySelectorAll(".hero-dot");
+        const bgs = document.querySelectorAll(".hero-bg");
         const prevBtn = document.getElementById("hero-prev");
         const nextBtn = document.getElementById("hero-next");
         let currentSlide = 0;
@@ -3905,6 +3889,18 @@
               }
             }
           });
+
+          if (bgs.length > 0) {
+            bgs.forEach((bg, i) => {
+              if (i === currentSlide) {
+                bg.classList.remove("opacity-0");
+                bg.classList.add("opacity-100");
+              } else {
+                bg.classList.remove("opacity-100");
+                bg.classList.add("opacity-0");
+              }
+            });
+          }
 
           dots.forEach((dot, i) => {
             if (i === currentSlide) {
